@@ -10,6 +10,12 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -72,11 +78,19 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="3hFcliemXdG" resolve="Farmer" />
     </node>
+    <node concept="1TJgyj" id="3hFcliemXeu" role="1TKVEi">
+      <property role="IQ2ns" value="3777166951715689374" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Crops" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="3hFcliemXe4" resolve="Crop" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3hFcliemXdG">
     <property role="EcuMT" value="3777166951715689324" />
     <property role="TrG5h" value="Farmer" />
     <property role="R4oN_" value="Farmer represents the person that operates smart farming system. " />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="3hFcliemXdH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -104,6 +118,64 @@
   <node concept="QkHVr" id="3hFcliemXdT">
     <property role="3F6X1D" value="3777166951715689337" />
     <property role="TrG5h" value="Email" />
+  </node>
+  <node concept="1TIwiD" id="3hFcliemXe4">
+    <property role="EcuMT" value="3777166951715689348" />
+    <property role="TrG5h" value="Crop" />
+    <property role="R4oN_" value="Crop represents the crop in smart farming system. " />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3hFcliemXe5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="3hFcliemXe7" role="1TKVEl">
+      <property role="IQ2nx" value="3777166951715689351" />
+      <property role="TrG5h" value="group" />
+      <ref role="AX2Wp" node="3hFcliemXe9" resolve="CropGroup" />
+    </node>
+    <node concept="1TJgyi" id="3hFcliemXen" role="1TKVEl">
+      <property role="IQ2nx" value="3777166951715689367" />
+      <property role="TrG5h" value="growth_duration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3hFcliemXeq" role="1TKVEl">
+      <property role="IQ2nx" value="3777166951715689370" />
+      <property role="TrG5h" value="seed_code" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="25R3W" id="3hFcliemXe9">
+    <property role="3F6X1D" value="3777166951715689353" />
+    <property role="TrG5h" value="CropGroup" />
+    <node concept="25R33" id="3hFcliemXea" role="25R1y">
+      <property role="3tVfz5" value="3777166951715689354" />
+      <property role="TrG5h" value="Vegetable" />
+    </node>
+    <node concept="25R33" id="3hFcliemXeb" role="25R1y">
+      <property role="3tVfz5" value="3777166951715689355" />
+      <property role="TrG5h" value="Fruit" />
+    </node>
+    <node concept="25R33" id="3hFcliemXee" role="25R1y">
+      <property role="3tVfz5" value="3777166951715689358" />
+      <property role="TrG5h" value="Flower" />
+    </node>
+    <node concept="25R33" id="3hFcliemXei" role="25R1y">
+      <property role="3tVfz5" value="3777166951715689362" />
+      <property role="TrG5h" value="Tuber" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3hFcliemXex">
+    <property role="EcuMT" value="3777166951715689377" />
+    <property role="TrG5h" value="IoTSystem" />
+    <property role="R4oN_" value="IoT System represents the system powered by IoT that manage farm." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3hFcliemXey" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="3hFcliemXe$" role="1TKVEl">
+      <property role="IQ2nx" value="3777166951715689380" />
+      <property role="TrG5h" value="version" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
