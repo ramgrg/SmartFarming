@@ -9,28 +9,34 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Analytics = 0;
-  public static final int CommunicationProtocol = 1;
-  public static final int ControlSystem = 2;
-  public static final int Crop = 3;
-  public static final int Farm = 4;
-  public static final int Farmer = 5;
-  public static final int Gateway = 6;
-  public static final int IoTSystem = 7;
-  public static final int MonitoringSystem = 8;
-  public static final int Service = 9;
+  public static final int Actuator = 0;
+  public static final int Analytics = 1;
+  public static final int CommunicationProtocol = 2;
+  public static final int ControlSystem = 3;
+  public static final int Crop = 4;
+  public static final int Device = 5;
+  public static final int Farm = 6;
+  public static final int Farmer = 7;
+  public static final int Gateway = 8;
+  public static final int IoTSystem = 9;
+  public static final int MonitoringSystem = 10;
+  public static final int Sensor = 11;
+  public static final int Service = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x5284d1bee3634c06L, 0xa2364161e9028c0dL);
+    builder.put(0x4cd0d7ded3055af0L, Actuator);
     builder.put(0x6813e10dbb9625dfL, Analytics);
     builder.put(0x75c7c5f96ef4bb03L, CommunicationProtocol);
     builder.put(0x6813e10dbb962600L, ControlSystem);
     builder.put(0x346b31548e5bd384L, Crop);
+    builder.put(0x4cd0d7ded30444b9L, Device);
     builder.put(0xad19f946497d8c4L, Farm);
     builder.put(0x346b31548e5bd36cL, Farmer);
     builder.put(0x75c7c5f96ef4bafbL, Gateway);
     builder.put(0x346b31548e5bd3a1L, IoTSystem);
     builder.put(0x6813e10dbb96262fL, MonitoringSystem);
+    builder.put(0x4cd0d7ded3049b6dL, Sensor);
     builder.put(0x6813e10dbb9625c4L, Service);
     myIndex = builder.seal();
   }

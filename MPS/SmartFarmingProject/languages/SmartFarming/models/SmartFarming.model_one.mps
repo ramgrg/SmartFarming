@@ -13,9 +13,12 @@
       </concept>
     </language>
     <language id="5284d1be-e363-4c06-a236-4161e9028c0d" name="SmartFarming">
+      <concept id="5535161294061345645" name="SmartFarming.structure.Sensor" flags="ng" index="2vP4MN" />
+      <concept id="5535161294061394672" name="SmartFarming.structure.Actuator" flags="ng" index="2vPoOI" />
       <concept id="3777166951715689324" name="SmartFarming.structure.Farmer" flags="ng" index="2Uce8S" />
       <concept id="3777166951715689348" name="SmartFarming.structure.Crop" flags="ng" index="2Ucebg" />
       <concept id="3777166951715689377" name="SmartFarming.structure.IoTSystem" flags="ng" index="2UcebP">
+        <child id="5535161294061767438" name="devices" index="2vQXNg" />
         <child id="7499585253600205390" name="services" index="3jyJH3" />
       </concept>
       <concept id="7499585253600011743" name="SmartFarming.structure.Analytics" flags="ng" index="3jxsji" />
@@ -36,6 +39,13 @@
       <node concept="3jxssy" id="6wjSgQVDkxA" role="3jyJH3" />
       <node concept="3jxssd" id="6wjSgQVDkwY" role="3jyJH3" />
       <node concept="3jxsji" id="6wjSgQVDkwS" role="3jyJH3" />
+      <node concept="2vP4MN" id="4NgPXVj3g$S" role="2vQXNg" />
+      <node concept="2vPoOI" id="4NgPXVj3ICs" role="2vQXNg">
+        <property role="TrG5h" value="a " />
+      </node>
+      <node concept="2vPoOI" id="4NgPXVj4bxd" role="2vQXNg">
+        <property role="TrG5h" value="ac" />
+      </node>
     </node>
   </node>
 </model>
