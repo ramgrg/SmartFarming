@@ -22,6 +22,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -182,6 +183,13 @@
       <property role="TrG5h" value="version" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="6wjSgQVAhDe" role="1TKVEi">
+      <property role="IQ2ns" value="7499585253600205390" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="services" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="6wjSgQV_yn4" resolve="Service" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7n7Lv_IXbFV">
     <property role="EcuMT" value="8486969697902050043" />
@@ -252,6 +260,209 @@
     <node concept="25R33" id="7n7Lv_IXbGx" role="25R1y">
       <property role="3tVfz5" value="8486969697902050081" />
       <property role="TrG5h" value="ZWave" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wjSgQV_yn4">
+    <property role="EcuMT" value="7499585253600011716" />
+    <property role="TrG5h" value="Service" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="6wjSgQV_yn5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="6wjSgQV_ynb" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011723" />
+      <property role="TrG5h" value="ServiceID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6wjSgQV_ynd" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011725" />
+      <property role="TrG5h" value="ServiceName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6wjSgQV_yng" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011728" />
+      <property role="TrG5h" value="Host" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6wjSgQV_ynk" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011732" />
+      <property role="TrG5h" value="URI" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wjSgQV_ynv">
+    <property role="EcuMT" value="7499585253600011743" />
+    <property role="TrG5h" value="Analytics" />
+    <ref role="1TJDcQ" node="6wjSgQV_yn4" resolve="Service" />
+    <node concept="1TJgyi" id="6wjSgQV_ynD" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011753" />
+      <property role="TrG5h" value="AnalyticsType" />
+      <ref role="AX2Wp" node="6wjSgQV_ynw" resolve="AnalyticType" />
+    </node>
+    <node concept="1TJgyi" id="6wjSgQV_ynF" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011755" />
+      <property role="TrG5h" value="DataSource" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6wjSgQV_ynI" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011758" />
+      <property role="TrG5h" value="OutputType" />
+      <ref role="AX2Wp" node="6wjSgQV_ynM" resolve="OutputType" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6wjSgQV_ynw">
+    <property role="3F6X1D" value="7499585253600011744" />
+    <property role="TrG5h" value="AnalyticType" />
+    <node concept="25R33" id="6wjSgQV_ynx" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011745" />
+      <property role="TrG5h" value="Harvesting" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yny" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011746" />
+      <property role="TrG5h" value="Seeding" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yn_" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011749" />
+      <property role="TrG5h" value="Resource" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6wjSgQV_ynM">
+    <property role="3F6X1D" value="7499585253600011762" />
+    <property role="TrG5h" value="OutputType" />
+    <node concept="25R33" id="6wjSgQV_ynN" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011763" />
+      <property role="TrG5h" value="LineGraph" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_ynO" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011764" />
+      <property role="TrG5h" value="PieChart" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_ynR" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011767" />
+      <property role="TrG5h" value="BarChart" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_ynV" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011771" />
+      <property role="TrG5h" value="Tabular" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wjSgQV_yo0">
+    <property role="EcuMT" value="7499585253600011776" />
+    <property role="TrG5h" value="ControlSystem" />
+    <ref role="1TJDcQ" node="6wjSgQV_yn4" resolve="Service" />
+    <node concept="1TJgyi" id="6wjSgQV_yo1" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011777" />
+      <property role="TrG5h" value="ControlType" />
+      <ref role="AX2Wp" node="6wjSgQV_yo4" resolve="ControlType" />
+    </node>
+    <node concept="1TJgyi" id="6wjSgQV_yoo" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011800" />
+      <property role="TrG5h" value="Actions" />
+      <ref role="AX2Wp" node="6wjSgQV_yor" resolve="Actions" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6wjSgQV_yo4">
+    <property role="3F6X1D" value="7499585253600011780" />
+    <property role="TrG5h" value="ControlType" />
+    <node concept="25R33" id="6wjSgQV_yo5" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011781" />
+      <property role="TrG5h" value="AirConditioner" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yo6" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011782" />
+      <property role="TrG5h" value="Nutrient" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yo9" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011785" />
+      <property role="TrG5h" value="Light" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yod" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011789" />
+      <property role="TrG5h" value="Oxygen" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yoi" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011794" />
+      <property role="TrG5h" value="CO2" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6wjSgQV_yor">
+    <property role="3F6X1D" value="7499585253600011803" />
+    <property role="TrG5h" value="Actions" />
+    <node concept="25R33" id="6wjSgQV_yos" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011804" />
+      <property role="TrG5h" value="Increase" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yot" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011805" />
+      <property role="TrG5h" value="Decrease" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yow" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011808" />
+      <property role="TrG5h" value="ON" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yo$" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011812" />
+      <property role="TrG5h" value="OFF" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yoD" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011817" />
+      <property role="TrG5h" value="Alert" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wjSgQV_yoJ">
+    <property role="EcuMT" value="7499585253600011823" />
+    <property role="TrG5h" value="MonitoringSystem" />
+    <ref role="1TJDcQ" node="6wjSgQV_yn4" resolve="Service" />
+    <node concept="1TJgyi" id="6wjSgQV_yoK" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011824" />
+      <property role="TrG5h" value="Metrics" />
+      <ref role="AX2Wp" node="6wjSgQV_yoM" resolve="Metrics" />
+    </node>
+    <node concept="1TJgyi" id="6wjSgQV_yoV" role="1TKVEl">
+      <property role="IQ2nx" value="7499585253600011835" />
+      <property role="TrG5h" value="Condition" />
+      <ref role="AX2Wp" node="6wjSgQV_yoY" resolve="Conditions" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6wjSgQV_yoM">
+    <property role="3F6X1D" value="7499585253600011826" />
+    <property role="TrG5h" value="Metrics" />
+    <node concept="25R33" id="6wjSgQV_yoN" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011827" />
+      <property role="TrG5h" value="Nutrient" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yoO" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011828" />
+      <property role="TrG5h" value="PhotoSynthesis" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yoR" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011831" />
+      <property role="TrG5h" value="EnvironemtalSafety" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6wjSgQV_yoY">
+    <property role="3F6X1D" value="7499585253600011838" />
+    <property role="TrG5h" value="Conditions" />
+    <node concept="25R33" id="6wjSgQV_yoZ" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011839" />
+      <property role="TrG5h" value="Optimum" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yp0" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011840" />
+      <property role="TrG5h" value="Health" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yp3" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011843" />
+      <property role="TrG5h" value="Good" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_yp7" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011847" />
+      <property role="TrG5h" value="Warning" />
+    </node>
+    <node concept="25R33" id="6wjSgQV_ypc" role="25R1y">
+      <property role="3tVfz5" value="7499585253600011852" />
+      <property role="TrG5h" value="Danger" />
     </node>
   </node>
 </model>

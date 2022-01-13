@@ -9,16 +9,43 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Analytics;
+  private ConceptPresentation props_CommunicationProtocol;
+  private ConceptPresentation props_ControlSystem;
   private ConceptPresentation props_Crop;
   private ConceptPresentation props_Farm;
   private ConceptPresentation props_Farmer;
+  private ConceptPresentation props_Gateway;
   private ConceptPresentation props_IoTSystem;
+  private ConceptPresentation props_MonitoringSystem;
+  private ConceptPresentation props_Service;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Analytics:
+        if (props_Analytics == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Analytics = cpb.create();
+        }
+        return props_Analytics;
+      case LanguageConceptSwitch.CommunicationProtocol:
+        if (props_CommunicationProtocol == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_CommunicationProtocol = cpb.create();
+        }
+        return props_CommunicationProtocol;
+      case LanguageConceptSwitch.ControlSystem:
+        if (props_ControlSystem == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ControlSystem = cpb.create();
+        }
+        return props_ControlSystem;
       case LanguageConceptSwitch.Crop:
         if (props_Crop == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -43,6 +70,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Farmer = cpb.create();
         }
         return props_Farmer;
+      case LanguageConceptSwitch.Gateway:
+        if (props_Gateway == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Gateway represent gateway in IoT System");
+          cpb.presentationByName();
+          props_Gateway = cpb.create();
+        }
+        return props_Gateway;
       case LanguageConceptSwitch.IoTSystem:
         if (props_IoTSystem == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -51,6 +86,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IoTSystem = cpb.create();
         }
         return props_IoTSystem;
+      case LanguageConceptSwitch.MonitoringSystem:
+        if (props_MonitoringSystem == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_MonitoringSystem = cpb.create();
+        }
+        return props_MonitoringSystem;
+      case LanguageConceptSwitch.Service:
+        if (props_Service == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Service = cpb.create();
+        }
+        return props_Service;
     }
     return null;
   }
