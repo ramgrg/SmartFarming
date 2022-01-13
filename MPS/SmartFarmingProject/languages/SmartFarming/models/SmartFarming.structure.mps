@@ -85,12 +85,18 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="3hFcliemXe4" resolve="Crop" />
     </node>
+    <node concept="1TJgyj" id="7n7Lv_IWIMu" role="1TKVEi">
+      <property role="IQ2ns" value="8486969697901931678" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="IoTSystem" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3hFcliemXex" resolve="IoTSystem" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3hFcliemXdG">
     <property role="EcuMT" value="3777166951715689324" />
     <property role="TrG5h" value="Farmer" />
     <property role="R4oN_" value="Farmer represents the person that operates smart farming system. " />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="3hFcliemXdH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -129,17 +135,17 @@
     </node>
     <node concept="1TJgyi" id="3hFcliemXe7" role="1TKVEl">
       <property role="IQ2nx" value="3777166951715689351" />
-      <property role="TrG5h" value="group" />
+      <property role="TrG5h" value="Group" />
       <ref role="AX2Wp" node="3hFcliemXe9" resolve="CropGroup" />
     </node>
     <node concept="1TJgyi" id="3hFcliemXen" role="1TKVEl">
       <property role="IQ2nx" value="3777166951715689367" />
-      <property role="TrG5h" value="growth_duration" />
+      <property role="TrG5h" value="GrowthDuration" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="3hFcliemXeq" role="1TKVEl">
       <property role="IQ2nx" value="3777166951715689370" />
-      <property role="TrG5h" value="seed_code" />
+      <property role="TrG5h" value="SeedCode" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -175,6 +181,77 @@
       <property role="IQ2nx" value="3777166951715689380" />
       <property role="TrG5h" value="version" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7n7Lv_IXbFV">
+    <property role="EcuMT" value="8486969697902050043" />
+    <property role="TrG5h" value="Gateway" />
+    <property role="R4oN_" value="Gateway represent gateway in IoT System" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7n7Lv_IXbFW" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7n7Lv_IXbFY" role="1TKVEl">
+      <property role="IQ2nx" value="8486969697902050046" />
+      <property role="TrG5h" value="GatewayID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7n7Lv_IXbG0" role="1TKVEl">
+      <property role="IQ2nx" value="8486969697902050048" />
+      <property role="TrG5h" value="Model" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="7n7Lv_IXbGF" role="1TKVEi">
+      <property role="IQ2ns" value="8486969697902050091" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Protocols" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="7n7Lv_IXbG3" resolve="CommunicationProtocol" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7n7Lv_IXbG3">
+    <property role="EcuMT" value="8486969697902050051" />
+    <property role="TrG5h" value="CommunicationProtocol" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7n7Lv_IXbG4" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7n7Lv_IXbGD" role="1TKVEl">
+      <property role="IQ2nx" value="8486969697902050089" />
+      <property role="TrG5h" value="Type" />
+      <ref role="AX2Wp" node="7n7Lv_IXbG6" resolve="CommunicationType" />
+    </node>
+  </node>
+  <node concept="25R3W" id="7n7Lv_IXbG6">
+    <property role="3F6X1D" value="8486969697902050054" />
+    <property role="TrG5h" value="CommunicationType" />
+    <node concept="25R33" id="7n7Lv_IXbG7" role="25R1y">
+      <property role="3tVfz5" value="8486969697902050055" />
+      <property role="TrG5h" value="ZigBee" />
+    </node>
+    <node concept="25R33" id="7n7Lv_IXbG8" role="25R1y">
+      <property role="3tVfz5" value="8486969697902050056" />
+      <property role="TrG5h" value="MQTT" />
+    </node>
+    <node concept="25R33" id="7n7Lv_IXbGb" role="25R1y">
+      <property role="3tVfz5" value="8486969697902050059" />
+      <property role="TrG5h" value="CoAP" />
+    </node>
+    <node concept="25R33" id="7n7Lv_IXbGf" role="25R1y">
+      <property role="3tVfz5" value="8486969697902050063" />
+      <property role="TrG5h" value="HTTP" />
+    </node>
+    <node concept="25R33" id="7n7Lv_IXbGk" role="25R1y">
+      <property role="3tVfz5" value="8486969697902050068" />
+      <property role="TrG5h" value="WiFi" />
+    </node>
+    <node concept="25R33" id="7n7Lv_IXbGq" role="25R1y">
+      <property role="3tVfz5" value="8486969697902050074" />
+      <property role="TrG5h" value="Bluetooth" />
+    </node>
+    <node concept="25R33" id="7n7Lv_IXbGx" role="25R1y">
+      <property role="3tVfz5" value="8486969697902050081" />
+      <property role="TrG5h" value="ZWave" />
     </node>
   </node>
 </model>

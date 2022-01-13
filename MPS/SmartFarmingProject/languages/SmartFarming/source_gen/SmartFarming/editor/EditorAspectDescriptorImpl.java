@@ -18,9 +18,13 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new Farm_Editor());
+        return Collections.<ConceptEditor>singletonList(new Crop_Editor());
       case 1:
+        return Collections.<ConceptEditor>singletonList(new Farm_Editor());
+      case 2:
         return Collections.<ConceptEditor>singletonList(new Farmer_Editor());
+      case 3:
+        return Collections.<ConceptEditor>singletonList(new IoTSystem_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -28,5 +32,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0xad19f946497d8c4L), MetaIdFactory.conceptId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd384L), MetaIdFactory.conceptId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0xad19f946497d8c4L), MetaIdFactory.conceptId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL), MetaIdFactory.conceptId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd3a1L)).seal();
 }
