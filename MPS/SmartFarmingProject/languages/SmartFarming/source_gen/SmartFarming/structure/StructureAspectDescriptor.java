@@ -70,9 +70,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/3777166951715689348");
     b.version(2);
-    b.property("group", 0x346b31548e5bd387L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd389L)).origin("3777166951715689351").done();
-    b.property("growth_duration", 0x346b31548e5bd397L).type(PrimitiveTypeId.INTEGER).origin("3777166951715689367").done();
-    b.property("seed_code", 0x346b31548e5bd39aL).type(PrimitiveTypeId.STRING).origin("3777166951715689370").done();
+    b.property("Group", 0x346b31548e5bd387L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd389L)).origin("3777166951715689351").done();
+    b.property("GrowthDuration", 0x346b31548e5bd397L).type(PrimitiveTypeId.INTEGER).origin("3777166951715689367").done();
+    b.property("SeedCode", 0x346b31548e5bd39aL).type(PrimitiveTypeId.STRING).origin("3777166951715689370").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFarm() {
@@ -85,11 +85,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("size", 0x346b31548e5bd369L).type(PrimitiveTypeId.INTEGER).origin("3777166951715689321").done();
     b.aggregate("Farmers", 0x346b31548e5bd37eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL).optional(false).ordered(true).multiple(true).origin("3777166951715689342").done();
     b.aggregate("Crops", 0x346b31548e5bd39eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd384L).optional(false).ordered(true).multiple(true).origin("3777166951715689374").done();
+    b.aggregate("IoTSystem", 0x75c7c5f96ef2ec9eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd3a1L).optional(false).ordered(true).multiple(false).origin("8486969697901931678").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFarmer() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "Farmer", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL);
-    b.class_(false, false, true);
+    b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/3777166951715689324");
     b.version(2);
