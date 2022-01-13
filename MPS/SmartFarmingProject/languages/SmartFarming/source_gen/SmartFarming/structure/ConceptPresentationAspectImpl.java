@@ -9,15 +9,18 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Actuator;
   private ConceptPresentation props_Analytics;
   private ConceptPresentation props_CommunicationProtocol;
   private ConceptPresentation props_ControlSystem;
   private ConceptPresentation props_Crop;
+  private ConceptPresentation props_Device;
   private ConceptPresentation props_Farm;
   private ConceptPresentation props_Farmer;
   private ConceptPresentation props_Gateway;
   private ConceptPresentation props_IoTSystem;
   private ConceptPresentation props_MonitoringSystem;
+  private ConceptPresentation props_Sensor;
   private ConceptPresentation props_Service;
 
   @Override
@@ -25,6 +28,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Actuator:
+        if (props_Actuator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Actuator = cpb.create();
+        }
+        return props_Actuator;
       case LanguageConceptSwitch.Analytics:
         if (props_Analytics == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -54,6 +64,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Crop = cpb.create();
         }
         return props_Crop;
+      case LanguageConceptSwitch.Device:
+        if (props_Device == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("It is the abstract metamodel for Devices ");
+          props_Device = cpb.create();
+        }
+        return props_Device;
       case LanguageConceptSwitch.Farm:
         if (props_Farm == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -93,6 +110,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_MonitoringSystem = cpb.create();
         }
         return props_MonitoringSystem;
+      case LanguageConceptSwitch.Sensor:
+        if (props_Sensor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Sensor defines all the sensor that will be used in the system ");
+          cpb.presentationByName();
+          props_Sensor = cpb.create();
+        }
+        return props_Sensor;
       case LanguageConceptSwitch.Service:
         if (props_Service == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
