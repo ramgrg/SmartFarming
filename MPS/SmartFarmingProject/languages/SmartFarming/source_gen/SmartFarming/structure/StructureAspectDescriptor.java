@@ -16,11 +16,24 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAnalytics = createDescriptorForAnalytics();
+  /*package*/ final ConceptDescriptor myConceptCommunicationProtocol = createDescriptorForCommunicationProtocol();
+  /*package*/ final ConceptDescriptor myConceptControlSystem = createDescriptorForControlSystem();
   /*package*/ final ConceptDescriptor myConceptCrop = createDescriptorForCrop();
   /*package*/ final ConceptDescriptor myConceptFarm = createDescriptorForFarm();
   /*package*/ final ConceptDescriptor myConceptFarmer = createDescriptorForFarmer();
+  /*package*/ final ConceptDescriptor myConceptGateway = createDescriptorForGateway();
   /*package*/ final ConceptDescriptor myConceptIoTSystem = createDescriptorForIoTSystem();
+  /*package*/ final ConceptDescriptor myConceptMonitoringSystem = createDescriptorForMonitoringSystem();
+  /*package*/ final ConceptDescriptor myConceptService = createDescriptorForService();
+  /*package*/ final EnumerationDescriptor myEnumerationActions = new EnumerationDescriptor_Actions();
+  /*package*/ final EnumerationDescriptor myEnumerationAnalyticType = new EnumerationDescriptor_AnalyticType();
+  /*package*/ final EnumerationDescriptor myEnumerationCommunicationType = new EnumerationDescriptor_CommunicationType();
+  /*package*/ final EnumerationDescriptor myEnumerationConditions = new EnumerationDescriptor_Conditions();
+  /*package*/ final EnumerationDescriptor myEnumerationControlType = new EnumerationDescriptor_ControlType();
   /*package*/ final EnumerationDescriptor myEnumerationCropGroup = new EnumerationDescriptor_CropGroup();
+  /*package*/ final EnumerationDescriptor myEnumerationMetrics = new EnumerationDescriptor_Metrics();
+  /*package*/ final EnumerationDescriptor myEnumerationOutputType = new EnumerationDescriptor_OutputType();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -35,21 +48,33 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCrop, myConceptFarm, myConceptFarmer, myConceptIoTSystem);
+    return Arrays.asList(myConceptAnalytics, myConceptCommunicationProtocol, myConceptControlSystem, myConceptCrop, myConceptFarm, myConceptFarmer, myConceptGateway, myConceptIoTSystem, myConceptMonitoringSystem, myConceptService);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Analytics:
+        return myConceptAnalytics;
+      case LanguageConceptSwitch.CommunicationProtocol:
+        return myConceptCommunicationProtocol;
+      case LanguageConceptSwitch.ControlSystem:
+        return myConceptControlSystem;
       case LanguageConceptSwitch.Crop:
         return myConceptCrop;
       case LanguageConceptSwitch.Farm:
         return myConceptFarm;
       case LanguageConceptSwitch.Farmer:
         return myConceptFarmer;
+      case LanguageConceptSwitch.Gateway:
+        return myConceptGateway;
       case LanguageConceptSwitch.IoTSystem:
         return myConceptIoTSystem;
+      case LanguageConceptSwitch.MonitoringSystem:
+        return myConceptMonitoringSystem;
+      case LanguageConceptSwitch.Service:
+        return myConceptService;
       default:
         return null;
     }
@@ -57,13 +82,43 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationCropGroup);
+    return Arrays.asList(myEnumerationActions, myEnumerationAnalyticType, myEnumerationCommunicationType, myEnumerationConditions, myEnumerationControlType, myEnumerationCropGroup, myEnumerationMetrics, myEnumerationOutputType);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAnalytics() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "Analytics", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb9625dfL);
+    b.class_(false, false, false);
+    b.super_("SmartFarming.structure.Service", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb9625c4L);
+    b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/7499585253600011743");
+    b.version(2);
+    b.property("AnalyticsType", 0x6813e10dbb9625e9L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb9625e0L)).origin("7499585253600011753").done();
+    b.property("DataSource", 0x6813e10dbb9625ebL).type(PrimitiveTypeId.STRING).origin("7499585253600011755").done();
+    b.property("OutputType", 0x6813e10dbb9625eeL).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb9625f2L)).origin("7499585253600011758").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForCommunicationProtocol() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "CommunicationProtocol", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x75c7c5f96ef4bb03L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/8486969697902050051");
+    b.version(2);
+    b.property("Type", 0x75c7c5f96ef4bb29L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x75c7c5f96ef4bb06L)).origin("8486969697902050089").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForControlSystem() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "ControlSystem", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb962600L);
+    b.class_(false, false, false);
+    b.super_("SmartFarming.structure.Service", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb9625c4L);
+    b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/7499585253600011776");
+    b.version(2);
+    b.property("ControlType", 0x6813e10dbb962601L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb962604L)).origin("7499585253600011777").done();
+    b.property("Actions", 0x6813e10dbb962618L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb96261bL)).origin("7499585253600011800").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForCrop() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "Crop", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd384L);
     b.class_(false, false, false);
@@ -99,6 +154,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("PhoneNumber", 0x346b31548e5bd374L).type(PrimitiveTypeId.STRING).origin("3777166951715689332").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForGateway() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "Gateway", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x75c7c5f96ef4bafbL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/8486969697902050043");
+    b.version(2);
+    b.property("GatewayID", 0x75c7c5f96ef4bafeL).type(PrimitiveTypeId.STRING).origin("8486969697902050046").done();
+    b.property("Model", 0x75c7c5f96ef4bb00L).type(PrimitiveTypeId.STRING).origin("8486969697902050048").done();
+    b.aggregate("Protocols", 0x75c7c5f96ef4bb2bL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x75c7c5f96ef4bb03L).optional(false).ordered(true).multiple(true).origin("8486969697902050091").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForIoTSystem() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "IoTSystem", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd3a1L);
     b.class_(false, false, false);
@@ -106,6 +172,29 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/3777166951715689377");
     b.version(2);
     b.property("version", 0x346b31548e5bd3a4L).type(PrimitiveTypeId.STRING).origin("3777166951715689380").done();
+    b.aggregate("services", 0x6813e10dbb991a4eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb9625c4L).optional(false).ordered(true).multiple(true).origin("7499585253600205390").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMonitoringSystem() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "MonitoringSystem", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb96262fL);
+    b.class_(false, false, false);
+    b.super_("SmartFarming.structure.Service", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb9625c4L);
+    b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/7499585253600011823");
+    b.version(2);
+    b.property("Metrics", 0x6813e10dbb962630L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb962632L)).origin("7499585253600011824").done();
+    b.property("Condition", 0x6813e10dbb96263bL).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb96263eL)).origin("7499585253600011835").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForService() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "Service", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x6813e10dbb9625c4L);
+    b.class_(false, true, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/7499585253600011716");
+    b.version(2);
+    b.property("ServiceID", 0x6813e10dbb9625cbL).type(PrimitiveTypeId.STRING).origin("7499585253600011723").done();
+    b.property("ServiceName", 0x6813e10dbb9625cdL).type(PrimitiveTypeId.STRING).origin("7499585253600011725").done();
+    b.property("Host", 0x6813e10dbb9625d0L).type(PrimitiveTypeId.STRING).origin("7499585253600011728").done();
+    b.property("URI", 0x6813e10dbb9625d4L).type(PrimitiveTypeId.STRING).origin("7499585253600011732").done();
     return b.create();
   }
 }
