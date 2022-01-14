@@ -176,6 +176,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForDevice() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarming", "Device", 0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x4cd0d7ded30444b9L);
     b.class_(false, true, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/5535161294061323449");
     b.version(2);
     b.property("DeviceID", 0x4cd0d7ded3046d9eL).type(PrimitiveTypeId.STRING).origin("5535161294061333918").done();
@@ -225,7 +226,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("GatewayID", 0x75c7c5f96ef4bafeL).type(PrimitiveTypeId.STRING).origin("8486969697902050046").done();
     b.property("Model", 0x75c7c5f96ef4bb00L).type(PrimitiveTypeId.STRING).origin("8486969697902050048").done();
     b.aggregate("Protocols", 0x75c7c5f96ef4bb2bL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x75c7c5f96ef4bb03L).optional(false).ordered(true).multiple(true).origin("8486969697902050091").done();
-    b.aggregate("Devices", 0x50589ba2dcca1b2cL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x50589ba2dccb47a0L).optional(true).ordered(true).multiple(false).origin("5789548444776012588").done();
+    b.aggregate("Devices", 0x50589ba2dcca1b2cL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x50589ba2dccb47a0L).optional(false).ordered(true).multiple(true).origin("5789548444776012588").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIoTSystem() {
