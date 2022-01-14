@@ -10,18 +10,22 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Actuator;
-  private ConceptPresentation props_Analytics;
+  private ConceptPresentation props_ActuatorReference;
+  private ConceptPresentation props_AnalyticsSystem;
   private ConceptPresentation props_CommunicationProtocol;
   private ConceptPresentation props_ControlSystem;
   private ConceptPresentation props_Crop;
   private ConceptPresentation props_Device;
+  private ConceptPresentation props_DeviceReference;
   private ConceptPresentation props_Farm;
   private ConceptPresentation props_Farmer;
   private ConceptPresentation props_Gateway;
   private ConceptPresentation props_IoTSystem;
   private ConceptPresentation props_MonitoringSystem;
   private ConceptPresentation props_Sensor;
+  private ConceptPresentation props_SensorReference;
   private ConceptPresentation props_Service;
+  private ConceptPresentation props_ServiceReference;
 
   @Override
   @Nullable
@@ -35,13 +39,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Actuator = cpb.create();
         }
         return props_Actuator;
-      case LanguageConceptSwitch.Analytics:
-        if (props_Analytics == null) {
+      case LanguageConceptSwitch.ActuatorReference:
+        if (props_ActuatorReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ActuatorReference");
+          props_ActuatorReference = cpb.create();
+        }
+        return props_ActuatorReference;
+      case LanguageConceptSwitch.AnalyticsSystem:
+        if (props_AnalyticsSystem == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Analytics = cpb.create();
+          props_AnalyticsSystem = cpb.create();
         }
-        return props_Analytics;
+        return props_AnalyticsSystem;
       case LanguageConceptSwitch.CommunicationProtocol:
         if (props_CommunicationProtocol == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -71,6 +82,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Device = cpb.create();
         }
         return props_Device;
+      case LanguageConceptSwitch.DeviceReference:
+        if (props_DeviceReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("DeviceReference");
+          props_DeviceReference = cpb.create();
+        }
+        return props_DeviceReference;
       case LanguageConceptSwitch.Farm:
         if (props_Farm == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -118,12 +136,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensor = cpb.create();
         }
         return props_Sensor;
+      case LanguageConceptSwitch.SensorReference:
+        if (props_SensorReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("SensorReference");
+          props_SensorReference = cpb.create();
+        }
+        return props_SensorReference;
       case LanguageConceptSwitch.Service:
         if (props_Service == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_Service = cpb.create();
         }
         return props_Service;
+      case LanguageConceptSwitch.ServiceReference:
+        if (props_ServiceReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ServiceReference");
+          props_ServiceReference = cpb.create();
+        }
+        return props_ServiceReference;
     }
     return null;
   }

@@ -48,6 +48,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -64,12 +67,12 @@
     </node>
     <node concept="1TJgyi" id="3hFcliemXdB" role="1TKVEl">
       <property role="IQ2nx" value="3777166951715689319" />
-      <property role="TrG5h" value="location" />
+      <property role="TrG5h" value="Location" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="3hFcliemXdD" role="1TKVEl">
       <property role="IQ2nx" value="3777166951715689321" />
-      <property role="TrG5h" value="size" />
+      <property role="TrG5h" value="Size" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyj" id="3hFcliemXdY" role="1TKVEi">
@@ -89,7 +92,7 @@
     <node concept="1TJgyj" id="7n7Lv_IWIMu" role="1TKVEi">
       <property role="IQ2ns" value="8486969697901931678" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="IoTSystem" />
+      <property role="20kJfa" value="IoTSystems" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3hFcliemXex" resolve="IoTSystem" />
     </node>
@@ -117,14 +120,23 @@
       <property role="TrG5h" value="PhoneNumber" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="51oAUbsMxH6" role="1TKVEi">
+      <property role="IQ2ns" value="5789548444776012614" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Services" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="51oAUbsMxGO" resolve="ServiceReference" />
+    </node>
   </node>
   <node concept="QkHVr" id="3hFcliemXdS">
     <property role="3F6X1D" value="3777166951715689336" />
     <property role="TrG5h" value="double" />
+    <property role="3GE5qa" value="DataType" />
   </node>
   <node concept="QkHVr" id="3hFcliemXdT">
     <property role="3F6X1D" value="3777166951715689337" />
     <property role="TrG5h" value="Email" />
+    <property role="3GE5qa" value="DataType" />
   </node>
   <node concept="1TIwiD" id="3hFcliemXe4">
     <property role="EcuMT" value="3777166951715689348" />
@@ -153,6 +165,7 @@
   <node concept="25R3W" id="3hFcliemXe9">
     <property role="3F6X1D" value="3777166951715689353" />
     <property role="TrG5h" value="CropGroup" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="3hFcliemXea" role="25R1y">
       <property role="3tVfz5" value="3777166951715689354" />
       <property role="TrG5h" value="Vegetable" />
@@ -180,27 +193,27 @@
     </node>
     <node concept="1TJgyi" id="3hFcliemXe$" role="1TKVEl">
       <property role="IQ2nx" value="3777166951715689380" />
-      <property role="TrG5h" value="version" />
+      <property role="TrG5h" value="Version" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="6wjSgQVAhDe" role="1TKVEi">
       <property role="IQ2ns" value="7499585253600205390" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="services" />
+      <property role="20kJfa" value="Services" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="6wjSgQV_yn4" resolve="Service" />
     </node>
     <node concept="1TJgyj" id="4NgPXVj2KGe" role="1TKVEi">
       <property role="IQ2ns" value="5535161294061767438" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="devices" />
+      <property role="20kJfa" value="Devices" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="4NgPXVj14iT" resolve="Device" />
     </node>
     <node concept="1TJgyj" id="4NgPXVj2LzF" role="1TKVEi">
       <property role="IQ2ns" value="5535161294061770987" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="gateways" />
+      <property role="20kJfa" value="Gateways" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7n7Lv_IXbFV" resolve="Gateway" />
     </node>
@@ -209,6 +222,7 @@
     <property role="EcuMT" value="8486969697902050043" />
     <property role="TrG5h" value="Gateway" />
     <property role="R4oN_" value="Gateway represent gateway in IoT System" />
+    <property role="3GE5qa" value="Gateway" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="7n7Lv_IXbFW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -230,10 +244,17 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7n7Lv_IXbG3" resolve="CommunicationProtocol" />
     </node>
+    <node concept="1TJgyj" id="51oAUbsMxGG" role="1TKVEi">
+      <property role="IQ2ns" value="5789548444776012588" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Devices" />
+      <ref role="20lvS9" node="51oAUbsMOuw" resolve="DeviceReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7n7Lv_IXbG3">
     <property role="EcuMT" value="8486969697902050051" />
     <property role="TrG5h" value="CommunicationProtocol" />
+    <property role="3GE5qa" value="Gateway" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="7n7Lv_IXbG4" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -247,6 +268,7 @@
   <node concept="25R3W" id="7n7Lv_IXbG6">
     <property role="3F6X1D" value="8486969697902050054" />
     <property role="TrG5h" value="CommunicationType" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="7n7Lv_IXbG7" role="25R1y">
       <property role="3tVfz5" value="8486969697902050055" />
       <property role="TrG5h" value="ZigBee" />
@@ -280,6 +302,7 @@
     <property role="EcuMT" value="7499585253600011716" />
     <property role="TrG5h" value="Service" />
     <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="Service" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="6wjSgQV_yn5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -307,7 +330,8 @@
   </node>
   <node concept="1TIwiD" id="6wjSgQV_ynv">
     <property role="EcuMT" value="7499585253600011743" />
-    <property role="TrG5h" value="Analytics" />
+    <property role="TrG5h" value="AnalyticsSystem" />
+    <property role="3GE5qa" value="Service" />
     <ref role="1TJDcQ" node="6wjSgQV_yn4" resolve="Service" />
     <node concept="1TJgyi" id="6wjSgQV_ynD" role="1TKVEl">
       <property role="IQ2nx" value="7499585253600011753" />
@@ -328,6 +352,7 @@
   <node concept="25R3W" id="6wjSgQV_ynw">
     <property role="3F6X1D" value="7499585253600011744" />
     <property role="TrG5h" value="AnalyticType" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="6wjSgQV_ynx" role="25R1y">
       <property role="3tVfz5" value="7499585253600011745" />
       <property role="TrG5h" value="Harvesting" />
@@ -344,6 +369,7 @@
   <node concept="25R3W" id="6wjSgQV_ynM">
     <property role="3F6X1D" value="7499585253600011762" />
     <property role="TrG5h" value="OutputType" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="6wjSgQV_ynN" role="25R1y">
       <property role="3tVfz5" value="7499585253600011763" />
       <property role="TrG5h" value="LineGraph" />
@@ -364,6 +390,7 @@
   <node concept="1TIwiD" id="6wjSgQV_yo0">
     <property role="EcuMT" value="7499585253600011776" />
     <property role="TrG5h" value="ControlSystem" />
+    <property role="3GE5qa" value="Service" />
     <ref role="1TJDcQ" node="6wjSgQV_yn4" resolve="Service" />
     <node concept="1TJgyi" id="6wjSgQV_yo1" role="1TKVEl">
       <property role="IQ2nx" value="7499585253600011777" />
@@ -375,10 +402,18 @@
       <property role="TrG5h" value="Actions" />
       <ref role="AX2Wp" node="6wjSgQV_yor" resolve="Actions" />
     </node>
+    <node concept="1TJgyj" id="51oAUbsMxNQ" role="1TKVEi">
+      <property role="IQ2ns" value="5789548444776013046" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Actuators" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="51oAUbsMxNK" resolve="ActuatorReference" />
+    </node>
   </node>
   <node concept="25R3W" id="6wjSgQV_yo4">
     <property role="3F6X1D" value="7499585253600011780" />
     <property role="TrG5h" value="ControlType" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="6wjSgQV_yo5" role="25R1y">
       <property role="3tVfz5" value="7499585253600011781" />
       <property role="TrG5h" value="AirConditioner" />
@@ -402,7 +437,8 @@
   </node>
   <node concept="25R3W" id="6wjSgQV_yor">
     <property role="3F6X1D" value="7499585253600011803" />
-    <property role="TrG5h" value="Actions" />
+    <property role="TrG5h" value="ControlActions" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="6wjSgQV_yos" role="25R1y">
       <property role="3tVfz5" value="7499585253600011804" />
       <property role="TrG5h" value="Increase" />
@@ -427,6 +463,7 @@
   <node concept="1TIwiD" id="6wjSgQV_yoJ">
     <property role="EcuMT" value="7499585253600011823" />
     <property role="TrG5h" value="MonitoringSystem" />
+    <property role="3GE5qa" value="Service" />
     <ref role="1TJDcQ" node="6wjSgQV_yn4" resolve="Service" />
     <node concept="1TJgyi" id="6wjSgQV_yoK" role="1TKVEl">
       <property role="IQ2nx" value="7499585253600011824" />
@@ -438,10 +475,23 @@
       <property role="TrG5h" value="Condition" />
       <ref role="AX2Wp" node="6wjSgQV_yoY" resolve="Conditions" />
     </node>
+    <node concept="1TJgyj" id="51oAUbsMxGV" role="1TKVEi">
+      <property role="IQ2ns" value="5789548444776012603" />
+      <property role="20kJfa" value="Trigger" />
+      <ref role="20lvS9" node="6wjSgQV_yo0" resolve="ControlSystem" />
+    </node>
+    <node concept="1TJgyj" id="51oAUbsMxNN" role="1TKVEi">
+      <property role="IQ2ns" value="5789548444776013043" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Sensors" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="51oAUbsMxGl" resolve="SensorReference" />
+    </node>
   </node>
   <node concept="25R3W" id="6wjSgQV_yoM">
     <property role="3F6X1D" value="7499585253600011826" />
-    <property role="TrG5h" value="Metrics" />
+    <property role="TrG5h" value="MonitoringMetrics" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="6wjSgQV_yoN" role="25R1y">
       <property role="3tVfz5" value="7499585253600011827" />
       <property role="TrG5h" value="Nutrient" />
@@ -457,7 +507,8 @@
   </node>
   <node concept="25R3W" id="6wjSgQV_yoY">
     <property role="3F6X1D" value="7499585253600011838" />
-    <property role="TrG5h" value="Conditions" />
+    <property role="TrG5h" value="MonitoringConditions" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="6wjSgQV_yoZ" role="25R1y">
       <property role="3tVfz5" value="7499585253600011839" />
       <property role="TrG5h" value="Optimum" />
@@ -484,6 +535,7 @@
     <property role="TrG5h" value="Device" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="It is the abstract metamodel for Devices " />
+    <property role="3GE5qa" value="Device" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="4NgPXVj16Qu" role="1TKVEl">
       <property role="IQ2nx" value="5535161294061333918" />
@@ -505,6 +557,7 @@
     <property role="EcuMT" value="5535161294061345645" />
     <property role="TrG5h" value="Sensor" />
     <property role="R4oN_" value="Sensor defines all the sensor that will be used in the system " />
+    <property role="3GE5qa" value="Device" />
     <ref role="1TJDcQ" node="4NgPXVj14iT" resolve="Device" />
     <node concept="1TJgyi" id="4NgPXVj1jfm" role="1TKVEl">
       <property role="IQ2nx" value="5535161294061384662" />
@@ -533,6 +586,7 @@
   <node concept="25R3W" id="4NgPXVj1bmI">
     <property role="3F6X1D" value="5535161294061352366" />
     <property role="TrG5h" value="SensorType" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="4NgPXVj1bmJ" role="25R1y">
       <property role="3tVfz5" value="5535161294061352367" />
       <property role="TrG5h" value="Temperature" />
@@ -565,6 +619,7 @@
   <node concept="25R3W" id="4NgPXVj1g6t">
     <property role="3F6X1D" value="5535161294061371805" />
     <property role="TrG5h" value="SensorState" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="4NgPXVj1g6u" role="25R1y">
       <property role="3tVfz5" value="5535161294061371806" />
       <property role="TrG5h" value="Active" />
@@ -577,6 +632,7 @@
   <node concept="1TIwiD" id="4NgPXVj1lFK">
     <property role="EcuMT" value="5535161294061394672" />
     <property role="TrG5h" value="Actuator" />
+    <property role="3GE5qa" value="Device" />
     <ref role="1TJDcQ" node="4NgPXVj14iT" resolve="Device" />
     <node concept="1TJgyi" id="4NgPXVj1rzt" role="1TKVEl">
       <property role="IQ2nx" value="5535161294061418717" />
@@ -590,6 +646,7 @@
   <node concept="25R3W" id="4NgPXVj1n7D">
     <property role="3F6X1D" value="5535161294061400553" />
     <property role="TrG5h" value="ActuatorType" />
+    <property role="3GE5qa" value="Enumerations" />
     <node concept="25R33" id="4NgPXVj1n7E" role="25R1y">
       <property role="3tVfz5" value="5535161294061400554" />
       <property role="TrG5h" value="AirConditioner" />
@@ -609,6 +666,50 @@
     <node concept="25R33" id="4NgPXVj1qsv" role="25R1y">
       <property role="3tVfz5" value="5535161294061414175" />
       <property role="TrG5h" value="CarbondioxideController" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="51oAUbsMxGl">
+    <property role="EcuMT" value="5789548444776012565" />
+    <property role="3GE5qa" value="Device" />
+    <property role="TrG5h" value="SensorReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="51oAUbsMxGm" role="1TKVEi">
+      <property role="IQ2ns" value="5789548444776012566" />
+      <property role="20kJfa" value="Uses" />
+      <ref role="20lvS9" node="4NgPXVj19HH" resolve="Sensor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="51oAUbsMxGO">
+    <property role="EcuMT" value="5789548444776012596" />
+    <property role="3GE5qa" value="Service" />
+    <property role="TrG5h" value="ServiceReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="51oAUbsMxGP" role="1TKVEi">
+      <property role="IQ2ns" value="5789548444776012597" />
+      <property role="20kJfa" value="Operates" />
+      <ref role="20lvS9" node="6wjSgQV_yn4" resolve="Service" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="51oAUbsMxNK">
+    <property role="EcuMT" value="5789548444776013040" />
+    <property role="3GE5qa" value="Device" />
+    <property role="TrG5h" value="ActuatorReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="51oAUbsMxNL" role="1TKVEi">
+      <property role="IQ2ns" value="5789548444776013041" />
+      <property role="20kJfa" value="Uses" />
+      <ref role="20lvS9" node="4NgPXVj1lFK" resolve="Actuator" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="51oAUbsMOuw">
+    <property role="EcuMT" value="5789548444776089504" />
+    <property role="3GE5qa" value="Device" />
+    <property role="TrG5h" value="DeviceReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="51oAUbsMOux" role="1TKVEi">
+      <property role="IQ2ns" value="5789548444776089505" />
+      <property role="20kJfa" value="Manages" />
+      <ref role="20lvS9" node="4NgPXVj14iT" resolve="Device" />
     </node>
   </node>
 </model>
