@@ -19,6 +19,9 @@
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -93,7 +96,7 @@
       <property role="IQ2ns" value="8486969697901931678" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="IoTSystems" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="3hFcliemXex" resolve="IoTSystem" />
     </node>
   </node>
@@ -581,7 +584,7 @@
     <node concept="1TJgyi" id="4NgPXVj1jW7" role="1TKVEl">
       <property role="IQ2nx" value="5535161294061387527" />
       <property role="TrG5h" value="Value" />
-      <ref role="AX2Wp" node="3hFcliemXdS" resolve="double" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="4NgPXVj1E8H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -715,6 +718,12 @@
       <property role="20kJfa" value="Manages" />
       <ref role="20lvS9" node="4NgPXVj14iT" resolve="Device" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="4qB$gLhvyJt">
+    <property role="3F6X1D" value="5091197385858493405" />
+    <property role="3GE5qa" value="DataType" />
+    <property role="TrG5h" value="Emaill" />
+    <property role="FLfZY" value="//" />
   </node>
 </model>
 
