@@ -35,6 +35,8 @@
         <child id="8486969697902050091" name="Protocols" index="rcRVi" />
       </concept>
       <concept id="5535161294061345645" name="SmartFarming.structure.Sensor" flags="ng" index="2vP4MN">
+        <property id="5535161294061384662" name="Type" index="2vPug8" />
+        <property id="5535161294061387527" name="Value" index="2vPuzp" />
         <property id="5535161294061387523" name="Unit" index="2vPuzt" />
         <property id="5535161294061386092" name="State" index="2vPuUM" />
       </concept>
@@ -94,13 +96,18 @@
   </registry>
   <node concept="1Ih$tg" id="6LCgsI8h_5w">
     <property role="TrG5h" value="Haha" />
-    <property role="2Uce8N" value="Tasikmalaya" />
+    <property role="2Uce8N" value="asdfsdfsd" />
     <property role="2Uce8X" value="500" />
     <node concept="2Ucebg" id="KyTPI15VV5" role="2Uceba">
       <property role="TrG5h" value="Lettuce" />
       <property role="2Ucebj" value="3hFcliemXea/Vegetable" />
       <property role="2Uceb3" value="27" />
-      <property role="2Ucebe" value="09939" />
+      <property role="2Ucebe" value="sded" />
+    </node>
+    <node concept="2Ucebg" id="5vGOreg1X2N" role="2Uceba">
+      <property role="2Ucebe" value="kjkj" />
+      <property role="TrG5h" value="tomato" />
+      <property role="2Ucebj" value="3hFcliemXea/Vegetable" />
     </node>
     <node concept="2Uce8S" id="KyTPI15VUU" role="2Uce8E">
       <property role="TrG5h" value="Mohammed" />
@@ -116,6 +123,15 @@
         <ref role="2c$C2n" node="KyTPI15VTE" resolve="LED-Light" />
       </node>
     </node>
+    <node concept="2Uce8S" id="5vGOrefP$Xb" role="2Uce8E">
+      <property role="2Uce8V" value="dadf" />
+      <property role="TrG5h" value="Monster" />
+      <property role="2Uce8w" value="asddasd" />
+      <node concept="2c$C2m" id="5vGOregap4n" role="2c$C3$" />
+      <node concept="2c$C2m" id="5vGOrefP$Xj" role="2c$C3$">
+        <ref role="2c$C2n" node="KyTPI15VT_" resolve="Harvest01" />
+      </node>
+    </node>
     <node concept="2UcebP" id="6LCgsI8h_5z" role="rdi_B">
       <property role="TrG5h" value="IoT1" />
       <property role="2UcebK" value="12.0.1" />
@@ -123,12 +139,18 @@
         <property role="TrG5h" value="Zig-Gateway" />
         <property role="rcRW7" value="092929" />
         <property role="rcRVT" value="2.3" />
+        <node concept="2c$XK2" id="5vGOrefXM3P" role="2c$C2e">
+          <ref role="2c$XK3" node="KyTPI15VUh" resolve="sensor 1" />
+        </node>
         <node concept="rcRVU" id="KyTPI15VUN" role="rcRVi">
           <property role="TrG5h" value="Proto-01" />
           <property role="rcRVg" value="7n7Lv_IXbG8/MQTT" />
         </node>
-        <node concept="2c$XK2" id="KyTPI1kPc4" role="2c$C2e">
-          <ref role="2c$XK3" node="KyTPI15VUh" resolve="sensor 1" />
+        <node concept="rcRVU" id="5vGOrefYBAP" role="rcRVi">
+          <property role="TrG5h" value="daf" />
+        </node>
+        <node concept="2c$XK2" id="5vGOrefYBAM" role="2c$C2e">
+          <ref role="2c$XK3" node="KyTPI15VUm" resolve="sensor2" />
         </node>
       </node>
       <node concept="3jxssy" id="KyTPI15VU6" role="3jyJH3">
@@ -173,6 +195,8 @@
         <property role="2vPbD0" value="1222444" />
         <property role="2vPa0i" value="123.33.33.2" />
         <property role="2vPaGV" value="teeeeprr" />
+        <property role="2vPug8" value="4NgPXVj1bmJ/Temperature" />
+        <property role="2vPuzp" value="12" />
       </node>
       <node concept="2vP4MN" id="KyTPI15VUm" role="2vQXNg">
         <property role="TrG5h" value="sensor2" />
@@ -181,6 +205,7 @@
         <property role="2vPbD0" value="23244556" />
         <property role="2vPa0i" value="22.335.2.33" />
         <property role="2vPaGV" value="teeeeper" />
+        <property role="2vPug8" value="4NgPXVj1epQ/Nutrients" />
       </node>
       <node concept="2vPoOI" id="KyTPI15VUu" role="2vQXNg">
         <property role="TrG5h" value="Nammp2" />
@@ -188,6 +213,9 @@
         <property role="2vPbD0" value="34332" />
         <property role="2vPa0i" value="22.334.2.11" />
         <property role="2vPaGV" value="teeeper" />
+      </node>
+      <node concept="2vP4MN" id="5vGOreg49Ao" role="2vQXNg">
+        <property role="TrG5h" value="Sensor" />
       </node>
     </node>
   </node>

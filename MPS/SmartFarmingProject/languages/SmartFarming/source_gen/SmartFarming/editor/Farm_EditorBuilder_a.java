@@ -183,6 +183,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createConstant_5() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "\"");
     editorCell.setCellId("Constant_mu0zbf_d3a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -194,10 +197,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
       editorCell.setDefaultText("<no Location>");
       editorCell.setCellId("property_Location");
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-      style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
-      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
@@ -219,6 +218,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "\",");
     editorCell.setCellId("Constant_mu0zbf_f3a");
     Style style = new StyleImpl();
+    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
