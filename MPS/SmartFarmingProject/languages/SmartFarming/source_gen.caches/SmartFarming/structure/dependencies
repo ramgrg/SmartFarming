@@ -20,16 +20,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase" />
   </dependency>
-  <dependency className="SmartFarming.structure.EnumerationDescriptor_Actions">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.EnumerationLiteralsIndex" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
-  </dependency>
   <dependency className="SmartFarming.structure.EnumerationDescriptor_ActuatorType">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -60,7 +50,7 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
   </dependency>
-  <dependency className="SmartFarming.structure.EnumerationDescriptor_Conditions">
+  <dependency className="SmartFarming.structure.EnumerationDescriptor_ControlActions">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />
@@ -90,7 +80,17 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
   </dependency>
-  <dependency className="SmartFarming.structure.EnumerationDescriptor_Metrics">
+  <dependency className="SmartFarming.structure.EnumerationDescriptor_MonitoringConditions">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.EnumerationLiteralsIndex" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
+  </dependency>
+  <dependency className="SmartFarming.structure.EnumerationDescriptor_MonitoringMetrics">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />
@@ -137,14 +137,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
   </dependency>
   <dependency className="SmartFarming.structure.StructureAspectDescriptor">
-    <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_Actions" />
     <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_ActuatorType" />
     <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_AnalyticType" />
     <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_CommunicationType" />
-    <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_Conditions" />
+    <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_ControlActions" />
     <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_ControlType" />
     <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_CropGroup" />
-    <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_Metrics" />
+    <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_MonitoringConditions" />
+    <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_MonitoringMetrics" />
     <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_OutputType" />
     <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_SensorState" />
     <classNode dependClassName="SmartFarming.structure.EnumerationDescriptor_SensorType" />
