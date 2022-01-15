@@ -24,7 +24,7 @@ public final class Farmer_FeedbackFeedback extends BaseFeedbackDescriptor {
     @NotNull
     @Override
     public MessageProvider.Msg yieldMessage(FailingPropertyConstraintContext context) {
-      return new MessageProvider.StringMsg("The \"FarmerID\" you entered is used ");
+      return new MessageProvider.StringMsg("The \"Farmer_ID\" you entered is already used. ");
     }
   };
 

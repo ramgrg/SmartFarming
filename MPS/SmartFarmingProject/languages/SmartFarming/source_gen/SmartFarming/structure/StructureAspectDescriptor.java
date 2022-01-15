@@ -47,6 +47,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationSensorState = new EnumerationDescriptor_SensorState();
   /*package*/ final EnumerationDescriptor myEnumerationSensorType = new EnumerationDescriptor_SensorType();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeEmaill = new ConstrainedStringDatatypeDescriptorImpl(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x46a7910c517e2bddL, "Emaill", "r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/5091197385858493405", "//");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypePhoneNumber = new ConstrainedStringDatatypeDescriptorImpl(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x31f1023a595f93b9L, "PhoneNumber", "r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/3598660026876531641", "/^[0-9]/");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -109,7 +110,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationActuatorType, myEnumerationAnalyticType, myEnumerationCommunicationType, myEnumerationControlActions, myEnumerationControlType, myEnumerationCropGroup, myEnumerationMonitoringConditions, myEnumerationMonitoringMetrics, myEnumerationOutputType, myEnumerationSensorState, myEnumerationSensorType, myCSDatatypeEmaill);
+    return Arrays.asList(myEnumerationActuatorType, myEnumerationAnalyticType, myEnumerationCommunicationType, myEnumerationControlActions, myEnumerationControlType, myEnumerationCropGroup, myEnumerationMonitoringConditions, myEnumerationMonitoringMetrics, myEnumerationOutputType, myEnumerationSensorState, myEnumerationSensorType, myCSDatatypeEmaill, myCSDatatypePhoneNumber);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -124,6 +125,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/5535161294061394672");
     b.version(2);
     b.property("Type", 0x4cd0d7ded305b8ddL).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x4cd0d7ded30571e9L)).origin("5535161294061418717").done();
+    b.associate("Uses", 0x31f1023a591dffb0L).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x75c7c5f96ef4bb03L).optional(true).origin("3598660026872233904").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForActuatorReference() {
@@ -216,7 +218,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("FarmerID", 0x346b31548e5bd36fL).type(PrimitiveTypeId.STRING).origin("3777166951715689327").done();
     b.property("Email", 0x346b31548e5bd371L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd379L)).origin("3777166951715689329").done();
-    b.property("PhoneNumber", 0x346b31548e5bd374L).type(PrimitiveTypeId.STRING).origin("3777166951715689332").done();
+    b.property("PhoneNumber", 0x346b31548e5bd374L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x31f1023a595f93b9L)).origin("3777166951715689332").done();
     b.aggregate("Services", 0x50589ba2dcca1b46L).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x50589ba2dcca1b34L).optional(true).ordered(true).multiple(true).origin("5789548444776012614").done();
     return b.create();
   }
@@ -267,6 +269,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("State", 0x4cd0d7ded305396cL).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x4cd0d7ded305019dL)).origin("5535161294061386092").done();
     b.property("Unit", 0x4cd0d7ded3053f03L).type(PrimitiveTypeId.STRING).origin("5535161294061387523").done();
     b.property("Value", 0x4cd0d7ded3053f07L).type(PrimitiveTypeId.INTEGER).origin("5535161294061387527").done();
+    b.associate("Uses", 0x31f1023a591dffaeL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x75c7c5f96ef4bb03L).optional(true).origin("3598660026872233902").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSensorReference() {
