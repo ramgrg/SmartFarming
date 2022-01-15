@@ -10,6 +10,31 @@
       <unit at="10,0,17,0" name="SmartFarming.feedback.GeneratedFeedbackAspectFeedback" />
     </file>
   </root>
+  <root nodeRef="r:96cd50fa-da12-4f36-a2a5-dfb20bd54751(SmartFarming.feedback)/2144816825580593461">
+    <file name="Sensor_FeedbackFeedback.java">
+      <node id="2144816825580593461" at="21,0,22,0" concept="3" trace="CONCEPT" />
+      <node id="2144816825580593462" at="26,87,27,86" concept="2" />
+      <node id="2144816825580593461" at="31,0,32,0" concept="3" trace="PROVIDERS" />
+      <node id="2144816825580593461" at="33,36,34,19" concept="4" />
+      <node id="2144816825580593461" at="39,58,40,30" concept="2" />
+      <node id="2144816825580593461" at="44,0,45,0" concept="3" trace="Value$k4Ig" />
+      <node id="2144816825580593461" at="33,0,36,0" concept="0" trace="Sensor_FeedbackFeedback#()V" />
+      <node id="2144816825580593462" at="24,0,29,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/feedback/messages/FailingPropertyConstraintContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="2144816825580593461" at="37,0,42,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="2144816825580593462" at="23,0,30,0" concept="3" trace="MSGPROVIDER_WhenPropertyConstraintFails_f1aps7_a" />
+      <scope id="2144816825580593462" at="26,87,27,86" />
+      <scope id="2144816825580593461" at="33,36,34,19" />
+      <scope id="2144816825580593461" at="39,58,40,30" />
+      <scope id="2144816825580593461" at="33,0,36,0" />
+      <scope id="2144816825580593462" at="24,0,29,0">
+        <var name="context" id="2144816825580593462" />
+      </scope>
+      <scope id="2144816825580593461" at="37,0,42,0" />
+      <unit id="2144816825580593461" at="43,0,46,0" name="SmartFarming.feedback.Sensor_FeedbackFeedback$PROPS" />
+      <unit id="2144816825580593462" at="23,129,29,3" name="SmartFarming.feedback.Sensor_FeedbackFeedback$1" />
+      <unit id="2144816825580593461" at="20,0,47,0" name="SmartFarming.feedback.Sensor_FeedbackFeedback" />
+    </file>
+  </root>
   <root nodeRef="r:96cd50fa-da12-4f36-a2a5-dfb20bd54751(SmartFarming.feedback)/3598660026872334454">
     <file name="Crop_FeedbackFeedback.java">
       <node id="3598660026872334454" at="21,0,22,0" concept="3" trace="CONCEPT" />
@@ -138,26 +163,44 @@
   <root nodeRef="r:96cd50fa-da12-4f36-a2a5-dfb20bd54751(SmartFarming.feedback)/874515657862469414">
     <file name="Farmer_FeedbackFeedback.java">
       <node id="874515657862469414" at="21,0,22,0" concept="3" trace="CONCEPT" />
-      <node id="874515657862469415" at="26,87,27,94" concept="2" />
-      <node id="874515657862469414" at="31,0,32,0" concept="3" trace="PROVIDERS" />
-      <node id="874515657862469414" at="33,36,34,19" concept="4" />
-      <node id="874515657862469414" at="39,58,40,30" concept="2" />
-      <node id="874515657862469414" at="44,0,45,0" concept="3" trace="FarmerID$iX2e" />
-      <node id="874515657862469414" at="33,0,36,0" concept="0" trace="Farmer_FeedbackFeedback#()V" />
-      <node id="874515657862469415" at="24,0,29,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/feedback/messages/FailingPropertyConstraintContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
-      <node id="874515657862469414" at="37,0,42,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
-      <node id="874515657862469415" at="23,0,30,0" concept="3" trace="MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_a" />
-      <scope id="874515657862469415" at="26,87,27,94" />
-      <scope id="874515657862469414" at="33,36,34,19" />
-      <scope id="874515657862469414" at="39,58,40,30" />
-      <scope id="874515657862469414" at="33,0,36,0" />
-      <scope id="874515657862469415" at="24,0,29,0">
+      <node id="2144816825577064367" at="26,87,27,91" concept="2" />
+      <node id="2144816825575555932" at="33,87,34,85" concept="2" />
+      <node id="874515657862469415" at="40,87,41,99" concept="2" />
+      <node id="874515657862469414" at="45,0,46,0" concept="3" trace="PROVIDERS" />
+      <node id="874515657862469414" at="47,36,48,19" concept="4" />
+      <node id="874515657862469414" at="53,58,54,30" concept="2" />
+      <node id="874515657862469414" at="58,0,59,0" concept="3" trace="PhoneNumber$j38C" />
+      <node id="874515657862469414" at="59,0,60,0" concept="3" trace="Email$iXwg" />
+      <node id="874515657862469414" at="60,0,61,0" concept="3" trace="FarmerID$iX2e" />
+      <node id="874515657862469414" at="47,0,50,0" concept="0" trace="Farmer_FeedbackFeedback#()V" />
+      <node id="2144816825577064367" at="24,0,29,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/feedback/messages/FailingPropertyConstraintContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="2144816825575555932" at="31,0,36,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/feedback/messages/FailingPropertyConstraintContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="874515657862469415" at="38,0,43,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/feedback/messages/FailingPropertyConstraintContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="874515657862469414" at="51,0,56,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="2144816825577064367" at="23,0,30,0" concept="3" trace="MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_a" />
+      <node id="2144816825575555932" at="30,0,37,0" concept="3" trace="MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_b" />
+      <node id="874515657862469415" at="37,0,44,0" concept="3" trace="MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_c" />
+      <scope id="2144816825577064367" at="26,87,27,91" />
+      <scope id="2144816825575555932" at="33,87,34,85" />
+      <scope id="874515657862469415" at="40,87,41,99" />
+      <scope id="874515657862469414" at="47,36,48,19" />
+      <scope id="874515657862469414" at="53,58,54,30" />
+      <scope id="874515657862469414" at="47,0,50,0" />
+      <scope id="2144816825577064367" at="24,0,29,0">
+        <var name="context" id="2144816825577064367" />
+      </scope>
+      <scope id="2144816825575555932" at="31,0,36,0">
+        <var name="context" id="2144816825575555932" />
+      </scope>
+      <scope id="874515657862469415" at="38,0,43,0">
         <var name="context" id="874515657862469415" />
       </scope>
-      <scope id="874515657862469414" at="37,0,42,0" />
-      <unit id="874515657862469414" at="43,0,46,0" name="SmartFarming.feedback.Farmer_FeedbackFeedback$PROPS" />
-      <unit id="874515657862469415" at="23,129,29,3" name="SmartFarming.feedback.Farmer_FeedbackFeedback$1" />
-      <unit id="874515657862469414" at="20,0,47,0" name="SmartFarming.feedback.Farmer_FeedbackFeedback" />
+      <scope id="874515657862469414" at="51,0,56,0" />
+      <unit id="874515657862469414" at="57,0,62,0" name="SmartFarming.feedback.Farmer_FeedbackFeedback$PROPS" />
+      <unit id="2144816825577064367" at="23,129,29,3" name="SmartFarming.feedback.Farmer_FeedbackFeedback$1" />
+      <unit id="2144816825575555932" at="30,129,36,3" name="SmartFarming.feedback.Farmer_FeedbackFeedback$2" />
+      <unit id="874515657862469415" at="37,129,43,3" name="SmartFarming.feedback.Farmer_FeedbackFeedback$3" />
+      <unit id="874515657862469414" at="20,0,63,0" name="SmartFarming.feedback.Farmer_FeedbackFeedback" />
     </file>
   </root>
 </debug-info>

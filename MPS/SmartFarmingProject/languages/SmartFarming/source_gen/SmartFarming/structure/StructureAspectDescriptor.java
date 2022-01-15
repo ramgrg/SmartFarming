@@ -46,8 +46,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationOutputType = new EnumerationDescriptor_OutputType();
   /*package*/ final EnumerationDescriptor myEnumerationSensorState = new EnumerationDescriptor_SensorState();
   /*package*/ final EnumerationDescriptor myEnumerationSensorType = new EnumerationDescriptor_SensorType();
-  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeEmaill = new ConstrainedStringDatatypeDescriptorImpl(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x46a7910c517e2bddL, "Emaill", "r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/5091197385858493405", "//");
-  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypePhoneNumber = new ConstrainedStringDatatypeDescriptorImpl(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x31f1023a595f93b9L, "PhoneNumber", "r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/3598660026876531641", "/^[0-9]/");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeDouble = new ConstrainedStringDatatypeDescriptorImpl(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x1dc3eb8a04d26c40L, "Double", "r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/2144816825577401408", "^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeEmail = new ConstrainedStringDatatypeDescriptorImpl(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x46a7910c517e2bddL, "Email", "r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/5091197385858493405", "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeIPAddress = new ConstrainedStringDatatypeDescriptorImpl(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x1dc3eb8a04cde1b6L, "IPAddress", "r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/2144816825577103798", "^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)(\\.(?!$)|$)){4}$");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypePhoneNumber = new ConstrainedStringDatatypeDescriptorImpl(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x1dc3eb8a04c4085dL, "PhoneNumber", "r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/2144816825576458333", "^(\\+\\d{1,2}\\s?)?1?\\-?\\.?\\s?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -110,7 +112,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationActuatorType, myEnumerationAnalyticType, myEnumerationCommunicationType, myEnumerationControlActions, myEnumerationControlType, myEnumerationCropGroup, myEnumerationMonitoringConditions, myEnumerationMonitoringMetrics, myEnumerationOutputType, myEnumerationSensorState, myEnumerationSensorType, myCSDatatypeEmaill, myCSDatatypePhoneNumber);
+    return Arrays.asList(myEnumerationActuatorType, myEnumerationAnalyticType, myEnumerationCommunicationType, myEnumerationControlActions, myEnumerationControlType, myEnumerationCropGroup, myEnumerationMonitoringConditions, myEnumerationMonitoringMetrics, myEnumerationOutputType, myEnumerationSensorState, myEnumerationSensorType, myCSDatatypeDouble, myCSDatatypeEmail, myCSDatatypeIPAddress, myCSDatatypePhoneNumber);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -185,7 +187,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/5535161294061323449");
     b.version(2);
     b.property("DeviceID", 0x4cd0d7ded3046d9eL).type(PrimitiveTypeId.STRING).origin("5535161294061333918").done();
-    b.property("IPAddress", 0x4cd0d7ded30477ccL).type(PrimitiveTypeId.STRING).origin("5535161294061336524").done();
+    b.property("IPAddress", 0x4cd0d7ded30477ccL).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x1dc3eb8a04cde1b6L)).origin("5535161294061336524").done();
     b.property("Manufacturer", 0x4cd0d7ded3047ce5L).type(PrimitiveTypeId.STRING).origin("5535161294061337829").done();
     return b.create();
   }
@@ -204,7 +206,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/779579670203455684");
     b.version(2);
     b.property("Location", 0x346b31548e5bd367L).type(PrimitiveTypeId.STRING).origin("3777166951715689319").done();
-    b.property("Size", 0x346b31548e5bd369L).type(PrimitiveTypeId.INTEGER).origin("3777166951715689321").done();
+    b.property("Size", 0x346b31548e5bd369L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x1dc3eb8a04d26c40L)).origin("3777166951715689321").done();
     b.aggregate("Farmers", 0x346b31548e5bd37eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL).optional(false).ordered(true).multiple(true).origin("3777166951715689342").done();
     b.aggregate("Crops", 0x346b31548e5bd39eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd384L).optional(false).ordered(true).multiple(true).origin("3777166951715689374").done();
     b.aggregate("IoTSystems", 0x75c7c5f96ef2ec9eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd3a1L).optional(false).ordered(true).multiple(true).origin("8486969697901931678").done();
@@ -217,8 +219,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)/3777166951715689324");
     b.version(2);
     b.property("FarmerID", 0x346b31548e5bd36fL).type(PrimitiveTypeId.STRING).origin("3777166951715689327").done();
-    b.property("Email", 0x346b31548e5bd371L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd379L)).origin("3777166951715689329").done();
-    b.property("PhoneNumber", 0x346b31548e5bd374L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x31f1023a595f93b9L)).origin("3777166951715689332").done();
+    b.property("Email", 0x346b31548e5bd371L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x46a7910c517e2bddL)).origin("3777166951715689329").done();
+    b.property("PhoneNumber", 0x346b31548e5bd374L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x1dc3eb8a04c4085dL)).origin("3777166951715689332").done();
     b.aggregate("Services", 0x50589ba2dcca1b46L).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x50589ba2dcca1b34L).optional(true).ordered(true).multiple(true).origin("5789548444776012614").done();
     return b.create();
   }
@@ -268,7 +270,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("Type", 0x4cd0d7ded30533d6L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x4cd0d7ded304b5aeL)).origin("5535161294061384662").done();
     b.property("State", 0x4cd0d7ded305396cL).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x4cd0d7ded305019dL)).origin("5535161294061386092").done();
     b.property("Unit", 0x4cd0d7ded3053f03L).type(PrimitiveTypeId.STRING).origin("5535161294061387523").done();
-    b.property("Value", 0x4cd0d7ded3053f07L).type(PrimitiveTypeId.INTEGER).origin("5535161294061387527").done();
+    b.property("Value", 0x4cd0d7ded3053f07L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x1dc3eb8a04d26c40L)).origin("5535161294061387527").done();
     b.associate("Uses", 0x31f1023a591dffaeL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x75c7c5f96ef4bb03L).optional(true).origin("3598660026872233902").done();
     return b.create();
   }

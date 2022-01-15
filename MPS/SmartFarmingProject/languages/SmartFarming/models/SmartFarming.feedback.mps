@@ -15,7 +15,7 @@
   </languages>
   <imports>
     <import index="gv5y" ref="r:17f8e5c2-54e9-4f66-903e-aba76cf0e1c5(SmartFarming.structure)" />
-    <import index="fudv" ref="r:9006e6ce-991d-45e3-a20f-0deb45783955(jetbrains.mps.lang.feedback.problem.childAndProp.feedback)" implicit="true" />
+    <import index="fudv" ref="r:9006e6ce-991d-45e3-a20f-0deb45783955(jetbrains.mps.lang.feedback.problem.childAndProp.feedback)" />
   </imports>
   <registry>
     <language id="033598a4-76a9-47e1-ac89-a300c0fceab8" name="jetbrains.mps.lang.feedback.problem">
@@ -69,14 +69,39 @@
   </node>
   <node concept="3QByoM" id="KyTPI1qdsA">
     <ref role="3Z9TSV" to="gv5y:3hFcliemXdG" resolve="Farmer" />
+    <node concept="3QByp$" id="1R3USC4NkuJ" role="3QBEN7">
+      <node concept="16I2mz" id="1R3USC4NkuK" role="16N$OO">
+        <node concept="16N$OT" id="1R3USC4NkuL" role="16I2mt">
+          <property role="16N$OU" value="The &quot;Phone_Number&quot; you entered isn't valid" />
+        </node>
+      </node>
+      <node concept="1GjwBS" id="1R3USC4NkuH" role="3JXyrO">
+        <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
+        <ref role="1Gj$d9" to="gv5y:3hFcliemXdO" resolve="PhoneNumber" />
+      </node>
+    </node>
+    <node concept="3QByp$" id="1R3USC4H$ds" role="3QBEN7">
+      <node concept="16I2mz" id="1R3USC4H$dt" role="16N$OO">
+        <node concept="16N$OT" id="1R3USC4H$du" role="16I2mt">
+          <property role="16N$OU" value="The &quot;Email&quot; you entered isn't valid." />
+        </node>
+      </node>
+      <node concept="1GjwBS" id="1R3USC4H$dq" role="3JXyrO">
+        <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
+        <ref role="1Gj$d9" to="gv5y:3hFcliemXdL" resolve="Email" />
+      </node>
+    </node>
     <node concept="3QByp$" id="KyTPI1qdsB" role="3QBEN7">
       <node concept="1GjwBS" id="KyTPI1qdrL" role="3JXyrO">
         <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
         <ref role="1Gj$d9" to="gv5y:3hFcliemXdJ" resolve="FarmerID" />
       </node>
       <node concept="16I2mz" id="KyTPI1qdsF" role="16N$OO">
-        <node concept="16N$OT" id="KyTPI1qdsG" role="16I2mt">
+        <node concept="16N$OT" id="1R3USC4H$d7" role="16I2mt">
           <property role="16N$OU" value="The &quot;Farmer_ID&quot; you entered is already used. " />
+        </node>
+        <node concept="16N$OT" id="1R3USC4H$dg" role="16I2mt">
+          <property role="16N$OU" value="" />
         </node>
       </node>
     </node>
@@ -133,6 +158,20 @@
       <node concept="16I2mz" id="37L0zDp8ysy" role="16N$OO">
         <node concept="16N$OT" id="37L0zDp8ysz" role="16I2mt">
           <property role="16N$OU" value="The &quot;Service_ID&quot; you entered is already used." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3QByoM" id="1R3USC50M4P">
+    <ref role="3Z9TSV" to="gv5y:4NgPXVj19HH" resolve="Sensor" />
+    <node concept="3QByp$" id="1R3USC50M4Q" role="3QBEN7">
+      <node concept="1GjwBS" id="1R3USC50M40" role="3JXyrO">
+        <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
+        <ref role="1Gj$d9" to="gv5y:4NgPXVj1jW7" resolve="Value" />
+      </node>
+      <node concept="16I2mz" id="1R3USC50M4U" role="16N$OO">
+        <node concept="16N$OT" id="1R3USC50M4V" role="16I2mt">
+          <property role="16N$OU" value="Only temperature value can be negative." />
         </node>
       </node>
     </node>

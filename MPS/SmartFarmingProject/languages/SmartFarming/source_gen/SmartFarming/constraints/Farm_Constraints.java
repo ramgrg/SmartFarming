@@ -27,14 +27,14 @@ public class Farm_Constraints extends BaseConstraintsDescriptor {
     }
     @Override
     public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
-      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
+      boolean result = staticValidateProperty(node, SPropertyOperations.castString(propertyValue));
       if (!(result) && checkingNodeContext != null) {
         checkingNodeContext.setBreakingNode(new SNodePointer("r:4238c262-210f-4459-bd66-e1eb2a494b4d(SmartFarming.constraints)", "874515657862460406"));
       }
       return result;
     }
-    private static boolean staticValidateProperty(SNode node, int propertyValue) {
-      return propertyValue > 0;
+    private static boolean staticValidateProperty(SNode node, String propertyValue) {
+      return Double.valueOf(propertyValue) > 0;
     }
   }
   @Override

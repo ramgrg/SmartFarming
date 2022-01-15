@@ -52,6 +52,7 @@
       </concept>
       <concept id="3777166951715689324" name="SmartFarming.structure.Farmer" flags="ng" index="2Uce8S">
         <property id="3777166951715689332" name="PhoneNumber" index="2Uce8w" />
+        <property id="3777166951715689329" name="Email" index="2Uce8_" />
         <property id="3777166951715689327" name="FarmerID" index="2Uce8V" />
         <child id="5789548444776012614" name="Services" index="2c$C3$" />
       </concept>
@@ -99,7 +100,7 @@
   <node concept="1Ih$tg" id="6LCgsI8h_5w">
     <property role="TrG5h" value="Haha" />
     <property role="2Uce8N" value="asdfsdfsd" />
-    <property role="2Uce8X" value="500" />
+    <property role="2Uce8X" value="2" />
     <node concept="2Ucebg" id="KyTPI15VV5" role="2Uceba">
       <property role="TrG5h" value="Lettuce" />
       <property role="2Ucebj" value="3hFcliemXea/Vegetable" />
@@ -115,6 +116,7 @@
       <property role="TrG5h" value="Mohammed" />
       <property role="2Uce8V" value="ssl331" />
       <property role="2Uce8w" value="0987736633" />
+      <property role="2Uce8_" value="ram.12@dfd.c" />
       <node concept="2c$C2m" id="KyTPI15VUW" role="2c$C3$">
         <ref role="2c$C2n" node="KyTPI15VT_" resolve="Harvest01" />
       </node>
@@ -126,9 +128,10 @@
       </node>
     </node>
     <node concept="2Uce8S" id="5vGOrefP$Xb" role="2Uce8E">
-      <property role="2Uce8V" value="dadf" />
+      <property role="2Uce8V" value="ssl330" />
       <property role="TrG5h" value="Monster" />
-      <property role="2Uce8w" value="asddasd" />
+      <property role="2Uce8w" value="+35157357357" />
+      <property role="2Uce8_" value="tst112.dfd@test.nl" />
       <node concept="2c$C2m" id="5vGOregap4n" role="2c$C3$" />
       <node concept="2c$C2m" id="5vGOrefP$Xj" role="2c$C3$">
         <ref role="2c$C2n" node="KyTPI15VT_" resolve="Harvest01" />
@@ -150,6 +153,7 @@
         </node>
         <node concept="rcRVU" id="5vGOrefYBAP" role="rcRVi">
           <property role="TrG5h" value="daf" />
+          <property role="rcRVg" value="7n7Lv_IXbGb/CoAP" />
         </node>
         <node concept="2c$XK2" id="5vGOrefYBAM" role="2c$C2e">
           <ref role="2c$XK3" node="KyTPI15VUm" resolve="sensor2" />
@@ -195,32 +199,38 @@
         <property role="2vPuUM" value="4NgPXVj1g6u/Active" />
         <property role="2vPuzt" value="celcius" />
         <property role="2vPbD0" value="1222444" />
-        <property role="2vPa0i" value="123.33.33.2" />
+        <property role="2vPa0i" value="1.155.3.2" />
         <property role="2vPaGV" value="teeeeprr" />
         <property role="2vPug8" value="4NgPXVj1bmJ/Temperature" />
-        <property role="2vPuzp" value="12" />
+        <property role="2vPuzp" value="-2" />
       </node>
       <node concept="2vP4MN" id="KyTPI15VUm" role="2vQXNg">
         <property role="TrG5h" value="sensor2" />
         <property role="2vPuUM" value="4NgPXVj1g6u/Active" />
         <property role="2vPuzt" value="number" />
         <property role="2vPbD0" value="23244556" />
-        <property role="2vPa0i" value="22.335.2.33" />
+        <property role="2vPa0i" value="2.35.2.33" />
         <property role="2vPaGV" value="teeeeper" />
         <property role="2vPug8" value="4NgPXVj1epQ/Nutrients" />
+        <property role="2vPuzp" value="45" />
       </node>
       <node concept="2vPoOI" id="KyTPI15VUu" role="2vQXNg">
         <property role="TrG5h" value="Nammp2" />
         <property role="2vPmW3" value="4NgPXVj1n7E/AirConditioner" />
         <property role="2vPbD0" value="34332" />
-        <property role="2vPa0i" value="22.334.2.11" />
+        <property role="2vPa0i" value="22.134.2.11" />
         <property role="2vPaGV" value="teeeper" />
         <ref role="1CVfQa" node="KyTPI15VUN" resolve="Proto-01" />
       </node>
       <node concept="2vP4MN" id="5vGOreg49Ao" role="2vQXNg">
-        <property role="TrG5h" value="Sensor" />
+        <property role="TrG5h" value="Sensor2" />
         <property role="2vPbD0" value="2324456" />
-        <property role="2vPa0i" value="2" />
+        <property role="2vPa0i" value="24.14.7.9" />
+        <property role="2vPug8" value="4NgPXVj1epQ/Nutrients" />
+        <property role="2vPuUM" value="4NgPXVj1iyF/Passive" />
+        <property role="2vPuzt" value="mS/cm" />
+        <property role="2vPuzp" value="23" />
+        <property role="2vPaGV" value="ABC" />
         <ref role="1CVfQk" node="KyTPI15VUN" resolve="Proto-01" />
       </node>
     </node>
