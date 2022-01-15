@@ -20,15 +20,29 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Farmer_FeedbackFeedback extends BaseFeedbackDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL, "SmartFarming.structure.Farmer");
 
-  private static final FeedbackProvider<FailingPropertyConstraintContext> MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_a = new BaseMessageProvider<FailingPropertyConstraintContext>(new FailingPropertyConstraintProblemId(PROPS.FarmerID$iX2e)) {
+  private static final FeedbackProvider<FailingPropertyConstraintContext> MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_a = new BaseMessageProvider<FailingPropertyConstraintContext>(new FailingPropertyConstraintProblemId(PROPS.PhoneNumber$j38C)) {
     @NotNull
     @Override
     public MessageProvider.Msg yieldMessage(FailingPropertyConstraintContext context) {
-      return new MessageProvider.StringMsg("The \"Farmer_ID\" you entered is already used. ");
+      return new MessageProvider.StringMsg("The \"Phone_Number\" you entered isn't valid");
+    }
+  };
+  private static final FeedbackProvider<FailingPropertyConstraintContext> MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_b = new BaseMessageProvider<FailingPropertyConstraintContext>(new FailingPropertyConstraintProblemId(PROPS.Email$iXwg)) {
+    @NotNull
+    @Override
+    public MessageProvider.Msg yieldMessage(FailingPropertyConstraintContext context) {
+      return new MessageProvider.StringMsg("The \"Email\" you entered isn't valid.");
+    }
+  };
+  private static final FeedbackProvider<FailingPropertyConstraintContext> MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_c = new BaseMessageProvider<FailingPropertyConstraintContext>(new FailingPropertyConstraintProblemId(PROPS.FarmerID$iX2e)) {
+    @NotNull
+    @Override
+    public MessageProvider.Msg yieldMessage(FailingPropertyConstraintContext context) {
+      return new MessageProvider.StringMsg("The \"Farmer_ID\" you entered is already used. " + "");
     }
   };
 
-  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_a));
+  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_a, MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_b, MSGPROVIDER_WhenPropertyConstraintFails_a85q6b_c));
 
   public Farmer_FeedbackFeedback() {
     super(CONCEPT);
@@ -41,6 +55,8 @@ public final class Farmer_FeedbackFeedback extends BaseFeedbackDescriptor {
   }
 
   private static final class PROPS {
+    /*package*/ static final SProperty PhoneNumber$j38C = MetaAdapterFactory.getProperty(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL, 0x346b31548e5bd374L, "PhoneNumber");
+    /*package*/ static final SProperty Email$iXwg = MetaAdapterFactory.getProperty(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL, 0x346b31548e5bd371L, "Email");
     /*package*/ static final SProperty FarmerID$iX2e = MetaAdapterFactory.getProperty(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL, 0x346b31548e5bd36fL, "FarmerID");
   }
 }

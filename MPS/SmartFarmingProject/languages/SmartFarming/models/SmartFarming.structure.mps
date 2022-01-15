@@ -12,6 +12,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <child id="3348158742936976577" name="members" index="25R1y" />
@@ -32,7 +33,6 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
-      <concept id="1083243159079" name="jetbrains.mps.lang.structure.structure.PrimitiveDataTypeDeclaration" flags="ng" index="QkHVr" />
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -76,7 +76,7 @@
     <node concept="1TJgyi" id="3hFcliemXdD" role="1TKVEl">
       <property role="IQ2nx" value="3777166951715689321" />
       <property role="TrG5h" value="Size" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="1R3USC4OAL0" resolve="Double" />
     </node>
     <node concept="1TJgyj" id="3hFcliemXdY" role="1TKVEi">
       <property role="IQ2ns" value="3777166951715689342" />
@@ -116,12 +116,12 @@
     <node concept="1TJgyi" id="3hFcliemXdL" role="1TKVEl">
       <property role="IQ2nx" value="3777166951715689329" />
       <property role="TrG5h" value="Email" />
-      <ref role="AX2Wp" node="3hFcliemXdT" resolve="Email" />
+      <ref role="AX2Wp" node="4qB$gLhvyJt" resolve="Email" />
     </node>
     <node concept="1TJgyi" id="3hFcliemXdO" role="1TKVEl">
       <property role="IQ2nx" value="3777166951715689332" />
       <property role="TrG5h" value="PhoneNumber" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="1R3USC4L0xt" resolve="PhoneNumber" />
     </node>
     <node concept="1TJgyj" id="51oAUbsMxH6" role="1TKVEi">
       <property role="IQ2ns" value="5789548444776012614" />
@@ -130,16 +130,6 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="51oAUbsMxGO" resolve="ServiceReference" />
     </node>
-  </node>
-  <node concept="QkHVr" id="3hFcliemXdS">
-    <property role="3F6X1D" value="3777166951715689336" />
-    <property role="TrG5h" value="double" />
-    <property role="3GE5qa" value="DataType" />
-  </node>
-  <node concept="QkHVr" id="3hFcliemXdT">
-    <property role="3F6X1D" value="3777166951715689337" />
-    <property role="TrG5h" value="Email" />
-    <property role="3GE5qa" value="DataType" />
   </node>
   <node concept="1TIwiD" id="3hFcliemXe4">
     <property role="EcuMT" value="3777166951715689348" />
@@ -549,7 +539,7 @@
     <node concept="1TJgyi" id="4NgPXVj17vc" role="1TKVEl">
       <property role="IQ2nx" value="5535161294061336524" />
       <property role="TrG5h" value="IPAddress" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="1R3USC4Nu6Q" resolve="IPAddress" />
     </node>
     <node concept="1TJgyi" id="4NgPXVj17N_" role="1TKVEl">
       <property role="IQ2nx" value="5535161294061337829" />
@@ -584,7 +574,7 @@
     <node concept="1TJgyi" id="4NgPXVj1jW7" role="1TKVEl">
       <property role="IQ2nx" value="5535161294061387527" />
       <property role="TrG5h" value="Value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="1R3USC4OAL0" resolve="Double" />
     </node>
     <node concept="PrWs8" id="4NgPXVj1E8H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -602,6 +592,7 @@
     <node concept="25R33" id="4NgPXVj1bmJ" role="25R1y">
       <property role="3tVfz5" value="5535161294061352367" />
       <property role="TrG5h" value="Temperature" />
+      <property role="1L1pqM" value="Temperature" />
     </node>
     <node concept="25R33" id="4NgPXVj1doG" role="25R1y">
       <property role="3tVfz5" value="5535161294061360684" />
@@ -733,8 +724,26 @@
   <node concept="Az7Fb" id="4qB$gLhvyJt">
     <property role="3F6X1D" value="5091197385858493405" />
     <property role="3GE5qa" value="DataType" />
-    <property role="TrG5h" value="Emaill" />
-    <property role="FLfZY" value="//" />
+    <property role="TrG5h" value="Email" />
+    <property role="FLfZY" value="^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$" />
+  </node>
+  <node concept="Az7Fb" id="1R3USC4L0xt">
+    <property role="3F6X1D" value="2144816825576458333" />
+    <property role="3GE5qa" value="DataType" />
+    <property role="TrG5h" value="PhoneNumber" />
+    <property role="FLfZY" value="^(\\+\\d{1,2}\\s?)?1?\\-?\\.?\\s?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$" />
+  </node>
+  <node concept="Az7Fb" id="1R3USC4Nu6Q">
+    <property role="3F6X1D" value="2144816825577103798" />
+    <property role="3GE5qa" value="DataType" />
+    <property role="TrG5h" value="IPAddress" />
+    <property role="FLfZY" value="^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)(\\.(?!$)|$)){4}$" />
+  </node>
+  <node concept="Az7Fb" id="1R3USC4OAL0">
+    <property role="3F6X1D" value="2144816825577401408" />
+    <property role="3GE5qa" value="DataType" />
+    <property role="TrG5h" value="Double" />
+    <property role="FLfZY" value="^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$" />
   </node>
 </model>
 
