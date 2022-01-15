@@ -35,6 +35,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Actuator:
         if (props_Actuator == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Actuator represents actuator that are used in system");
           cpb.presentationByName();
           props_Actuator = cpb.create();
         }
@@ -108,7 +109,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Gateway:
         if (props_Gateway == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Gateway represent gateway in IoT System");
+          cpb.shortDesc("Gateway represent gateway in IoT System.");
           cpb.presentationByName();
           props_Gateway = cpb.create();
         }
@@ -131,7 +132,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Sensor:
         if (props_Sensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Sensor defines all the sensor that will be used in the system ");
+          cpb.shortDesc("Sensor defines the sensor that will be used in the system ");
           cpb.presentationByName();
           props_Sensor = cpb.create();
         }

@@ -62,7 +62,7 @@
       </node>
       <node concept="16I2mz" id="KyTPI1qd7P" role="16N$OO">
         <node concept="16N$OT" id="KyTPI1qd7Q" role="16I2mt">
-          <property role="16N$OU" value="Size can't be negative or zero" />
+          <property role="16N$OU" value="Size must be greater than zero." />
         </node>
       </node>
     </node>
@@ -76,7 +76,63 @@
       </node>
       <node concept="16I2mz" id="KyTPI1qdsF" role="16N$OO">
         <node concept="16N$OT" id="KyTPI1qdsG" role="16I2mt">
-          <property role="16N$OU" value="The &quot;FarmerID&quot; you entered is used " />
+          <property role="16N$OU" value="The &quot;Farmer_ID&quot; you entered is already used. " />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3QByoM" id="37L0zDp7SxQ">
+    <ref role="3Z9TSV" to="gv5y:3hFcliemXe4" resolve="Crop" />
+    <node concept="3QByp$" id="37L0zDp7SxR" role="3QBEN7">
+      <node concept="1GjwBS" id="37L0zDp7Sx1" role="3JXyrO">
+        <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
+        <ref role="1Gj$d9" to="gv5y:3hFcliemXeq" resolve="SeedCode" />
+      </node>
+      <node concept="16I2mz" id="37L0zDp7SxV" role="16N$OO">
+        <node concept="16N$OT" id="37L0zDp7SxW" role="16I2mt">
+          <property role="16N$OU" value="The &quot;Seed_Code&quot; you entered is already used." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3QByoM" id="37L0zDp85_V">
+    <ref role="3Z9TSV" to="gv5y:4NgPXVj14iT" resolve="Device" />
+    <node concept="3QByp$" id="37L0zDp85_W" role="3QBEN7">
+      <node concept="1GjwBS" id="37L0zDp85_6" role="3JXyrO">
+        <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
+        <ref role="1Gj$d9" to="gv5y:4NgPXVj16Qu" resolve="DeviceID" />
+      </node>
+      <node concept="16I2mz" id="37L0zDp85A0" role="16N$OO">
+        <node concept="16N$OT" id="37L0zDp85A1" role="16I2mt">
+          <property role="16N$OU" value="The &quot;Device_ID&quot; you entered is already used." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3QByoM" id="37L0zDp8jTa">
+    <ref role="3Z9TSV" to="gv5y:7n7Lv_IXbFV" resolve="Gateway" />
+    <node concept="3QByp$" id="37L0zDp8jTb" role="3QBEN7">
+      <node concept="1GjwBS" id="37L0zDp8jSl" role="3JXyrO">
+        <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
+        <ref role="1Gj$d9" to="gv5y:7n7Lv_IXbFY" resolve="GatewayID" />
+      </node>
+      <node concept="16I2mz" id="37L0zDp8jTf" role="16N$OO">
+        <node concept="16N$OT" id="37L0zDp8jTg" role="16I2mt">
+          <property role="16N$OU" value="The &quot;Gateway_ID&quot; you entered is already used." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3QByoM" id="37L0zDp8yst">
+    <ref role="3Z9TSV" to="gv5y:6wjSgQV_yn4" resolve="Service" />
+    <node concept="3QByp$" id="37L0zDp8ysu" role="3QBEN7">
+      <node concept="1GjwBS" id="37L0zDp8yrC" role="3JXyrO">
+        <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
+        <ref role="1Gj$d9" to="gv5y:6wjSgQV_ynb" resolve="ServiceID" />
+      </node>
+      <node concept="16I2mz" id="37L0zDp8ysy" role="16N$OO">
+        <node concept="16N$OT" id="37L0zDp8ysz" role="16I2mt">
+          <property role="16N$OU" value="The &quot;Service_ID&quot; you entered is already used." />
         </node>
       </node>
     </node>

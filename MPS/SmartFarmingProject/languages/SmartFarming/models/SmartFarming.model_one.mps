@@ -39,6 +39,7 @@
         <property id="5535161294061387527" name="Value" index="2vPuzp" />
         <property id="5535161294061387523" name="Unit" index="2vPuzt" />
         <property id="5535161294061386092" name="State" index="2vPuUM" />
+        <reference id="3598660026872233902" name="Uses" index="1CVfQk" />
       </concept>
       <concept id="5535161294061323449" name="SmartFarming.structure.Device" flags="ng" index="2vP9dB">
         <property id="5535161294061336524" name="IPAddress" index="2vPa0i" />
@@ -47,6 +48,7 @@
       </concept>
       <concept id="5535161294061394672" name="SmartFarming.structure.Actuator" flags="ng" index="2vPoOI">
         <property id="5535161294061418717" name="Type" index="2vPmW3" />
+        <reference id="3598660026872233904" name="Uses" index="1CVfQa" />
       </concept>
       <concept id="3777166951715689324" name="SmartFarming.structure.Farmer" flags="ng" index="2Uce8S">
         <property id="3777166951715689332" name="PhoneNumber" index="2Uce8w" />
@@ -213,9 +215,106 @@
         <property role="2vPbD0" value="34332" />
         <property role="2vPa0i" value="22.334.2.11" />
         <property role="2vPaGV" value="teeeper" />
+        <ref role="1CVfQa" node="KyTPI15VUN" resolve="Proto-01" />
       </node>
       <node concept="2vP4MN" id="5vGOreg49Ao" role="2vQXNg">
         <property role="TrG5h" value="Sensor" />
+        <property role="2vPbD0" value="2324456" />
+        <property role="2vPa0i" value="2" />
+        <ref role="1CVfQk" node="KyTPI15VUN" resolve="Proto-01" />
+      </node>
+    </node>
+  </node>
+  <node concept="1Ih$tg" id="37L0zDpfr8z">
+    <property role="TrG5h" value="Aquila" />
+    <property role="2Uce8N" value="L'Aquila" />
+    <property role="2Uce8X" value="1200000" />
+    <node concept="2Uce8S" id="37L0zDpfr8$" role="2Uce8E">
+      <property role="TrG5h" value="Mohammed" />
+      <property role="2Uce8V" value="1235" />
+      <property role="2Uce8w" value="01234525624" />
+      <node concept="2c$C2m" id="37L0zDpg_7E" role="2c$C3$">
+        <ref role="2c$C2n" node="37L0zDpfr8M" resolve="MyMonitoring" />
+      </node>
+      <node concept="2c$C2m" id="37L0zDpnTeQ" role="2c$C3$">
+        <ref role="2c$C2n" node="37L0zDpfr8G" resolve="MyAnalytics" />
+      </node>
+    </node>
+    <node concept="2Ucebg" id="37L0zDpfr8_" role="2Uceba">
+      <property role="TrG5h" value="MyMonster" />
+      <property role="2Ucebj" value="3hFcliemXea/Vegetable" />
+      <property role="2Uceb3" value="120" />
+      <property role="2Ucebe" value="12345" />
+    </node>
+    <node concept="2UcebP" id="37L0zDpfr8A" role="rdi_B">
+      <property role="TrG5h" value="MySytem" />
+      <property role="2UcebK" value="12.3.4" />
+      <node concept="3jxsji" id="37L0zDpfr8G" role="3jyJH3">
+        <property role="TrG5h" value="MyAnalytics" />
+        <property role="3jxsj$" value="6wjSgQV_ynx/Harvesting" />
+        <property role="3jxsjA" value="excel.sx" />
+        <property role="3jxsjz" value="6wjSgQV_ynV/Tabular" />
+        <property role="3jxsj6" value="12345" />
+        <property role="3jxsjt" value="localhost.com" />
+        <property role="3jxsjp" value="xttp://example" />
+      </node>
+      <node concept="3jxssy" id="37L0zDpfr8M" role="3jyJH3">
+        <property role="TrG5h" value="MyMonitoring" />
+        <property role="3jxssX" value="6wjSgQV_yoO/PhotoSynthesis" />
+        <property role="3jxssQ" value="6wjSgQV_yp3/Good" />
+        <property role="3jxsj6" value="1234" />
+        <property role="3jxsjt" value="localhost" />
+        <property role="3jxsjp" value="xttp://example" />
+        <ref role="2c$C2p" node="37L0zDpfr8Y" resolve="MyControl" />
+        <node concept="2c$C2R" id="37L0zDphILq" role="2c$Cth">
+          <ref role="2c$C2O" node="KyTPI15VUh" resolve="sensor 1" />
+        </node>
+        <node concept="2c$C2R" id="37L0zDpmF_7" role="2c$Cth" />
+      </node>
+      <node concept="3jxssd" id="37L0zDpfr8Y" role="3jyJH3">
+        <property role="TrG5h" value="MyControl" />
+        <property role="3jxssc" value="6wjSgQV_yo5/AirConditioner" />
+        <property role="3jxssl" value="6wjSgQV_yos/Increase" />
+        <property role="3jxsj6" value="123" />
+        <property role="3jxsjt" value="localhost" />
+        <property role="3jxsjp" value="xttp://example" />
+        <node concept="2c$Cti" id="37L0zDpfr90" role="2c$Ctk" />
+      </node>
+      <node concept="rcRW2" id="37L0zDpfr8D" role="2vQWWP">
+        <property role="TrG5h" value="NyGateway" />
+        <property role="rcRW7" value="G001" />
+        <property role="rcRVT" value="Siemens" />
+        <node concept="rcRVU" id="37L0zDpfr8E" role="rcRVi">
+          <property role="TrG5h" value="Protocol01" />
+          <property role="rcRVg" value="7n7Lv_IXbGx/ZWave" />
+        </node>
+        <node concept="rcRVU" id="37L0zDpfr97" role="rcRVi">
+          <property role="TrG5h" value="Protocol02" />
+          <property role="rcRVg" value="7n7Lv_IXbG7/ZigBee" />
+        </node>
+        <node concept="2c$XK2" id="37L0zDpfr8F" role="2c$C2e">
+          <ref role="2c$XK3" node="37L0zDpg_7A" resolve="PHSensor2" />
+        </node>
+        <node concept="2c$XK2" id="37L0zDpg_TA" role="2c$C2e" />
+      </node>
+      <node concept="2vPoOI" id="37L0zDpg_7x" role="2vQXNg">
+        <property role="TrG5h" value="AirActuator1" />
+        <property role="2vPmW3" value="4NgPXVj1plr/NutrientController" />
+        <property role="2vPbD0" value="123456" />
+        <property role="2vPa0i" value="https://localhost:11" />
+        <property role="2vPaGV" value="Siemens" />
+        <ref role="1CVfQa" node="37L0zDpfr8E" resolve="Protocol01" />
+      </node>
+      <node concept="2vP4MN" id="37L0zDpg_7A" role="2vQXNg">
+        <property role="TrG5h" value="PHSensor2" />
+        <property role="2vPug8" value="4NgPXVj1doG/Humidity" />
+        <property role="2vPuUM" value="4NgPXVj1g6u/Active" />
+        <property role="2vPuzt" value="celsius" />
+        <property role="2vPuzp" value="123" />
+        <property role="2vPbD0" value="12345" />
+        <property role="2vPa0i" value="https://localhost:11" />
+        <property role="2vPaGV" value="Siemens" />
+        <ref role="1CVfQk" node="37L0zDpfr97" resolve="Protocol02" />
       </node>
     </node>
   </node>

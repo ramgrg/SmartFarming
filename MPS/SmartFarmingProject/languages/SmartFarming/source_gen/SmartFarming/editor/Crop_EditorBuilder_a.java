@@ -62,10 +62,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createCollection_1());
-    editorCell.addEditorCell(createConstant_13());
+    editorCell.addEditorCell(createConstant_12());
     editorCell.addEditorCell(createProperty_4());
     if (nodeCondition_lb9a7y_a6a()) {
-      editorCell.addEditorCell(createConstant_14());
+      editorCell.addEditorCell(createConstant_13());
     }
     return editorCell;
   }
@@ -135,10 +135,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.addEditorCell(createConstant_7());
     editorCell.addEditorCell(createConstant_8());
     editorCell.addEditorCell(createConstant_9());
-    editorCell.addEditorCell(createConstant_10());
     editorCell.addEditorCell(createProperty_3());
+    editorCell.addEditorCell(createConstant_10());
     editorCell.addEditorCell(createConstant_11());
-    editorCell.addEditorCell(createConstant_12());
     return editorCell;
   }
   private EditorCell createConstant_2() {
@@ -199,6 +198,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.setCellId("Constant_lb9a7y_e3a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -239,23 +239,17 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     }
   }
   private EditorCell createConstant_7() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "days");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "days,");
     editorCell.setCellId("Constant_lb9a7y_h3a");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_8() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ",");
-    editorCell.setCellId("Constant_lb9a7y_i3a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_9() {
+  private EditorCell createConstant_8() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Seed_Code:");
-    editorCell.setCellId("Constant_lb9a7y_j3a");
+    editorCell.setCellId("Constant_lb9a7y_i3a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.LIGHT_BLUE));
@@ -263,9 +257,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_10() {
+  private EditorCell createConstant_9() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "\"");
-    editorCell.setCellId("Constant_lb9a7y_k3a");
+    editorCell.setCellId("Constant_lb9a7y_j3a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
     editorCell.getStyle().putAll(style);
@@ -297,9 +291,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_11() {
+  private EditorCell createConstant_10() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "\"");
-    editorCell.setCellId("Constant_lb9a7y_m3a");
+    editorCell.setCellId("Constant_lb9a7y_l3a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
@@ -307,16 +301,16 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_12() {
+  private EditorCell createConstant_11() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "}");
-    editorCell.setCellId("Constant_lb9a7y_n3a");
+    editorCell.setCellId("Constant_lb9a7y_m3a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_13() {
+  private EditorCell createConstant_12() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "END");
     editorCell.setCellId("Constant_lb9a7y_e0");
     Style style = new StyleImpl();
@@ -355,7 +349,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createConstant_14() {
+  private EditorCell createConstant_13() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_lb9a7y_g0");
     Style style = new StyleImpl();

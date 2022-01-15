@@ -24,7 +24,7 @@ public final class Farm_FeedbackFeedback extends BaseFeedbackDescriptor {
     @NotNull
     @Override
     public MessageProvider.Msg yieldMessage(FailingPropertyConstraintContext context) {
-      return new MessageProvider.StringMsg("Size can't be negative or zero");
+      return new MessageProvider.StringMsg("Size must be greater than zero.");
     }
   };
 

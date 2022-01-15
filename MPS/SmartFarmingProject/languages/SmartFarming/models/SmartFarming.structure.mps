@@ -224,7 +224,7 @@
   <node concept="1TIwiD" id="7n7Lv_IXbFV">
     <property role="EcuMT" value="8486969697902050043" />
     <property role="TrG5h" value="Gateway" />
-    <property role="R4oN_" value="Gateway represent gateway in IoT System" />
+    <property role="R4oN_" value="Gateway represent gateway in IoT System." />
     <property role="3GE5qa" value="Gateway" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="7n7Lv_IXbFW" role="PzmwI">
@@ -563,7 +563,7 @@
   <node concept="1TIwiD" id="4NgPXVj19HH">
     <property role="EcuMT" value="5535161294061345645" />
     <property role="TrG5h" value="Sensor" />
-    <property role="R4oN_" value="Sensor defines all the sensor that will be used in the system " />
+    <property role="R4oN_" value="Sensor defines the sensor that will be used in the system " />
     <property role="3GE5qa" value="Device" />
     <ref role="1TJDcQ" node="4NgPXVj14iT" resolve="Device" />
     <node concept="1TJgyi" id="4NgPXVj1jfm" role="1TKVEl">
@@ -588,6 +588,11 @@
     </node>
     <node concept="PrWs8" id="4NgPXVj1E8H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="37L0zDp7vYI" role="1TKVEi">
+      <property role="IQ2ns" value="3598660026872233902" />
+      <property role="20kJfa" value="Uses" />
+      <ref role="20lvS9" node="7n7Lv_IXbG3" resolve="CommunicationProtocol" />
     </node>
   </node>
   <node concept="25R3W" id="4NgPXVj1bmI">
@@ -640,6 +645,7 @@
     <property role="EcuMT" value="5535161294061394672" />
     <property role="TrG5h" value="Actuator" />
     <property role="3GE5qa" value="Device" />
+    <property role="R4oN_" value="Actuator represents actuator that are used in system" />
     <ref role="1TJDcQ" node="4NgPXVj14iT" resolve="Device" />
     <node concept="1TJgyi" id="4NgPXVj1rzt" role="1TKVEl">
       <property role="IQ2nx" value="5535161294061418717" />
@@ -648,6 +654,11 @@
     </node>
     <node concept="PrWs8" id="4NgPXVj1ETj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="37L0zDp7vYK" role="1TKVEi">
+      <property role="IQ2ns" value="3598660026872233904" />
+      <property role="20kJfa" value="Uses" />
+      <ref role="20lvS9" node="7n7Lv_IXbG3" resolve="CommunicationProtocol" />
     </node>
   </node>
   <node concept="25R3W" id="4NgPXVj1n7D">

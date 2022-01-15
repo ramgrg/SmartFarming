@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fe1cb92-bd4d-4a32-ad10-6364a9353b1a" name="Changes" comment="" />
+    <list default="true" id="4fe1cb92-bd4d-4a32-ad10-6364a9353b1a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/MPS/SmartFarmingProject/languages/SmartFarming/classes_gen/SmartFarming/editor/IoTSystem_EditorBuilder_a$DevicesListHandler_rph0l3_v3a.class" beforeDir="false" afterPath="$PROJECT_DIR$/MPS/SmartFarmingProject/languages/SmartFarming/classes_gen/SmartFarming/editor/IoTSystem_EditorBuilder_a$DevicesListHandler_rph0l3_v3a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPS/SmartFarmingProject/languages/SmartFarming/classes_gen/SmartFarming/editor/IoTSystem_EditorBuilder_a$GatewaysListHandler_rph0l3_s3a.class" beforeDir="false" afterPath="$PROJECT_DIR$/MPS/SmartFarmingProject/languages/SmartFarming/classes_gen/SmartFarming/editor/IoTSystem_EditorBuilder_a$GatewaysListHandler_rph0l3_s3a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPS/SmartFarmingProject/languages/SmartFarming/classes_gen/SmartFarming/editor/IoTSystem_EditorBuilder_a$ServicesListHandler_rph0l3_n3a.class" beforeDir="false" afterPath="$PROJECT_DIR$/MPS/SmartFarmingProject/languages/SmartFarming/classes_gen/SmartFarming/editor/IoTSystem_EditorBuilder_a$ServicesListHandler_rph0l3_n3a.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +17,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="2109a230-958f-4ed9-9927-ecb32de28d8b/r:e32f2b60-56b1-42b2-812e-2d387c76bc9c(TempModule2109a230-958f-4ed9-9927-ecb32de28d8b/ConsoleModel_143635547519356)">
+            <model ref="d4af28c6-bfdb-403e-8132-db9639361023/r:f9855531-ae7a-48f1-b8aa-6f5a62b92f07(TempModuled4af28c6-bfdb-403e-8132-db9639361023/ConsoleModel_568143219375)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -33,11 +37,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="KyTPI14OVq">
-                <node concept="3balQm" id="KyTPI14OVr" role="aymYE" />
-                <node concept="2Clz$F" id="KyTPI14OVs" role="aymYO" />
-                <node concept="2_V_lH" id="KyTPI14OVt" role="1PhJh3">
-                  <ref role="2_V_lI" node="KyTPI14OVs" resolve="CommandHolder" />
+              <node concept="aymSD" id="37L0zDp77AV">
+                <node concept="3balQm" id="37L0zDp77AW" role="aymYE" />
+                <node concept="2Clz$F" id="37L0zDp77AX" role="aymYO" />
+                <node concept="2_V_lH" id="37L0zDp77AY" role="1PhJh3">
+                  <ref role="2_V_lI" node="37L0zDp77AX" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
