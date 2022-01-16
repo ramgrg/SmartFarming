@@ -8,9 +8,9 @@ The repository Contains four projects within:
   * Epsilon (ETL and EGL) - for model transformation
   * xText and Sirius - for development of textual and graphical editors.
 
-## Table Of Content
-  ### 1. Describing Domain Specific Concepts
-    #### MetaClasses
+# Table Of Content
+  ## 1. Describing Domain Specific Concepts
+    ## MetaClasses
     * Relationships
     * Constraints
     * Custom Datatypes
