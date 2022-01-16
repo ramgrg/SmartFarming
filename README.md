@@ -42,4 +42,20 @@ We have identified 13 main metamodel concepts to describe of specfic domain.
 As you can see from the above diagram,all metamodels have different types of relationships among them.
 
 ![image](https://user-images.githubusercontent.com/56352752/149663976-e324733e-de9a-4526-8aa1-6eff20638f87.png)
-			
+
+### Constaints
+	* Farm size can't be negative or zero
+	* Farmer ID must be unique
+	* Seed Code of Crop should be unique
+	* Service ID must be unique
+	* Gateway ID must be unique
+	* Device ID must be unique
+	* Negative value is only allowed to temprature sensors
+### Custome DataTypes
+We have created custom data types using regular expression for the following:
+	* Email
+	* IP Address
+	* Phone number
+	* Double
+
+	
