@@ -53,9 +53,9 @@ As you can see from the above diagram,all metamodels have different types of rel
 	* Negative value is only allowed to temprature sensors
 ### Custome DataTypes
 We have created custom data types using regular expression for the following:
-	* Email
-	* IP Address
-	* Phone number
-	* Double
+	$ Email
+	$ IP Address
+	$ Phone number
+	$ Double
 
 	
