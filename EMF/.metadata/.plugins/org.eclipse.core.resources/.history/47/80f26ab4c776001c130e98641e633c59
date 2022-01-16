@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartFarming:Farm
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:smartFarming="http://www.example.org/smartFarming"
+    xsi:schemaLocation="http://www.example.org/smartFarming smartFarming.ecore"
+    Name="Aquila"
+    Location="L'Aquila, Italy"
+    Size="4500.0">
+  <Crops Name="Lettuce"
+      GrowthDuration="68"
+      SeedCode="E3429k22"/>
+  <Farmers Name="Mohammed"
+      FarmerID="F23245"
+      Email="mohammed.rijal13@gmail.com"
+      PhoneNumber="0937397399"
+      Services="//@IoTSystem/@Services.0"/>
+  <IoTSystem
+      Name="TihanSystems"
+      Version="1.2.13">
+    <Services
+        xsi:type="smartFarming:AnalyticsSystem"
+        Name="LettuceSeeding"
+        ServiceID="1234"
+        Host="Aquila"
+        URI="k22332kjsl3"
+        AnalyticsType="Seeding"
+        DataSource="Model1"
+        OutputType="Tabular"/>
+    <Services
+        xsi:type="smartFarming:Monitoring"
+        Name="LettuceNutrientMonitoring"
+        Host="Aquila"
+        Condtion="Health"/>
+    <Services
+        xsi:type="smartFarming:Controlling"
+        Name="LutticeLightingController"
+        ServiceID="56713"
+        Host="Aquila"
+        ControlType="NutrientController"/>
+    <Devices/>
+  </IoTSystem>
+</smartFarming:Farm>

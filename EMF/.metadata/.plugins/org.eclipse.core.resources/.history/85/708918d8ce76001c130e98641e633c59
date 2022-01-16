@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartFarming:Farm
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:smartFarming="http://www.example.org/smartFarming"
+    xsi:schemaLocation="http://www.example.org/smartFarming smartFarming.ecore"
+    Name="Aquila"
+    Location="L'Aquila, Italy"
+    Size="2.14">
+  <Crops Name="Lettuce"
+      GrowthDuration="63"
+      SeedCode="le311q2"/>
+  <Crops Name="Broccoli"
+      GrowthDuration="78"
+      SeedCode="br9211w"/>
+  <Farmers Name="Mohammed Rijal"
+      FarmerID="1123"
+      Email="mohammed.rijal@gmail.com"
+      PhoneNumber="0432558202"/>
+  <Farmers Name="Ram Gurung"
+      FarmerID="1422"
+      Email="ram.gurung1990@gmail.com"
+      PhoneNumber="0234789823"/>
+  <Farmers Name="Haben Birhane"
+      FarmerID="2334"
+      Email="checkhaben@gmail.com"
+      PhoneNumber="0294837792"/>
+  <IoTSystem
+      Name="TihanSystems"
+      Version="03.51">
+    <Services
+        xsi:type="smartFarming:AnalyticsSystem"
+        Name="LettuceSeedingAnalytics"
+        ServiceID="66224"
+        Host="Aquila"
+        URI="12d/3332/5js"
+        AnalyticsType="Seeding"
+        DataSource="Model-01"/>
+    <Services
+        xsi:type="smartFarming:Monitoring"
+        Name="BroccoliNutrientSystem"
+        ServiceID="73022"
+        Host="Aquila"
+        URI="jdj/3223/42d"/>
+    <Services
+        xsi:type="smartFarming:Controlling"
+        Name="LettuceLightControl"
+        ServiceID="335678"
+        Host="Aquila"
+        URI="23e4/3qsl/332"
+        ControlType="LEDController"/>
+    <Devices
+        xsi:type="smartFarming:Actuator"
+        Name="tempActuator1"
+        DeviceID="12act356"
+        IPAddress="251.33.66.2"
+        Manufacturer="Tihan"
+        Type="NutrientController"/>
+    <Devices
+        xsi:type="smartFarming:Actuator"
+        Name="tempActuator2"
+        DeviceID="56342"
+        IPAddress="251.48.84.2"
+        Manufacturer="Tihan"/>
+    <Devices
+        xsi:type="smartFarming:Sensor"
+        Name="tempSensor1"
+        Manufacturer="Tihan"
+        Unit="celcius"
+        Value="15"/>
+    <Gateways
+        Name="Gateway1"
+        GatewayID="351112"
+        Model="3"
+        Devices="//@IoTSystem/@Devices.0 //@IoTSystem/@Devices.2"/>
+    <Gateways
+        Name="Gateway2"
+        GatewayID="8302848"
+        Model="3"
+        Devices="//@IoTSystem/@Devices.1"/>
+  </IoTSystem>
+</smartFarming:Farm>
