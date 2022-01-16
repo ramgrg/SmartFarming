@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/SmartFarming/src-gen" creationIcons="false" editDirectory="/SmartFarming.edit/src-gen"
+    editorDirectory="/SmartFarming.editor/src-gen" modelPluginID="SmartFarming" modelName="SmartFarming"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" copyrightFields="false" importOrganizing="true">
+  <foreignModel>smartFarming.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="SmartFarming" disposableProviderFactory="true" ecorePackage="smartFarming.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//CropGroup">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CropGroup/Vegitable"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CropGroup/Fruit"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CropGroup/Flower"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CropGroup/Tubers"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//ActuatorType">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ActuatorType/AirConditioner"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ActuatorType/NutrientController"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ActuatorType/LEDController"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ActuatorType/OxygenController"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ActuatorType/CO2Controller"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//AnalyticsType">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//AnalyticsType/Harvesting"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//AnalyticsType/Seeding"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//AnalyticsType/Resource"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//CommunicationType">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CommunicationType/Zig-Bee"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CommunicationType/MQTT"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CommunicationType/COAP"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CommunicationType/HTTP"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CommunicationType/WIFI"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CommunicationType/Bluetooth"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//CommunicationType/ZWave"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//ControllerAction">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControllerAction/Increase"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControllerAction/Decrease"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControllerAction/ON"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControllerAction/OFF"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControllerAction/Alert"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//ControlType">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControlType/AirConditioner"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControlType/NutrientController"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControlType/LEDController"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControlType/OxygenController"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//ControlType/CO2Controller"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//MonitoringCondition">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//MonitoringCondition/Optimum"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//MonitoringCondition/Health"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//MonitoringCondition/Good"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//MonitoringCondition/Warning"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//MonitoringCondition/Danger"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//MonitoringMetrics">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//MonitoringMetrics/Nutrient"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//MonitoringMetrics/PhotoSynthesis"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//MonitoringMetrics/EnvironmentalSafety"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//OutputType">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//OutputType/LineGraph"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//OutputType/PieChart"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//OutputType/BarChart"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//OutputType/Tabular"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//SensorState">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorState/Active"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorState/Passive"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartFarming.ecore#//SensorType">
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorType/Temprature"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorType/Humidity"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorType/CO2"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorType/Oxygen"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorType/PH"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorType/EC"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorType/LEDLight"/>
+      <genEnumLiterals ecoreEnumLiteral="smartFarming.ecore#//SensorType/Surviellance"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="smartFarming.ecore#//Email"/>
+    <genClasses ecoreClass="smartFarming.ecore#//Farm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Farm/Location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Farm/Size"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Farm/Crops"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Farm/Farmers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Farm/IoTSystem"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartFarming.ecore#//Named">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Named/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//Crop">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Crop/CropGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Crop/GrowthDuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Crop/SeedCode"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//Farmer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Farmer/FarmerID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Farmer/Email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Farmer/PhoneNumber"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Farmer/Services"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//IoTSystem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//IoTSystem/Version"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartFarming.ecore#//IoTSystem/Services"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartFarming.ecore#//IoTSystem/Devices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartFarming.ecore#//IoTSystem/Gateways"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartFarming.ecore#//Service">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Service/ServiceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Service/Host"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Service/URI"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//Device">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Device/DeviceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Device/IPAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Device/Manufacturer"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//Gateway">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Gateway/GatewayID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Gateway/Model"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Gateway/Protocols"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Gateway/Devices"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//AnalyticsSystem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//AnalyticsSystem/AnalyticsType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//AnalyticsSystem/DataSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//AnalyticsSystem/OutputType"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//Monitoring">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Monitoring/Metrics"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Monitoring/Condtion"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Monitoring/Sensors"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Monitoring/Control"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//Controlling">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Controlling/ControlType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Controlling/Action"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Controlling/Actuators"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//Actuator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Actuator/Type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Actuator/Protocol"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//Sensor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Sensor/Type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Sensor/State"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Sensor/Unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//Sensor/Value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartFarming.ecore#//Sensor/Protocol"/>
+    </genClasses>
+    <genClasses ecoreClass="smartFarming.ecore#//CommunicationProtocol">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartFarming.ecore#//CommunicationProtocol/Type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
