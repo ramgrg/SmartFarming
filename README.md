@@ -10,7 +10,7 @@ The repository Contains four projects within:
 
 ## Table Of Content
   ### 1. Describing Domain Specific Concepts
-    $ MetaClasses
+    #### MetaClasses
     * Relationships
     * Constraints
     * Custom Datatypes
