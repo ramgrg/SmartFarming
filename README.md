@@ -10,10 +10,10 @@ The repository Contains four projects within:
 
 ## Table Of Content
   ### 1. Describing Domain Specific Concepts
-    #### * MetaClasses
-    #### * Relationships
-    #### * Constraints
-    #### * Custom Datatypes
+    * MetaClasses
+    * Relationships
+    * Constraints
+    * Custom Datatypes
   2. MPS
     * Metamodels
     * Concrete Syntax
