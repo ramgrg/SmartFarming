@@ -29,3 +29,6 @@ The repository Contains four projects within:
   ### 5. xText and Sirius
     * Concrete Syntax using xText
     * Graphical Editor using Sirius
+
+## 1. Describing Domain Specific Concepts
+Smart Farming can mean different things, Since we are focusing on IoT systems for Smart farming, we considered an application that maximizes the use of IoT devices, i.e. Controlled Environment Farming(CEF). Controlled Environment Farming(CEF) is a type of smart farming, Which is indoor and all the agricultural metrics are monitored and controlled to give the maximum harvest. 
