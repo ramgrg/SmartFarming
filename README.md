@@ -32,3 +32,8 @@ The repository Contains four projects within:
 
 ## 1. Describing Domain Specific Concepts
 Smart Farming can mean different things, Since we are focusing on IoT systems for Smart farming, we considered an application that maximizes the use of IoT devices, i.e. Controlled Environment Farming(CEF). Controlled Environment Farming(CEF) is a type of smart farming, Which is indoor and all the agricultural metrics are monitored and controlled to give the maximum harvest. 
+
+### MetaClassess
+We have identified 13 main metamodel concepts to describe of specfic domain. 
+
+![image](https://user-images.githubusercontent.com/56352752/149663702-f7147cd1-9f53-4cd7-bf65-9374d2b5e9b7.png)
