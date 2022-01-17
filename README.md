@@ -39,12 +39,11 @@ We have identified 13 main metamodel concepts to describe of specfic domain.
 
 ### Relationships
 As you can see from the above diagram,all metamodels have different types of relationships among them.
-
-![image](https://user-images.githubusercontent.com/56352752/149663976-e324733e-de9a-4526-8aa1-6eff20638f87.png)
+<img width="819" alt="Screen Shot 2022-01-17 at 22 22 52" src="https://user-images.githubusercontent.com/37994271/149833063-703ad60d-4771-4aba-9c0c-638ad1f91e6f.png">
 
 ## 2. MPS
 
-### Metamodels (14 Metaclass)
+### Metamodels
 We have defined 13 metaclass concepts in MPS based on Domain Specific Concepts above. 
 - Farm (Root)
 - Farmer
@@ -120,8 +119,6 @@ We have created two model instances which represent the concrete syntax of our m
 ![image](https://user-images.githubusercontent.com/8501541/149832459-a6bb7d12-0603-4cd6-a56b-64d8944556ed.png)
 
 
-
-
 2. Farm_Lappeenranta
 ![image](https://user-images.githubusercontent.com/8501541/149832642-00ddcad1-c231-41a0-9f17-d77b069e93a3.png)
 
@@ -149,7 +146,12 @@ In addition, we have defined 1 metaclasses called Named to accommodate name fiel
 ### Dynamic Instances
 We have created two dynamic instances in the form of XMI: Farm_Aquila.xmi and Farm_Lapen.xmi. In order to open it first time, you need to register ecore package first. 
 
-//Image of Instance
+1. Farm_Aquila.xmi
+<img width="361" alt="Screen Shot 2022-01-17 at 22 24 56" src="https://user-images.githubusercontent.com/37994271/149833135-be99b838-3b65-4ec5-8cff-5540307f48f2.png">
+
+2. Farm_Lapen.xmi
+<img width="380" alt="Screen Shot 2022-01-17 at 22 25 42" src="https://user-images.githubusercontent.com/37994271/149833220-f8e3030e-5353-480b-a59d-b83a5d10458c.png">
+
 
 ### Constraints, Operations, and Derived Field
 We used OCL to define the constraints for our metaclasses. There are 12 constraints, 3 derived properties and 4 operations.
@@ -193,7 +195,7 @@ Communication Protocol
 - SensorNumber -> Show number of Sensor using respective communication protocol. Derived from relation Sensor with Communication Protocol. 
 - ActuatorNumber -> Show number of Actuator using respective communication protocol. Derived from relation Actuator with Communication Protocol.
 
-**Operation**
+**Operations**
 
 Sensor
 - isUsed() -> show if currently the Sensor is used by Monitoring service or not. It will return boolean value. 
