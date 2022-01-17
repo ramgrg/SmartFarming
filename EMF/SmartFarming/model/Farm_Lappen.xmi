@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartFarming:Farm
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:smartFarming="http://www.example.org/smartFarming"
+    Name="Lappen"
+    Location="Lappeenranta"
+    Size="2000.0">
+  <Crops Name="Potato"
+      CropGroup="Tubers"
+      GrowthDuration="180"
+      SeedCode="PT001"/>
+  <Crops Name="Lettuce"
+      GrowthDuration="120"
+      SeedCode="LT001"/>
+  <Farmers Name="Monica Shawarma"
+      FarmerID="FM004"
+      Email="monica.shawarma@lapen.com"
+      PhoneNumber="01234214421"
+      Services="//@IoTSystem/@Services.0 //@IoTSystem/@Services.1"/>
+  <Farmers Name="Diana Angelo"
+      FarmerID="FM005"
+      Email="diana.angelo@lapen.com"
+      PhoneNumber="01234214421"
+      Services="//@IoTSystem/@Services.2"/>
+  <IoTSystem
+      Name="Wonder"
+      Version="1.0.0">
+    <Services
+        xsi:type="smartFarming:Monitoring"
+        Name="EnvironmentalSafetyMonitoring1"
+        ServiceID="SER004"
+        Host="localhost"
+        URI="ser://monitoring/environment/1"
+        Metrics="EnvironmentalSafety"
+        Sensors="//@IoTSystem/@Devices.0 //@IoTSystem/@Devices.1"
+        Control="//@IoTSystem/@Services.1"/>
+    <Services
+        xsi:type="smartFarming:Controlling"
+        Name="EnvironmentalControling1"
+        ServiceID="SER005"
+        Host="localhost"
+        URI="ser://controlling/environment/1"
+        ControlType="CO2Controller"
+        Actuators="//@IoTSystem/@Devices.2"/>
+    <Services
+        xsi:type="smartFarming:AnalyticsSystem"
+        Name="SeedAnalytics"
+        ServiceID="SER006"
+        Host="localhost"
+        URI="ser://analytics/seeding/1"
+        AnalyticsType="Seeding"
+        DataSource="seed.xlsx"
+        OutputType="Tabular"/>
+    <Devices
+        xsi:type="smartFarming:Sensor"
+        Name="COSensor1"
+        DeviceID="S007"
+        IPAddress="123.123.12.123"
+        Manufacturer="Samsung"
+        Type="CO2"
+        Unit="ppm"
+        Value="500.0"
+        Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Devices
+        xsi:type="smartFarming:Sensor"
+        Name="COSensor2"
+        DeviceID="S008"
+        IPAddress="123.123.12.123"
+        Manufacturer="Samsung"
+        Type="CO2"
+        Unit="ppm"
+        Value="1000.0"
+        Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Devices
+        xsi:type="smartFarming:Actuator"
+        Name="COActuator1"
+        DeviceID="S009"
+        IPAddress="123.123.12.123"
+        Manufacturer="Samsung"
+        Type="CO2Controller"
+        Protocol="//@IoTSystem/@Gateways.1/@Protocols.0"/>
+    <Devices
+        xsi:type="smartFarming:Sensor"
+        Name="LightSensor1"
+        DeviceID="A003"
+        IPAddress="123.123.12.123"
+        Manufacturer="Samsung"
+        Type="LEDLight"
+        State="Passive"
+        Unit="wavelength"
+        Value="20.0"
+        Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Devices
+        xsi:type="smartFarming:Actuator"
+        Name="LightActuator1"
+        DeviceID="A004"
+        IPAddress="123.12.123"
+        Manufacturer="Samsung"
+        Type="LEDController"
+        Protocol="//@IoTSystem/@Gateways.1/@Protocols.0"/>
+    <Gateways
+        Name="Gateway1"
+        GatewayID="GT002"
+        Model="Samsung"
+        Devices="//@IoTSystem/@Devices.0 //@IoTSystem/@Devices.1 //@IoTSystem/@Devices.3">
+      <Protocols
+          Name="ZigBee1"/>
+    </Gateways>
+    <Gateways
+        Name="Gateway2"
+        GatewayID="GT003"
+        Model="Samsung"
+        Devices="//@IoTSystem/@Devices.2 //@IoTSystem/@Devices.4">
+      <Protocols
+          Name="Bluetooth1"
+          Type="Bluetooth"/>
+    </Gateways>
+  </IoTSystem>
+</smartFarming:Farm>
