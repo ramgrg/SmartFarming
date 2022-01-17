@@ -95,8 +95,8 @@
     <node concept="1TJgyj" id="7n7Lv_IWIMu" role="1TKVEi">
       <property role="IQ2ns" value="8486969697901931678" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="IoTSystems" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20kJfa" value="IoTSystem" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3hFcliemXex" resolve="IoTSystem" />
     </node>
   </node>

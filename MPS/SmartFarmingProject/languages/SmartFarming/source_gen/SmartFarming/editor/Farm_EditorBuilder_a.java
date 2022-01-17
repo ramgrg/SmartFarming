@@ -296,14 +296,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new IoTSystemsSingleRoleHandler_mu0zbf_m3a(myNode, LINKS.IoTSystems$gquL, getEditorContext());
+    SingleRoleCellProvider provider = new IoTSystemSingleRoleHandler_mu0zbf_m3a(myNode, LINKS.IoTSystem$gquL, getEditorContext());
     return provider.createCell();
   }
-  private static class IoTSystemsSingleRoleHandler_mu0zbf_m3a extends SingleRoleCellProvider {
+  private static class IoTSystemSingleRoleHandler_mu0zbf_m3a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public IoTSystemsSingleRoleHandler_mu0zbf_m3a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public IoTSystemSingleRoleHandler_mu0zbf_m3a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -316,8 +316,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     protected EditorCell createChildCell(SNode child) {
       EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.IoTSystems$gquL, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.IoTSystems$gquL, child));
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.IoTSystem$gquL, child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.IoTSystem$gquL, child));
       installCellInfo(child, editorCell, false);
       return editorCell;
     }
@@ -329,7 +329,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
         editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
       }
       if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.IoTSystems$gquL);
+        editorCell.setSRole(LINKS.IoTSystem$gquL);
       }
       Style style = new StyleImpl();
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
@@ -339,10 +339,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     @Override
     protected EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.IoTSystems$gquL));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.IoTSystem$gquL));
       try {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_IoTSystems");
+        editorCell.setCellId("empty_IoTSystem");
         installCellInfo(null, editorCell, true);
         setCellContext(editorCell);
         return editorCell;
@@ -351,7 +351,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     }
     protected String getNoTargetText() {
-      return "<no IoTSystems>";
+      return "<no IoTSystem>";
     }
   }
   private EditorCell createConstant_12() {
@@ -621,7 +621,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink IoTSystems$gquL = MetaAdapterFactory.getContainmentLink(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0xad19f946497d8c4L, 0x75c7c5f96ef2ec9eL, "IoTSystems");
+    /*package*/ static final SContainmentLink IoTSystem$gquL = MetaAdapterFactory.getContainmentLink(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0xad19f946497d8c4L, 0x75c7c5f96ef2ec9eL, "IoTSystem");
     /*package*/ static final SContainmentLink Farmers$v8um = MetaAdapterFactory.getContainmentLink(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0xad19f946497d8c4L, 0x346b31548e5bd37eL, "Farmers");
     /*package*/ static final SContainmentLink Crops$vuKP = MetaAdapterFactory.getContainmentLink(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0xad19f946497d8c4L, 0x346b31548e5bd39eL, "Crops");
   }

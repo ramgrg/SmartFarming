@@ -216,7 +216,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="6LCgsI8gFOh" role="3EZMnx">
-          <ref role="1NtTu8" to="gv5y:7n7Lv_IWIMu" resolve="IoTSystems" />
+          <ref role="1NtTu8" to="gv5y:7n7Lv_IWIMu" resolve="IoTSystem" />
           <node concept="ljvvj" id="6LCgsI8gFQm" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -2681,6 +2681,9 @@
         <node concept="1sVBvm" id="51oAUbsMxQk" role="1sWHZn">
           <node concept="3F0A7n" id="51oAUbsMxQm" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VechU" id="1DBpVrqpPhX" role="3F10Kt">
+              <property role="Vb096" value="fLwANPs/magenta" />
+            </node>
           </node>
         </node>
       </node>
