@@ -97,234 +97,243 @@
       </concept>
     </language>
   </registry>
-  <node concept="1Ih$tg" id="6LCgsI8h_5w">
-    <property role="TrG5h" value="Haha" />
-    <property role="2Uce8N" value="asdfsdfsd" />
-    <property role="2Uce8X" value="2" />
-    <node concept="2Ucebg" id="KyTPI15VV5" role="2Uceba">
-      <property role="TrG5h" value="Lettuce" />
+  <node concept="1Ih$tg" id="1DBpVrqpMWH">
+    <property role="TrG5h" value="Farm_Aqila" />
+    <property role="2Uce8N" value="L'Aquila" />
+    <property role="2Uce8X" value="25" />
+    <node concept="2Uce8S" id="1DBpVrqpMWI" role="2Uce8E">
+      <property role="TrG5h" value="Ram" />
+      <property role="2Uce8V" value="FAQ1" />
+      <property role="2Uce8_" value="ram.gurung1990@gmail.com" />
+      <property role="2Uce8w" value="3518214426" />
+      <node concept="2c$C2m" id="1DBpVrqpNwU" role="2c$C3$">
+        <ref role="2c$C2n" node="1DBpVrqpMXa" resolve="NutriMoniteringSystem" />
+      </node>
+    </node>
+    <node concept="2Uce8S" id="1DBpVrqpNwW" role="2Uce8E">
+      <property role="TrG5h" value="Haben" />
+      <property role="2Uce8V" value="FAQ2" />
+      <property role="2Uce8_" value="checkhaben@gmail.com" />
+      <property role="2Uce8w" value="3519521535" />
+      <node concept="2c$C2m" id="1DBpVrqpNxd" role="2c$C3$">
+        <ref role="2c$C2n" node="1DBpVrqpNx6" resolve="Harvest" />
+      </node>
+    </node>
+    <node concept="2Uce8S" id="1DBpVrqpNxf" role="2Uce8E">
+      <property role="TrG5h" value="Mohammad" />
+      <property role="2Uce8_" value="mohammad.rijal13@gmail.com" />
+      <property role="2Uce8V" value="FAQ3" />
+      <property role="2Uce8w" value="3337688713" />
+      <node concept="2c$C2m" id="1DBpVrqpNxl" role="2c$C3$">
+        <ref role="2c$C2n" node="1DBpVrqpMXu" resolve="NutriControllingSystem" />
+      </node>
+    </node>
+    <node concept="2Ucebg" id="1DBpVrqpMWJ" role="2Uceba">
+      <property role="TrG5h" value="Cabbage" />
       <property role="2Ucebj" value="3hFcliemXea/Vegetable" />
-      <property role="2Uceb3" value="27" />
-      <property role="2Ucebe" value="sded" />
+      <property role="2Uceb3" value="70" />
+      <property role="2Ucebe" value="Veg-Cab-1" />
     </node>
-    <node concept="2Ucebg" id="5vGOreg1X2N" role="2Uceba">
-      <property role="2Ucebe" value="kjkj" />
-      <property role="TrG5h" value="tomato" />
-      <property role="2Ucebj" value="3hFcliemXea/Vegetable" />
+    <node concept="2Ucebg" id="1DBpVrqpNxn" role="2Uceba">
+      <property role="TrG5h" value="Lily" />
+      <property role="2Ucebj" value="3hFcliemXee/Flower" />
+      <property role="2Uceb3" value="100" />
+      <property role="2Ucebe" value="Flow-Li-1" />
     </node>
-    <node concept="2Uce8S" id="KyTPI15VUU" role="2Uce8E">
-      <property role="TrG5h" value="Mohammed" />
-      <property role="2Uce8V" value="ssl331" />
-      <property role="2Uce8w" value="0987736633" />
-      <property role="2Uce8_" value="ram.12@dfd.c" />
-      <node concept="2c$C2m" id="KyTPI15VUW" role="2c$C3$">
-        <ref role="2c$C2n" node="KyTPI15VT_" resolve="Harvest01" />
-      </node>
-      <node concept="2c$C2m" id="KyTPI15VUY" role="2c$C3$">
-        <ref role="2c$C2n" node="KyTPI15VU6" resolve="Nutrient" />
-      </node>
-      <node concept="2c$C2m" id="KyTPI15VV1" role="2c$C3$">
-        <ref role="2c$C2n" node="KyTPI15VTE" resolve="LED-Light" />
-      </node>
+    <node concept="2Ucebg" id="1DBpVrqpNxq" role="2Uceba">
+      <property role="TrG5h" value="Lemon" />
+      <property role="2Ucebj" value="3hFcliemXeb/Fruit" />
+      <property role="2Uceb3" value="300" />
+      <property role="2Ucebe" value="Fru-Lem-1" />
     </node>
-    <node concept="2Uce8S" id="5vGOrefP$Xb" role="2Uce8E">
-      <property role="2Uce8V" value="ssl330" />
-      <property role="TrG5h" value="Monster" />
-      <property role="2Uce8w" value="+35157357357" />
-      <property role="2Uce8_" value="tst112.dfd@test.nl" />
-      <node concept="2c$C2m" id="5vGOregap4n" role="2c$C3$" />
-      <node concept="2c$C2m" id="5vGOrefP$Xj" role="2c$C3$">
-        <ref role="2c$C2n" node="KyTPI15VT_" resolve="Harvest01" />
-      </node>
-    </node>
-    <node concept="2UcebP" id="6LCgsI8h_5z" role="rdi_B">
-      <property role="TrG5h" value="IoT1" />
-      <property role="2UcebK" value="12.0.1" />
-      <node concept="rcRW2" id="KyTPI15VUM" role="2vQWWP">
-        <property role="TrG5h" value="Zig-Gateway" />
-        <property role="rcRW7" value="092929" />
-        <property role="rcRVT" value="2.3" />
-        <node concept="2c$XK2" id="5vGOrefXM3P" role="2c$C2e">
-          <ref role="2c$XK3" node="KyTPI15VUh" resolve="sensor 1" />
-        </node>
-        <node concept="rcRVU" id="KyTPI15VUN" role="rcRVi">
-          <property role="TrG5h" value="Proto-01" />
-          <property role="rcRVg" value="7n7Lv_IXbG8/MQTT" />
-        </node>
-        <node concept="rcRVU" id="5vGOrefYBAP" role="rcRVi">
-          <property role="TrG5h" value="daf" />
-          <property role="rcRVg" value="7n7Lv_IXbGb/CoAP" />
-        </node>
-        <node concept="2c$XK2" id="5vGOrefYBAM" role="2c$C2e">
-          <ref role="2c$XK3" node="KyTPI15VUm" resolve="sensor2" />
-        </node>
-      </node>
-      <node concept="3jxssy" id="KyTPI15VU6" role="3jyJH3">
-        <property role="TrG5h" value="Nutrient" />
+    <node concept="2UcebP" id="1DBpVrqpMWK" role="rdi_B">
+      <property role="TrG5h" value="Aquila-IoT1" />
+      <property role="2UcebK" value="1.0.0" />
+      <node concept="3jxssy" id="1DBpVrqpMXa" role="3jyJH3">
+        <property role="TrG5h" value="NutriMoniteringSystem" />
         <property role="3jxssX" value="6wjSgQV_yoN/Nutrient" />
         <property role="3jxssQ" value="6wjSgQV_yp3/Good" />
-        <property role="3jxsj6" value="1123" />
-        <property role="3jxsjt" value="HaHa" />
-        <property role="3jxsjp" value="xttedd" />
-        <ref role="2c$C2p" node="KyTPI15VTE" resolve="LED-Light" />
-        <node concept="2c$C2R" id="KyTPI15VU8" role="2c$Cth">
-          <ref role="2c$C2O" node="KyTPI15VUh" resolve="sensor 1" />
-        </node>
-        <node concept="2c$C2R" id="KyTPI15VUz" role="2c$Cth">
-          <ref role="2c$C2O" node="KyTPI15VUm" resolve="sensor2" />
+        <property role="3jxsj6" value="AQNutMon1" />
+        <property role="3jxsjt" value="localhost" />
+        <property role="3jxsjp" value="farm://service-aq/monitor/nutrient" />
+        <ref role="2c$C2p" node="1DBpVrqpMXu" resolve="NutriControllingSystem" />
+        <node concept="2c$C2R" id="1DBpVrqpMXc" role="2c$Cth">
+          <ref role="2c$C2O" node="1DBpVrqpMXg" resolve="NutSensor1" />
         </node>
       </node>
-      <node concept="3jxssd" id="KyTPI15VTE" role="3jyJH3">
-        <property role="TrG5h" value="LED-Light" />
-        <property role="3jxssc" value="6wjSgQV_yo9/Light" />
-        <property role="3jxssl" value="6wjSgQV_yos/Increase" />
-        <property role="3jxsj6" value="223" />
-        <property role="3jxsjt" value="HaHa" />
-        <property role="3jxsjp" value="xttedd" />
-        <node concept="2c$Cti" id="KyTPI15VTG" role="2c$Ctk">
-          <ref role="2c$Ctj" node="KyTPI15VUu" resolve="Nammp2" />
+      <node concept="3jxssd" id="1DBpVrqpMXu" role="3jyJH3">
+        <property role="TrG5h" value="NutriControllingSystem" />
+        <property role="3jxssc" value="6wjSgQV_yo6/Nutrient" />
+        <property role="3jxssl" value="6wjSgQV_yoD/Alert" />
+        <property role="3jxsj6" value="AQNutCon1" />
+        <property role="3jxsjt" value="localhost" />
+        <property role="3jxsjp" value="farm://service-aq/control/nutrient" />
+        <node concept="2c$Cti" id="1DBpVrqpMXw" role="2c$Ctk">
+          <ref role="2c$Ctj" node="1DBpVrqpMXm" resolve="NutActuator1" />
         </node>
       </node>
-      <node concept="3jxsji" id="KyTPI15VT_" role="3jyJH3">
-        <property role="TrG5h" value="Harvest01" />
+      <node concept="3jxsji" id="1DBpVrqpNx6" role="3jyJH3">
+        <property role="TrG5h" value="Harvest" />
         <property role="3jxsj$" value="6wjSgQV_ynx/Harvesting" />
-        <property role="3jxsjA" value="Model-01" />
-        <property role="3jxsjz" value="6wjSgQV_ynV/Tabular" />
-        <property role="3jxsj6" value="21" />
-        <property role="3jxsjt" value="HaHa" />
-        <property role="3jxsjp" value="xttedd" />
+        <property role="3jxsjA" value="Data-AQ-Harvest.db" />
+        <property role="3jxsjz" value="6wjSgQV_ynR/BarChart" />
+        <property role="3jxsj6" value="AQHarAnl1" />
+        <property role="3jxsjt" value="localhost" />
+        <property role="3jxsjp" value="farm://service-aq/analytic/harvest" />
       </node>
-      <node concept="2vP4MN" id="KyTPI15VUh" role="2vQXNg">
-        <property role="TrG5h" value="sensor 1" />
-        <property role="2vPuUM" value="4NgPXVj1g6u/Active" />
-        <property role="2vPuzt" value="celcius" />
-        <property role="2vPbD0" value="1222444" />
-        <property role="2vPa0i" value="1.155.3.2" />
-        <property role="2vPaGV" value="teeeeprr" />
-        <property role="2vPug8" value="4NgPXVj1bmJ/Temperature" />
-        <property role="2vPuzp" value="-2" />
-      </node>
-      <node concept="2vP4MN" id="KyTPI15VUm" role="2vQXNg">
-        <property role="TrG5h" value="sensor2" />
-        <property role="2vPuUM" value="4NgPXVj1g6u/Active" />
-        <property role="2vPuzt" value="number" />
-        <property role="2vPbD0" value="23244556" />
-        <property role="2vPa0i" value="2.35.2.33" />
-        <property role="2vPaGV" value="teeeeper" />
-        <property role="2vPug8" value="4NgPXVj1epQ/Nutrients" />
-        <property role="2vPuzp" value="45" />
-      </node>
-      <node concept="2vPoOI" id="KyTPI15VUu" role="2vQXNg">
-        <property role="TrG5h" value="Nammp2" />
-        <property role="2vPmW3" value="4NgPXVj1n7E/AirConditioner" />
-        <property role="2vPbD0" value="34332" />
-        <property role="2vPa0i" value="22.134.2.11" />
-        <property role="2vPaGV" value="teeeper" />
-        <ref role="1CVfQa" node="KyTPI15VUN" resolve="Proto-01" />
-      </node>
-      <node concept="2vP4MN" id="5vGOreg49Ao" role="2vQXNg">
-        <property role="TrG5h" value="Sensor2" />
-        <property role="2vPbD0" value="2324456" />
-        <property role="2vPa0i" value="24.14.7.9" />
+      <node concept="2vP4MN" id="1DBpVrqpMXg" role="2vQXNg">
+        <property role="TrG5h" value="NutSensor1" />
         <property role="2vPug8" value="4NgPXVj1epQ/Nutrients" />
         <property role="2vPuUM" value="4NgPXVj1iyF/Passive" />
         <property role="2vPuzt" value="mS/cm" />
-        <property role="2vPuzp" value="23" />
-        <property role="2vPaGV" value="ABC" />
-        <ref role="1CVfQk" node="KyTPI15VUN" resolve="Proto-01" />
+        <property role="2vPuzp" value="1.3" />
+        <property role="2vPbD0" value="NutAQSen1" />
+        <property role="2vPa0i" value="19.24.33.10" />
+        <property role="2vPaGV" value="Krohne" />
+        <ref role="1CVfQk" node="1DBpVrqpMWO" resolve="Protocol-MQTT" />
+      </node>
+      <node concept="2vPoOI" id="1DBpVrqpMXm" role="2vQXNg">
+        <property role="TrG5h" value="NutActuator1" />
+        <property role="2vPmW3" value="4NgPXVj1plr/NutrientController" />
+        <property role="2vPbD0" value="NutAQAct1" />
+        <property role="2vPa0i" value="19.10.25.20" />
+        <property role="2vPaGV" value="ElectroCraft" />
+        <ref role="1CVfQa" node="1DBpVrqpMWO" resolve="Protocol-MQTT" />
+      </node>
+      <node concept="rcRW2" id="1DBpVrqpMWN" role="2vQWWP">
+        <property role="TrG5h" value="MQTT-Gateway" />
+        <property role="rcRW7" value="MQAQGate1" />
+        <property role="rcRVT" value="MQ123" />
+        <node concept="rcRVU" id="1DBpVrqpMWO" role="rcRVi">
+          <property role="rcRVg" value="7n7Lv_IXbG8/MQTT" />
+          <property role="TrG5h" value="Protocol-MQTT" />
+        </node>
+        <node concept="2c$XK2" id="1DBpVrqpOHi" role="2c$C2e">
+          <ref role="2c$XK3" node="1DBpVrqpMXg" resolve="NutSensor1" />
+        </node>
+        <node concept="2c$XK2" id="1DBpVrqpOHm" role="2c$C2e">
+          <ref role="2c$XK3" node="1DBpVrqpMXm" resolve="NutActuator1" />
+        </node>
       </node>
     </node>
   </node>
-  <node concept="1Ih$tg" id="37L0zDpfr8z">
-    <property role="TrG5h" value="Aquila" />
-    <property role="2Uce8N" value="L'Aquila" />
-    <property role="2Uce8X" value="1200000" />
-    <node concept="2Uce8S" id="37L0zDpfr8$" role="2Uce8E">
-      <property role="TrG5h" value="Mohammed" />
-      <property role="2Uce8V" value="1235" />
-      <property role="2Uce8w" value="01234525624" />
-      <node concept="2c$C2m" id="37L0zDpg_7E" role="2c$C3$">
-        <ref role="2c$C2n" node="37L0zDpfr8M" resolve="MyMonitoring" />
-      </node>
-      <node concept="2c$C2m" id="37L0zDpnTeQ" role="2c$C3$">
-        <ref role="2c$C2n" node="37L0zDpfr8G" resolve="MyAnalytics" />
+  <node concept="1Ih$tg" id="1DBpVrqpNxu">
+    <property role="TrG5h" value="Farm_Lappeenranta" />
+    <property role="2Uce8N" value="Lappeenranta" />
+    <property role="2Uce8X" value="28" />
+    <node concept="2Uce8S" id="1DBpVrqpNxv" role="2Uce8E">
+      <property role="TrG5h" value="Haben" />
+      <property role="2Uce8V" value="FLap1" />
+      <property role="2Uce8_" value="checkhaben@gmail.com" />
+      <property role="2Uce8w" value="3519521535" />
+      <node concept="2c$C2m" id="1DBpVrqpOI0" role="2c$C3$">
+        <ref role="2c$C2n" node="1DBpVrqpOHt" resolve="TemperatureControllingSystem" />
       </node>
     </node>
-    <node concept="2Ucebg" id="37L0zDpfr8_" role="2Uceba">
-      <property role="TrG5h" value="MyMonster" />
+    <node concept="2Uce8S" id="1DBpVrqpOI2" role="2Uce8E">
+      <property role="TrG5h" value="Ram" />
+      <property role="2Uce8V" value="FLap2" />
+      <property role="2Uce8_" value="ram.gurung1990@gmail.com" />
+      <property role="2Uce8w" value="3518214426" />
+      <node concept="2c$C2m" id="1DBpVrqpOI6" role="2c$C3$">
+        <ref role="2c$C2n" node="1DBpVrqpNxB" resolve="TemperatureMoniteringSystem" />
+      </node>
+    </node>
+    <node concept="2Uce8S" id="1DBpVrqpOI8" role="2Uce8E">
+      <property role="TrG5h" value="Mohammad" />
+      <property role="2Uce8V" value="FLap3" />
+      <property role="2Uce8_" value="mohammad.rijal13@gmail.com" />
+      <property role="2Uce8w" value="3337688713" />
+      <node concept="2c$C2m" id="1DBpVrqpOIe" role="2c$C3$">
+        <ref role="2c$C2n" node="1DBpVrqpOHF" resolve="Seed" />
+      </node>
+    </node>
+    <node concept="2Ucebg" id="1DBpVrqpNxw" role="2Uceba">
+      <property role="TrG5h" value="Mushroom" />
       <property role="2Ucebj" value="3hFcliemXea/Vegetable" />
-      <property role="2Uceb3" value="120" />
-      <property role="2Ucebe" value="12345" />
+      <property role="2Uceb3" value="40" />
+      <property role="2Ucebe" value="Veg-Mus-1" />
     </node>
-    <node concept="2UcebP" id="37L0zDpfr8A" role="rdi_B">
-      <property role="TrG5h" value="MySytem" />
-      <property role="2UcebK" value="12.3.4" />
-      <node concept="3jxsji" id="37L0zDpfr8G" role="3jyJH3">
-        <property role="TrG5h" value="MyAnalytics" />
-        <property role="3jxsj$" value="6wjSgQV_ynx/Harvesting" />
-        <property role="3jxsjA" value="excel.sx" />
-        <property role="3jxsjz" value="6wjSgQV_ynV/Tabular" />
-        <property role="3jxsj6" value="12345" />
-        <property role="3jxsjt" value="localhost.com" />
-        <property role="3jxsjp" value="xttp://example" />
-      </node>
-      <node concept="3jxssy" id="37L0zDpfr8M" role="3jyJH3">
-        <property role="TrG5h" value="MyMonitoring" />
-        <property role="3jxssX" value="6wjSgQV_yoO/PhotoSynthesis" />
-        <property role="3jxssQ" value="6wjSgQV_yp3/Good" />
-        <property role="3jxsj6" value="1234" />
+    <node concept="2Ucebg" id="1DBpVrqpOIg" role="2Uceba">
+      <property role="TrG5h" value="Rose" />
+      <property role="2Ucebj" value="3hFcliemXee/Flower" />
+      <property role="2Uceb3" value="100" />
+      <property role="2Ucebe" value="Flo-Ros-1" />
+    </node>
+    <node concept="2Ucebg" id="1DBpVrqpOIj" role="2Uceba">
+      <property role="TrG5h" value="Orange" />
+      <property role="2Ucebj" value="3hFcliemXeb/Fruit" />
+      <property role="2Uceb3" value="1500" />
+      <property role="2Ucebe" value="Fru-Or-1" />
+    </node>
+    <node concept="2UcebP" id="1DBpVrqpNxx" role="rdi_B">
+      <property role="TrG5h" value="Lappeenranta-IoT1" />
+      <property role="2UcebK" value="1.0.0" />
+      <node concept="3jxssy" id="1DBpVrqpNxB" role="3jyJH3">
+        <property role="TrG5h" value="TemperatureMoniteringSystem" />
+        <property role="3jxssX" value="6wjSgQV_yoR/EnvironemtalSafety" />
+        <property role="3jxssQ" value="6wjSgQV_yp0/Health" />
+        <property role="3jxsj6" value="LAPSafMon1" />
         <property role="3jxsjt" value="localhost" />
-        <property role="3jxsjp" value="xttp://example" />
-        <ref role="2c$C2p" node="37L0zDpfr8Y" resolve="MyControl" />
-        <node concept="2c$C2R" id="37L0zDphILq" role="2c$Cth">
-          <ref role="2c$C2O" node="KyTPI15VUh" resolve="sensor 1" />
+        <property role="3jxsjp" value="farm://service-lap/monitor/temperature" />
+        <ref role="2c$C2p" node="1DBpVrqpOHt" resolve="TemperatureControllingSystem" />
+        <node concept="2c$C2R" id="1DBpVrqpNxD" role="2c$Cth">
+          <ref role="2c$C2O" node="1DBpVrqpOHQ" resolve="TempSensor1" />
         </node>
-        <node concept="2c$C2R" id="37L0zDpmF_7" role="2c$Cth" />
       </node>
-      <node concept="3jxssd" id="37L0zDpfr8Y" role="3jyJH3">
-        <property role="TrG5h" value="MyControl" />
+      <node concept="3jxssd" id="1DBpVrqpOHt" role="3jyJH3">
+        <property role="TrG5h" value="TemperatureControllingSystem" />
         <property role="3jxssc" value="6wjSgQV_yo5/AirConditioner" />
-        <property role="3jxssl" value="6wjSgQV_yos/Increase" />
-        <property role="3jxsj6" value="123" />
+        <property role="3jxssl" value="6wjSgQV_yoD/Alert" />
+        <property role="3jxsj6" value="LapTempCont1" />
         <property role="3jxsjt" value="localhost" />
-        <property role="3jxsjp" value="xttp://example" />
-        <node concept="2c$Cti" id="37L0zDpfr90" role="2c$Ctk" />
-      </node>
-      <node concept="rcRW2" id="37L0zDpfr8D" role="2vQWWP">
-        <property role="TrG5h" value="NyGateway" />
-        <property role="rcRW7" value="G001" />
-        <property role="rcRVT" value="Siemens" />
-        <node concept="rcRVU" id="37L0zDpfr8E" role="rcRVi">
-          <property role="TrG5h" value="Protocol01" />
-          <property role="rcRVg" value="7n7Lv_IXbGx/ZWave" />
+        <property role="3jxsjp" value="farm://service-lap/control/temperature" />
+        <node concept="2c$Cti" id="1DBpVrqpOHv" role="2c$Ctk">
+          <ref role="2c$Ctj" node="1DBpVrqpOHW" resolve="TempActuator1" />
         </node>
-        <node concept="rcRVU" id="37L0zDpfr97" role="rcRVi">
-          <property role="TrG5h" value="Protocol02" />
-          <property role="rcRVg" value="7n7Lv_IXbG7/ZigBee" />
-        </node>
-        <node concept="2c$XK2" id="37L0zDpfr8F" role="2c$C2e">
-          <ref role="2c$XK3" node="37L0zDpg_7A" resolve="PHSensor2" />
-        </node>
-        <node concept="2c$XK2" id="37L0zDpg_TA" role="2c$C2e" />
       </node>
-      <node concept="2vPoOI" id="37L0zDpg_7x" role="2vQXNg">
-        <property role="TrG5h" value="AirActuator1" />
-        <property role="2vPmW3" value="4NgPXVj1plr/NutrientController" />
-        <property role="2vPbD0" value="123456" />
-        <property role="2vPa0i" value="https://localhost:11" />
-        <property role="2vPaGV" value="Siemens" />
-        <ref role="1CVfQa" node="37L0zDpfr8E" resolve="Protocol01" />
+      <node concept="3jxsji" id="1DBpVrqpOHF" role="3jyJH3">
+        <property role="TrG5h" value="Seed" />
+        <property role="3jxsj$" value="6wjSgQV_yny/Seeding" />
+        <property role="3jxsjA" value="Data-Lap-seeding.db" />
+        <property role="3jxsjz" value="6wjSgQV_ynO/PieChart" />
+        <property role="3jxsj6" value="LapSeedAnl1" />
+        <property role="3jxsjt" value="localhost" />
+        <property role="3jxsjp" value="farm://service-lap/analytic/seed" />
       </node>
-      <node concept="2vP4MN" id="37L0zDpg_7A" role="2vQXNg">
-        <property role="TrG5h" value="PHSensor2" />
-        <property role="2vPug8" value="4NgPXVj1doG/Humidity" />
+      <node concept="2vP4MN" id="1DBpVrqpOHQ" role="2vQXNg">
+        <property role="TrG5h" value="TempSensor1" />
+        <property role="2vPug8" value="4NgPXVj1bmJ/Temperature" />
         <property role="2vPuUM" value="4NgPXVj1g6u/Active" />
         <property role="2vPuzt" value="celsius" />
-        <property role="2vPuzp" value="123" />
-        <property role="2vPbD0" value="12345" />
-        <property role="2vPa0i" value="https://localhost:11" />
-        <property role="2vPaGV" value="Siemens" />
-        <ref role="1CVfQk" node="37L0zDpfr97" resolve="Protocol02" />
+        <property role="2vPuzp" value="24.0" />
+        <property role="2vPbD0" value="TempLapSen1" />
+        <property role="2vPa0i" value="12.23.11.2" />
+        <property role="2vPaGV" value="Aquara" />
+        <ref role="1CVfQk" node="1DBpVrqpNx_" resolve="Zigbee" />
+      </node>
+      <node concept="2vPoOI" id="1DBpVrqpOHW" role="2vQXNg">
+        <property role="TrG5h" value="TempActuator1" />
+        <property role="2vPmW3" value="4NgPXVj1n7E/AirConditioner" />
+        <property role="2vPbD0" value="TempLapAct1" />
+        <property role="2vPa0i" value="12.24.13.1" />
+        <property role="2vPaGV" value="Netatmo" />
+        <ref role="1CVfQa" node="1DBpVrqpNx_" resolve="Zigbee" />
+      </node>
+      <node concept="rcRW2" id="1DBpVrqpNx$" role="2vQWWP">
+        <property role="TrG5h" value="Zigbee-Gateway" />
+        <property role="rcRW7" value="ZigbeeLapGat1" />
+        <property role="rcRVT" value="ZIG256" />
+        <node concept="rcRVU" id="1DBpVrqpNx_" role="rcRVi">
+          <property role="TrG5h" value="Zigbee" />
+          <property role="rcRVg" value="7n7Lv_IXbG7/ZigBee" />
+        </node>
+        <node concept="2c$XK2" id="1DBpVrqpNxA" role="2c$C2e">
+          <ref role="2c$XK3" node="1DBpVrqpOHW" resolve="TempActuator1" />
+        </node>
+        <node concept="2c$XK2" id="1DBpVrqpOIn" role="2c$C2e">
+          <ref role="2c$XK3" node="1DBpVrqpOHQ" resolve="TempSensor1" />
+        </node>
       </node>
     </node>
   </node>

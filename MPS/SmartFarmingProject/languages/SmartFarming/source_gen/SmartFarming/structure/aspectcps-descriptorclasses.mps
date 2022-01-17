@@ -12752,7 +12752,7 @@
                         <node concept="liA8E" id="Yd" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long)" resolve="aggregate" />
                           <node concept="Xl_RD" id="Ye" role="37wK5m">
-                            <property role="Xl_RC" value="IoTSystems" />
+                            <property role="Xl_RC" value="IoTSystem" />
                           </node>
                           <node concept="1adDum" id="Yf" role="37wK5m">
                             <property role="1adDun" value="0x75c7c5f96ef2ec9eL" />
@@ -12786,9 +12786,7 @@
                 </node>
                 <node concept="liA8E" id="Y5" role="2OqNvi">
                   <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.multiple(boolean)" resolve="multiple" />
-                  <node concept="3clFbT" id="Yl" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
+                  <node concept="3clFbT" id="Yl" role="37wK5m" />
                 </node>
               </node>
               <node concept="liA8E" id="Y3" role="2OqNvi">

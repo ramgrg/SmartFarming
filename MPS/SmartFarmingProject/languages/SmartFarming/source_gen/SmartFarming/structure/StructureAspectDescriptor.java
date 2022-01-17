@@ -209,7 +209,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("Size", 0x346b31548e5bd369L).type(MetaIdFactory.dataTypeId(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x1dc3eb8a04d26c40L)).origin("3777166951715689321").done();
     b.aggregate("Farmers", 0x346b31548e5bd37eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd36cL).optional(false).ordered(true).multiple(true).origin("3777166951715689342").done();
     b.aggregate("Crops", 0x346b31548e5bd39eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd384L).optional(false).ordered(true).multiple(true).origin("3777166951715689374").done();
-    b.aggregate("IoTSystems", 0x75c7c5f96ef2ec9eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd3a1L).optional(false).ordered(true).multiple(true).origin("8486969697901931678").done();
+    b.aggregate("IoTSystem", 0x75c7c5f96ef2ec9eL).target(0x5284d1bee3634c06L, 0xa2364161e9028c0dL, 0x346b31548e5bd3a1L).optional(false).ordered(true).multiple(false).origin("8486969697901931678").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFarmer() {
