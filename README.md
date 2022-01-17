@@ -12,12 +12,11 @@ The repository Contains four projects within:
   ### 1. Describing Domain Specific Concepts
     * MetaClasses
     * Relationships
-    * Constraints
-    * Custom Datatypes
   ### 2. MPS
     * Metamodels
     * Concrete Syntax
     * Constraints
+    * Custom Datatypes
   ### 3. EMF
     * Metamodel in EMF
     * Dynamic Instances
