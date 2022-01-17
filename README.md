@@ -5,8 +5,12 @@ The repository Contains four projects within:
 
   * MPS Platform - for defining the metamodels within IoT for Smart Farming.
   * EMF Platform -  for defining the metamodels within IoT for Smart Farming.
-  * Epsilon (ETL and EGL) - for model transformation
-  * xText and Sirius - for development of textual and graphical editors.
+  * Epsilon (ETL and EGL) - for model transformation (Coming Soon)
+  * xText and Sirius - for development of textual and graphical editors. (Coming Soon)
+
+How to use the project:
+  * MPS: MPS Project is under folder MPS -> SmartFarming. 
+  * EMF: EMF Project is under folder EMF -> SmartFarming. Register smartFarming.ecore to be able to open the instances first time. 
 
 ## Table Of Content
   ### 1. Describing Domain Specific Concepts
@@ -21,11 +25,11 @@ The repository Contains four projects within:
     * Metamodel in EMF
     * Dynamic Instances
     * Constraints, Operations and Drived fields in OCL
-  ### 4. Model Transformation in Epsilon(ETL and EGL)
+  ### 4. Model Transformation in Epsilon (Coming Soon)
     * Refactoring and Refining of Metamodels
     * Model to Model Transformation
     * Model to Text Transformation
-  ### 5. xText and Sirius
+  ### 5. xText and Sirius (Coming Soon)
     * Concrete Syntax using xText
     * Graphical Editor using Sirius
 
@@ -125,7 +129,7 @@ We have created two model instances which represent the concrete syntax of our m
 
 ## 3. EMF
 
-### Metaclass
+### Metaclasses
 In EMF, we have defined same 13 main metaclass concepts from Domain Specific Concepts in smartFarming.ecore. 
 - Farm (Root)
 - Farmer
@@ -156,7 +160,7 @@ We have created two dynamic instances in the form of XMI: Farm_Aquila.xmi and Fa
 ### Constraints, Operations, and Derived Field
 We used OCL to define the constraints for our metaclasses. There are 12 constraints, 3 derived properties and 4 operations.
 
-**Constraints (Invariant)**
+**Constraints (Invariants)**
 
 Named
 - MustHaveName -> Named and its inherited class cannot be undefined
