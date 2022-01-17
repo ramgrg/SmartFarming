@@ -4,7 +4,6 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:smartFarming="http://www.example.org/smartFarming"
-    xsi:schemaLocation="http://www.example.org/smartFarming smartFarming.ecore"
     Name="Aquila"
     Location="L'Aquila, Italy"
     Size="2.14">
@@ -45,32 +44,28 @@
         Name="BroccoliNutrientSystem"
         ServiceID="73022"
         Host="Aquila"
-        URI="jdj/3223/42d"/>
+        URI="jdj/3223/42d"
+        Sensors="//@IoTSystem/@Devices.3 //@IoTSystem/@Devices.2 //@IoTSystem/@Devices.5"/>
     <Services
         xsi:type="smartFarming:Controlling"
         Name="LettuceLightControl"
         ServiceID="335678"
         Host="Aquila"
         URI="23e4/3qsl/332"
-        ControlType="LEDController"/>
+        ControlType="LEDController"
+        Actuators="//@IoTSystem/@Devices.7"/>
     <Devices
         xsi:type="smartFarming:Actuator"
-        Name="tempActuator1"
-        DeviceID="12act356"
+        Name="TempActuator1"
+        DeviceID="1356"
         IPAddress="251.33.66.2"
         Manufacturer="Tihan"
-        Type="NutrientController"
         Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
     <Devices
-        xsi:type="smartFarming:Actuator"
-        Name="tempActuator2"
-        DeviceID="56342"
-        IPAddress="251.48.84.2"
-        Manufacturer="Tihan"
-        Protocol="//@IoTSystem/@Gateways.1/@Protocols.0"/>
-    <Devices
         xsi:type="smartFarming:Sensor"
-        Name="tempSensor1"
+        Name="TempSensor1"
+        DeviceID="1122"
+        IPAddress="133.42.11.222"
         Manufacturer="Tihan"
         Unit="celcius"
         Value="15"
@@ -78,12 +73,12 @@
     <Devices
         xsi:type="smartFarming:Sensor"
         Name="PHSensor1"
-        DeviceID="90393"
+        DeviceID="9039"
         IPAddress="252.32.93.22"
         Manufacturer="Tihan"
         Type="PH"
-        Unit="ss"
-        Value="6"
+        Unit=""
+        Value="2"
         Protocol="//@IoTSystem/@Gateways.1/@Protocols.0"/>
     <Devices
         xsi:type="smartFarming:Sensor"
@@ -91,21 +86,50 @@
         DeviceID="73792"
         IPAddress="123.34.56.22"
         Manufacturer="Tihan"
-        Unit="cc"
+        Type="EC"
+        Unit="mS/cm"
         Value="92"
         Protocol="//@IoTSystem/@Gateways.1/@Protocols.0"/>
     <Devices
         xsi:type="smartFarming:Sensor"
         Name="LightSensor1"
+        DeviceID="7766"
+        IPAddress="232.33.3.213"
         Manufacturer="Tihan"
         Type="LEDLight"
-        Unit="wl"
-        Value="556"/>
+        Unit="wavelength"
+        Value="556"
+        Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Devices
+        xsi:type="smartFarming:Sensor"
+        Name="ECSensor2"
+        DeviceID="7887"
+        IPAddress="123.222.34.11"
+        Manufacturer="Tihan"
+        Type="EC"
+        Unit="mS/cm"
+        Value="45"
+        Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Devices
+        xsi:type="smartFarming:Actuator"
+        Name="NutActuator1"
+        DeviceID="3356"
+        IPAddress="223.44.68.43"
+        Manufacturer="Tihan"
+        Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Devices
+        xsi:type="smartFarming:Actuator"
+        Name="LEDActuator1"
+        DeviceID="9986"
+        IPAddress="33.21.56.77"
+        Manufacturer="Tihan"
+        Type="LEDController"
+        Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
     <Gateways
         Name="Gateway1"
         GatewayID="351112"
         Model="3"
-        Devices="//@IoTSystem/@Devices.0 //@IoTSystem/@Devices.2">
+        Devices="//@IoTSystem/@Devices.0 //@IoTSystem/@Devices.1">
       <Protocols
           Name="Protocol1"
           Type="MQTT"/>
@@ -113,8 +137,7 @@
     <Gateways
         Name="Gateway2"
         GatewayID="8302848"
-        Model="3"
-        Devices="//@IoTSystem/@Devices.1">
+        Model="3">
       <Protocols
           Name="Protocol2"
           Type="COAP"/>

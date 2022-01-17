@@ -1,27 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="smartFarming" nsURI="http://www.example.org/smartFarming" nsPrefix="smartFarming">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Farm" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ValidSize"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ValidSize" value="Size > 0"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Location" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Size" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Crops" lowerBound="1" upperBound="-1"
-        eType="#//Crop" containment="true" resolveProxies="false"/>
+        eType="#//Crop" containment="true" resolveProxies="false" eOpposite="#//Crop/Farm"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Farmers" lowerBound="1"
-        upperBound="-1" eType="#//Farmer" containment="true"/>
+        upperBound="-1" eType="#//Farmer" containment="true" eOpposite="#//Farmer/Farm"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="IoTSystem" lowerBound="1"
         eType="#//IoTSystem" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Named" abstract="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="MustHaveName"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="MustHaveName" value="not Name.oclIsUndefined()"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Crop" eSuperTypes="#//Named">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CropGroup" ordered="false"
-        eType="#//CropGroup"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GrowthDuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="CropUniqueID"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="CropUniqueID" value="self.Farm.Crops->select(x | x.SeedCode = self.SeedCode)->size() = 1"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CropGroup" eType="#//CropGroup"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GrowthDuration" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SeedCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Farm" lowerBound="1" eType="#//Farm"
+        eOpposite="#//Farm/Crops"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CropGroup">
-    <eLiterals name="Vegitable" value="1"/>
+    <eLiterals name="Vegetable" value="1"/>
     <eLiterals name="Fruit" value="2"/>
     <eLiterals name="Flower" value="3"/>
     <eLiterals name="Tubers" value="4"/>
@@ -67,6 +95,7 @@
     <eLiterals name="Good" value="3"/>
     <eLiterals name="Warning" value="4"/>
     <eLiterals name="Danger" value="5"/>
+    <eLiterals name="Invalid"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="MonitoringMetrics">
     <eLiterals name="Nutrient" value="1"/>
@@ -84,48 +113,93 @@
     <eLiterals name="Passive" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SensorType">
-    <eLiterals name="Temprature" value="1"/>
+    <eLiterals name="Temperature" value="1"/>
     <eLiterals name="Humidity" value="2"/>
     <eLiterals name="CO2" value="3"/>
     <eLiterals name="Oxygen" value="4"/>
     <eLiterals name="PH" value="5"/>
     <eLiterals name="EC" value="6"/>
     <eLiterals name="LEDLight" value="7"/>
-    <eLiterals name="Surviellance" value="8"/>
+    <eLiterals name="Surveillance" value="8"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Farmer" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="FarmerUniqueID FarmerMustHaveID"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="FarmerUniqueID" value="self.Farm.Farmers->select(x | x.FarmerID = self.FarmerID)->size() = 1"/>
+      <details key="FarmerMustHaveID" value="not FarmerID.oclIsUndefined()"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="FarmerID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Email"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Email" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="PhoneNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Farm" lowerBound="1" eType="#//Farm"
+        eOpposite="#//Farm/Farmers"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Services" lowerBound="1"
         upperBound="-1" eType="#//Service"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IoTSystem" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Services" lowerBound="1"
-        upperBound="-1" eType="#//Service" containment="true"/>
+        upperBound="-1" eType="#//Service" containment="true" eOpposite="#//Service/IoTSystem"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Devices" lowerBound="1"
-        upperBound="-1" eType="#//Device" containment="true"/>
+        upperBound="-1" eType="#//Device" containment="true" eOpposite="#//Device/IoTSystem"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Gateways" lowerBound="1"
-        upperBound="-1" eType="#//Gateway" containment="true"/>
+        upperBound="-1" eType="#//Gateway" containment="true" eOpposite="#//Gateway/IoTSystem"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Service" abstract="true" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ServiceUniqueID ServiceMustHaveID"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ServiceUniqueID" value="self.IoTSystem.Services->select(x | x.ServiceID = self.ServiceID)->size() = 1"/>
+      <details key="ServiceMustHaveID" value="not ServiceID.oclIsUndefined()"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ServiceID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Host" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="URI" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IoTSystem" lowerBound="1"
+        eType="#//IoTSystem" eOpposite="#//IoTSystem/Services"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="PIC" ordered="false" upperBound="-1"
+        eType="#//Farmer" changeable="false" volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="Farmer.allInstances()->select(f: Farmer | f.Services->exists(service | service = self))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Device" abstract="true" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="DeviceUniqueID DeviceMustHaveID"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="DeviceUniqueID" value="self.IoTSystem.Devices->select(x | x.DeviceID = self.DeviceID)->size() = 1"/>
+      <details key="DeviceMustHaveID" value="not DeviceID.oclIsUndefined()"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="DeviceID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="IPAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Manufacturer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IoTSystem" lowerBound="1"
+        eType="#//IoTSystem" eOpposite="#//IoTSystem/Devices"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Gateway" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="GatewayUniqueID GatewayMustHaveID"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="GatewayUniqueID" value="self.IoTSystem.Gateways->select(x | x.GatewayID = self.GatewayID)->size() = 1"/>
+      <details key="GatewayMustHaveID" value="not GatewayID.oclIsUndefined()"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="GatewayID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Model" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Protocols" lowerBound="1"
         upperBound="-1" eType="#//CommunicationProtocol" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Devices" lowerBound="1"
         upperBound="-1" eType="#//Device"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IoTSystem" lowerBound="1"
+        eType="#//IoTSystem" eOpposite="#//IoTSystem/Gateways"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AnalyticsSystem" eSuperTypes="#//Service">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="AnalyticsType" eType="#//AnalyticsType"/>
@@ -133,8 +207,18 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="OutputType" eType="#//OutputType"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Monitoring" eSuperTypes="#//Service">
+    <eOperations name="calculateAverage" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="self.Sensors->select(x: Sensor | x.Type = type)->iterate(x: Sensor; average: ecore::EFloat = 0 | average + x.Value) / self.Sensors->select(x: Sensor | x.Type = type)->size()"/>
+      </eAnnotations>
+      <eParameters name="type" lowerBound="1" eType="#//SensorType"/>
+    </eOperations>
+    <eOperations name="checkCondition" lowerBound="1" eType="#//MonitoringCondition">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;if(Metrics = MonitoringMetrics::Nutrient) then&#xA;&#x9;&#x9;&#x9;&#x9;if (calculateAverage(SensorType::EC) &lt; 40.0)  then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Danger&#xA;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;if(calculateAverage(SensorType::EC) &lt; 55.0 and ((calculateAverage(SensorType::PH) >=-1 and calculateAverage(SensorType::PH) &lt; 0) or (calculateAverage(SensorType::PH) > 3 and calculateAverage(SensorType::PH) &lt;= 4))) then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Warning&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if(calculateAverage(SensorType::EC) &lt; 65.0 and ((calculateAverage(SensorType::PH) >=0 and calculateAverage(SensorType::PH) &lt; 1) or (calculateAverage(SensorType::PH) > 2 and calculateAverage(SensorType::PH) &lt;= 3))) then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Good&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if(calculateAverage(SensorType::EC) &lt; 75 and (calculateAverage(SensorType::PH) >= 1 and calculateAverage(SensorType::PH) &lt;= 2)) then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Healthy&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if(calculateAverage(SensorType::EC) >=75 and calculateAverage(SensorType::PH) = 1.5) then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Optimum&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Danger&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;if(Metrics = MonitoringMetrics::EnvironmentalSafety) then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;if (calculateAverage(SensorType::CO2) >= 5000)  then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Danger&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if(calculateAverage(SensorType::CO2) >=3000) then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Warning&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if(calculateAverage(SensorType::CO2) >=1500) then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Good&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if(calculateAverage(SensorType::CO2) >= 900) then&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Healthy&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Optimum&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;MonitoringCondition::Invalid&#xA;&#x9;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;&#x9;endif"/>
+      </eAnnotations>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Metrics" eType="#//MonitoringMetrics"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Condtion" eType="#//MonitoringCondition"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Sensors" lowerBound="1"
         upperBound="-1" eType="#//Sensor"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Control" eType="#//Controlling"/>
@@ -146,19 +230,47 @@
         upperBound="-1" eType="#//Actuator"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Actuator" eSuperTypes="#//Device">
+    <eOperations name="isUsed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value=" Controlling.allInstances()->select(x: Controlling | x.Actuators->exists(actuator | actuator = self))->size() > 0"/>
+      </eAnnotations>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="#//ActuatorType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Protocol" lowerBound="1"
         eType="#//CommunicationProtocol"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Sensor" eSuperTypes="#//Device">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="SensorMinusConstraint"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="SensorMinusConstraint" value="&#xA;&#x9;&#x9;&#x9;if(self.Type = SensorType::Temperature) then&#xA;&#x9;&#x9;&#x9;&#x9;true&#xA;&#x9;&#x9;&#x9;else &#xA;&#x9;&#x9;&#x9;&#x9;self.Value > 0&#xA;&#x9;&#x9;&#x9;endif"/>
+    </eAnnotations>
+    <eOperations name="isUsed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="Monitoring.allInstances()->select(x: Monitoring | x.Sensors->exists(sensor | sensor = self))->size() > 0"/>
+      </eAnnotations>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="#//SensorType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="State" eType="#//SensorState"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Unit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Protocol" lowerBound="1"
         eType="#//CommunicationProtocol"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CommunicationProtocol" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="#//CommunicationType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SensorNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        changeable="false" volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="Sensor.allInstances()->select(x: Sensor | x.Protocol = self)->size()"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ActuatorNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"
+        changeable="false" volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="Actuator.allInstances()->select(x: Actuator | x.Protocol = self)->size()"/>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
 </ecore:EPackage>
