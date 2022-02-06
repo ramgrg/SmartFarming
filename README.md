@@ -232,8 +232,8 @@ We have designed a graphical editor to visualize and edit our domain models usin
 	- Light-Green square -> Crops
 	
 **Edges**
-	- Gray-Arrow represents Operate relationship -> connects Farmer to Services
-	- Red-Dot-Arrow represents Monitor relationship -> connects Monitoring service with Sensors
+*Gray-Arrow represents Operate relationship -> connects Farmer to Services
+*Red-Dot-Arrow represents Monitor relationship -> connects Monitoring service with Sensors
 	- Blue-Dot-Arrow represents Control relationship -> connects Controlling service with Actuators
 	- Green-Dash-and-Dot-Arrow represents Uses relationship -> connects Devices with communication protocol
 	- Dark-Gray-Dash-Arrow represents Manage relationship -> connects Gateway with Devices
