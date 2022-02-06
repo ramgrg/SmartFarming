@@ -5,7 +5,7 @@ The repository Contains four projects within:
 
   * MPS Platform - for defining the metamodels within IoT for Smart Farming.
   * EMF Platform -  for defining the metamodels within IoT for Smart Farming.
-  * Epsilon (ETL and EGL) - for model transformation 
+  * Accelio (ATL) - for model transformation 
   * xText and Sirius - for development of textual and graphical editors. 
 
 How to use the project:
@@ -27,7 +27,7 @@ How to use the project:
     * Constraints, Operations and Drived fields in OCL
   ### 4. Model Transformation in Epsilon 
     * Refactoring and Refining of Metamodels
-    * Model to Model Transformation
+    * Model to Model Transformation using ATL
     * Model to Text Transformation
   ### 5. xText and Sirius 
     * Concrete Syntax using xText
