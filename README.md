@@ -25,11 +25,11 @@ How to use the project:
     * Metamodel in EMF
     * Dynamic Instances
     * Constraints, Operations and Drived fields in OCL
-  ### 4. Model Transformation in Epsilon (Coming Soon)
+  ### 4. Model Transformation in Epsilon 
     * Refactoring and Refining of Metamodels
     * Model to Model Transformation
     * Model to Text Transformation
-  ### 5. xText and Sirius (Coming Soon)
+  ### 5. xText and Sirius 
     * Concrete Syntax using xText
     * Graphical Editor using Sirius
 
