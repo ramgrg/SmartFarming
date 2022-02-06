@@ -223,6 +223,7 @@ We have designed a graphical editor to visualize and edit our domain models usin
 ![image](https://user-images.githubusercontent.com/56352752/152698030-7858e1b2-2f1b-44ce-84fa-c4fc2406fe6c.png)
 
 **Nodes**
+
 	- Gray Ellipse -> Farmers
 	- Light-Gray Rectangle -> IoTSystem
 	- Light-Orange Diamond -> Services
@@ -232,6 +233,7 @@ We have designed a graphical editor to visualize and edit our domain models usin
 	- Light-Green square -> Crops
 	
 **Edges**
+
 *Gray-Arrow represents Operate relationship -> connects Farmer to Services
 *Red-Dot-Arrow represents Monitor relationship -> connects Monitoring service with Sensors
 	- Blue-Dot-Arrow represents Control relationship -> connects Controlling service with Actuators
