@@ -210,3 +210,30 @@ Actuator
 Monitoring
 - calculateAverage(type: SensorType) -> calcute the average value of the Sensors that are being monitored. It will return ecore::EFloat. 
 - checkCondition() -> Show monitoring condition based on the average value from the Sensors that are being monitored. It will return Enumeration value of MonitoringCondition. It is applicable for Monitoring service which has type of Nutrients and EnvironmentalSafety. For example, the EC Sensors has average value 70 and PH sensor has average value 1.70 will return Healthy condition.
+
+## 4. Model Transformation in Epsilon
+## 5. xText and Sirius
+
+### Concrete Syntax using xText
+
+### Graphical Editor using Sirius
+
+We have designed a graphical editor to visualize and edit our domain models using Sirius. In this task we have created nodes to represent metamodel concepts and relational edges to represent the relationship among concepts and palette operators to create such nodes and edges. For this task we have considered Project Management Viewpoint which considers 7 metaclasses and the relationship among them.
+
+![image](https://user-images.githubusercontent.com/56352752/152698030-7858e1b2-2f1b-44ce-84fa-c4fc2406fe6c.png)
+
+**Nodes**
+	- Gray Ellipse -> Farmers
+	- Light-Gray Rectangle -> IoTSystem
+	- Light-Orange Diamond -> Services
+	- Light-Blue Square -> Devices
+	- Light-Yellow Ellipse -> Communication Protocol
+	- Purple Ellipse -> Gateway
+	- Light-Green square -> Crops
+	
+**Edges**
+	- Gray-Arrow represents Operate relationship -> connects Farmer to Services
+	- Red-Dot-Arrow represents Monitor relationship -> connects Monitoring service with Sensors
+	- Blue-Dot-Arrow represents Control relationship -> connects Controlling service with Actuators
+	- Green-Dash-and-Dot-Arrow represents Uses relationship -> connects Devices with communication protocol
+	- Dark-Gray-Dash-Arrow represents Manage relationship -> connects Gateway with Devices
