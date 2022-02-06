@@ -5,8 +5,8 @@ The repository Contains four projects within:
 
   * MPS Platform - for defining the metamodels within IoT for Smart Farming.
   * EMF Platform -  for defining the metamodels within IoT for Smart Farming.
-  * Epsilon (ETL and EGL) - for model transformation (Coming Soon)
-  * xText and Sirius - for development of textual and graphical editors. (Coming Soon)
+  * Epsilon (ETL and EGL) - for model transformation 
+  * xText and Sirius - for development of textual and graphical editors. 
 
 How to use the project:
   * MPS: MPS Project is under folder MPS -> SmartFarming. 
