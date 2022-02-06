@@ -220,7 +220,7 @@ Monitoring
 
 We have designed a graphical editor to visualize and edit our domain models using Sirius. In this task we have created nodes to represent metamodel concepts and relational edges to represent the relationship among concepts and palette operators to create such nodes and edges. For this task we have considered Project Management Viewpoint which considers 7 metaclasses and the relationship among them.
 
-![image](https://user-images.githubusercontent.com/56352752/152698030-7858e1b2-2f1b-44ce-84fa-c4fc2406fe6c.png)
+![Aquila Farm](https://user-images.githubusercontent.com/56352752/152701832-8a048b08-2f85-42cd-badc-fe4516064985.jpg)
 
 **Nodes**
 
