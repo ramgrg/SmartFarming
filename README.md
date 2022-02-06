@@ -229,7 +229,7 @@ We have designed a graphical editor to visualize and edit our domain models usin
 	- Light-Orange Diamond -> Services
 	- Light-Blue Square -> Devices
 	- Light-Yellow Ellipse -> Communication Protocol
-	- Purple Ellipse -> Gateway
+	- Rectangle Container inside -> Gateway
 	- Light-Green square -> Crops
 	
 **Edges**
@@ -238,4 +238,3 @@ We have designed a graphical editor to visualize and edit our domain models usin
 	- Red-Dot-Arrow represents Monitor relationship -> connects Monitoring service with Sensors
 	- Blue-Dot-Arrow represents Control relationship -> connects Controlling service with Actuators
 	- Green-Dash-and-Dot-Arrow represents Uses relationship -> connects Devices with communication protocol
-	- Dark-Gray-Dash-Arrow represents Manage relationship -> connects Gateway with Devices
