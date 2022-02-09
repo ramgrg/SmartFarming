@@ -231,13 +231,13 @@ We have designed a graphical editor to visualize and edit our domain models usin
 
 **Nodes**
 
-	- Gray Ellipse -> Farmers
-	- Light-Gray Rectangle -> IoTSystem
-	- Light-Orange Diamond -> Services
-	- Light-Blue Square -> Devices
-	- Light-Yellow Ellipse -> Communication Protocol
-	- Rectangle Container inside -> Gateway
-	- Light-Green square -> Crops
+	- the Person with hat icon represents Farmer in our system
+	- The big Light-Gray Rectangle container represents IoTSystem 
+	- The Gears Icon represent Services
+	- The Blue chip represents Devices
+	- The small gray rectanlgular container represents Gateway
+	- The connected chip icon inside the Gateway represents the communication protocols-> Gateway
+	- The crops icon represent Crops
 	
 **Edges**
 
@@ -245,3 +245,26 @@ We have designed a graphical editor to visualize and edit our domain models usin
 	- Red-Dot-Arrow represents Monitor relationship -> connects Monitoring service with Sensors
 	- Blue-Dot-Arrow represents Control relationship -> connects Controlling service with Actuators
 	- Green-Dash-and-Dot-Arrow represents Uses relationship -> connects Devices with communication protocol
+	
+**Pallete Section**
+
+	- For this section we have added six node operators and three edge operators in pallete.
+	
+	![image](https://user-images.githubusercontent.com/56352752/153256896-624010a6-2d7d-4f0b-b982-a059e40d1135.png)
+	
+**Node Operators**
+
+	- Add Farmer - to add a new Farmer to our smart farming system
+	- Add Monitoring  - to add the Monitoring Service to our IoT System
+	- Add Controlling - to add  Controlling Service to our IoT System 
+	- Add Sensor - to add more Sensors to our IoT System
+	- Add Actuator -  to add more Actuators to our IoT System
+	- Add Crop - to add the crop we want to grow in our Smart farming
+	
+**Edge Operators** 
+
+We have added edge operators to represent the relationship among the defferent Conceps of domain
+	- Add Operator relation -  to add a relationship between the service and the farmer operating it.
+	- Add Monitor relation - to add a relationship between the monitoring service and the sensors it uses for that operation.
+	- Add Control relation - to add a relationship between the controlling service and the actuators it uses for that operation.
+
