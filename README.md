@@ -215,12 +215,18 @@ Monitoring
 ## 5. xText and Sirius
 
 ### Concrete Syntax using xText
+We have created XText project using the model created in A2. There is some changes in the automatically created xtext codes as per the design we opted. From the code, we have created two farm models:Farm_Aquila.farm and Farm_Lappeenranta.farm.
+
+Following is the screenshots of the farm we have created:
+![Lappeenranta_Farm](https://user-images.githubusercontent.com/8501541/153247682-6b474cd5-109b-4325-8419-452fa34a0236.png)
+![Aquila_Farm](https://user-images.githubusercontent.com/8501541/153248131-17c0788e-e1fc-4eb2-b9ed-2833589a9d12.png)
+
 
 ### Graphical Editor using Sirius
 
 We have designed a graphical editor to visualize and edit our domain models using Sirius. In this task we have created nodes to represent metamodel concepts and relational edges to represent the relationship among concepts and palette operators to create such nodes and edges. For this task we have considered Project Management Viewpoint which considers 7 metaclasses and the relationship among them.
 
-![image](https://user-images.githubusercontent.com/56352752/153249120-8d3b9efb-dede-42e9-93d6-79d1169d2777.png)
+![Aquila Farm](https://user-images.githubusercontent.com/56352752/152701832-8a048b08-2f85-42cd-badc-fe4516064985.jpg)
 
 **Nodes**
 
