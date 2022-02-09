@@ -250,7 +250,7 @@ We have designed a graphical editor to visualize and edit our domain models usin
 
 	- For this section we have added six node operators and three edge operators in pallete.
 	
-	![image](https://user-images.githubusercontent.com/56352752/153256896-624010a6-2d7d-4f0b-b982-a059e40d1135.png)
+![image](https://user-images.githubusercontent.com/56352752/153256896-624010a6-2d7d-4f0b-b982-a059e40d1135.png)
 	
 **Node Operators**
 
@@ -264,6 +264,7 @@ We have designed a graphical editor to visualize and edit our domain models usin
 **Edge Operators** 
 
 We have added edge operators to represent the relationship among the defferent Conceps of domain
+
 	- Add Operator relation -  to add a relationship between the service and the farmer operating it.
 	- Add Monitor relation - to add a relationship between the monitoring service and the sensors it uses for that operation.
 	- Add Control relation - to add a relationship between the controlling service and the actuators it uses for that operation.
