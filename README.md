@@ -216,15 +216,15 @@ Monitoring
 ### Model Refinement (SmartFarmingV2)
 We have refined the model from A2 with following changes: 
 
-Deletion and Addition of Concepts
+**Deletion and Addition of Concepts**
 - Delete Communication Protocol Concept. Include: Remove the containment reference from Gateway, change the value of Protocol of Sensor and Actuator directly to CommunicationType enum.
 - Add Database Concept (added under IoTSystem). 
 
-Concept Renaming
+**Concept Renaming**
 - Rename Abstract Concept Service to Utility
 - Rename Analytics System to Analytics
 
-Structural Refinement
+**Structural Refinement**
 - Rename Attribute ServiceID to UtilityID (from Service to Utility concept)
 - Select First Database for Utility from newly created Databases
 - Move Devices become under Gateways (change the reference to containment) and remove Devices containment reference from IoTSystem
@@ -232,42 +232,45 @@ Structural Refinement
 - Move Protocol Attribute from Sensor and Actuator to Device
 
 The structure of new metamodel shown in figure below. The new metamodel file can be seen under Transformation Folder -> SmartFarmingV2 (smartFarmingV2.ecore)
-![Copy of Sunday Diagram (1)](https://user-images.githubusercontent.com/37994271/153265549-c413f575-2ed3-4647-84b4-02b1a9784399.jpg)
+
+![Copy of Sunday Diagram (2)](https://user-images.githubusercontent.com/37994271/153266773-2f600b88-9d38-43a7-b66d-17af4fe47071.jpg)
 
 ### Model-to-Model Transformation (SmartFarmingTransformation)
 We transformed Farm_Lapen.xmi (smartFarming.ecore) to Output.xmi (smartFarmingV2.ecore) based on above model refinement using ATL. Following configuration is used:
+
 <img width="735" alt="Screen Shot 2022-02-09 at 20 11 11" src="https://user-images.githubusercontent.com/37994271/153263478-a5e98286-2351-4547-9a40-0e97d65fa009.png">
 
-Input: Farm_Lapen.xmi
+- Input: Farm_Lapen.xmi
 <img width="432" alt="Screen Shot 2022-02-09 at 20 10 34" src="https://user-images.githubusercontent.com/37994271/153263527-ae128f07-dd20-4d85-81b0-9f6f610a452f.png">
 
-Output: Output.xmi
+- Output: Output.xmi
 <img width="395" alt="Screen Shot 2022-02-09 at 20 10 48" src="https://user-images.githubusercontent.com/37994271/153263564-4d8d0ebd-fb2e-4cd2-b735-3ddf92f783fe.png">
 
 
 ### Model-To-Text Transformation (SmartFarmingAcceleo)
 We transformed Farm_Aquila_New.xmi from SmartFarmingV2 to html text under /html folder using Acceleo. We created 7 template. Following configuration is used. 
+
 <img width="716" alt="Screen Shot 2022-02-09 at 20 15 27" src="https://user-images.githubusercontent.com/37994271/153264102-770642de-78c0-4449-9f62-fca3a51c8d05.png">
 
-Farm Template (Aquila.html)
+- Farm Template (Aquila.html)
 ![_Users_mohammadrijal_Documents_SmartFarming_Transformation%20(A3)_SmartFarmingAcceleo_html_Aquila html](https://user-images.githubusercontent.com/37994271/153264506-3e3954e9-b772-4913-9f17-ae8bf80eb8cc.png)
 
-Crop Detail Template
+- Crop Detail Template
 ![_Users_mohammadrijal_Documents_SmartFarming_Transformation%20(A3)_SmartFarmingAcceleo_html_crop_BR001 html](https://user-images.githubusercontent.com/37994271/153264710-e04c4880-e380-49eb-8b93-46e549180276.png)
 
-Farmer Detail Template
+- Farmer Detail Template
 ![_Users_mohammadrijal_Documents_SmartFarming_Transformation%20(A3)_SmartFarmingAcceleo_html_farmer_FM001 html](https://user-images.githubusercontent.com/37994271/153264839-b20d96a3-d4a3-43ac-a42d-7be8f76b1c21.png)
 
-Utility Detail Template
+- Utility Detail Template
 ![_Users_mohammadrijal_Documents_SmartFarming_Transformation%20(A3)_SmartFarmingAcceleo_html_utility_SER001 html](https://user-images.githubusercontent.com/37994271/153264957-fe8abe81-d307-4596-acf7-808dbd5ae399.png)
 
-Gateway Detail template
+- Gateway Detail template
 ![_Users_mohammadrijal_Documents_SmartFarming_Transformation%20(A3)_SmartFarmingAcceleo_html_gateway_GT001 html](https://user-images.githubusercontent.com/37994271/153265143-cbfb62d4-0db2-4018-a2cf-c81e489aab6f.png)
 
-Database Detail template
+- Database Detail template
 ![_Users_mohammadrijal_Documents_SmartFarming_Transformation%20(A3)_SmartFarmingAcceleo_html_database_001 html](https://user-images.githubusercontent.com/37994271/153265231-0d93df51-9f4a-4ae1-a6c5-f47d7fe302ab.png)
 
-Device Detail Template
+- Device Detail Template
 ![_Users_mohammadrijal_Documents_SmartFarming_Transformation%20(A3)_SmartFarmingAcceleo_html_device_S002 html](https://user-images.githubusercontent.com/37994271/153265330-b87cfca9-7dba-4018-8655-66150071de88.png)
 
 ## 5. xText and Sirius
