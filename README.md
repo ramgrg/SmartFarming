@@ -271,7 +271,7 @@ We have added edge operators to represent the relationship among the defferent C
 	
 **Additional Layer** 
 
-	- We have added two additional layers to give more clear look for the project manager, if the project manager wants to focus on the IoT system he can remove the crop and farmer layers by unchecking the checkbox. And if he wants to see the crops and the farmers responsible for the services he can activate the Farmer and crop layer by checking the boxs.
+We have added two additional layers to give more clear look for the project manager, if the project manager wants to focus on the IoT system he can remove the crop and farmer layers by unchecking the checkbox. And if he wants to see the crops and the farmers responsible for the services he can activate the Farmer and crop layer by checking the boxs.
 
 ![image](https://user-images.githubusercontent.com/56352752/153263950-f8781e89-6d8d-41d8-94a0-f9f3cf30ff3f.png)
 
