@@ -235,7 +235,7 @@ The structure of new metamodel shown in figure below. The new metamodel file can
 ![Copy of Sunday Diagram (1)](https://user-images.githubusercontent.com/37994271/153265549-c413f575-2ed3-4647-84b4-02b1a9784399.jpg)
 
 ### Model-to-Model Transformation (SmartFarmingTransformation)
-We transformed Farm_Lapen.xmi (smartFarming.ecore) to Output.xmi (smartFarmingV2.ecore) based on above model refinement using ATL. Following configuration is used: 
+We transformed Farm_Lapen.xmi (smartFarming.ecore) to Output.xmi (smartFarmingV2.ecore) based on above model refinement using ATL. Following configuration is used:
 <img width="735" alt="Screen Shot 2022-02-09 at 20 11 11" src="https://user-images.githubusercontent.com/37994271/153263478-a5e98286-2351-4547-9a40-0e97d65fa009.png">
 
 Input: Farm_Lapen.xmi
