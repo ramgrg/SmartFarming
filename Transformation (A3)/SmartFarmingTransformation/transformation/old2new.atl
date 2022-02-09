@@ -1,0 +1,181 @@
+-- @path OLD=/SmartFarmingTransformation/metamodel/smartFarming.ecore
+-- @path NEW=/SmartFarmingTransformation/metamodel/smartFarming_new.ecore
+
+module old2new;
+
+create OUT : NEW from IN : OLD;
+
+--Helper to select first database
+helper def: firstDatabase() : Set(NEW!Database) = NEW!Database.allInstances()->asSequence()->first();
+
+--Helper to check whether a databse is already created
+helper def: isDatabaseAvailable() : Boolean = NEW!Database.allInstances()->size() > 0;
+
+--Import Name
+abstract rule ImportName {
+	from
+		s:OLD!Named
+	to
+		t:NEW!Named (
+			Name <- s.Name
+		)
+}
+
+-- Rename Abstract Concept Service to Utility, Rename ServiceID to UtilityID, Select First Database for Utility from newly created Databases
+abstract rule Service2Utility extends ImportName {
+	from
+		s:OLD!Service (thisModule.isDatabaseAvailable() and not s.IoTSystem.oclIsUndefined())
+	to
+		t:NEW!Utility(
+			UtilityID <- s.ServiceID,
+			Host <- s.Host,
+			URI <- s.URI,
+			IoTSystem <- s.IoTSystem,
+			Databases <- thisModule.firstDatabase()
+		)
+}
+
+-- Import Device
+abstract rule ImportDevice extends ImportName {
+	from 
+		s:OLD!Device (not s.IoTSystem.oclIsUndefined())
+	to
+		t:NEW!Device(
+			DeviceID <- s.DeviceID,
+			Manufacturer <- s.Manufacturer,
+			IPAddress <- s.IPAddress
+		)
+}
+
+-- Import Farm
+rule ImportFarm extends ImportName {
+	from
+		s: OLD!Farm
+	to
+		t: NEW!Farm(
+			Location <- s.Location,
+			Size <- s.Size,
+			Crops <- s.Crops,
+			Farmers <- s.Farmers,
+			IoTSystem <- s.IoTSystem
+		)
+}
+
+-- Import Crop
+rule ImportOldCrop extends ImportName {
+	from
+		s: OLD!Crop (not s.Farm.oclIsUndefined())
+	to
+		t: NEW!Crop(
+			Name <- s.Name,
+			CropGroup <- s.CropGroup,
+			GrowthDuration <- s.GrowthDuration,
+			SeedCode <- s.SeedCode,
+			Farm <- s.Farm
+		)
+}
+-- Rename Attribute Services to Utilities in Farmer
+rule OldFarmer2NewFarmer extends ImportName {
+	from
+		s: OLD!Farmer (not s.Farm.oclIsUndefined())
+	to
+		t: NEW!Farmer(
+			FarmerID <- s.FarmerID,
+			Email <- s.Email,
+			PhoneNumber <- s.PhoneNumber,
+			Farm <- s.Farm,
+			Utilities <- s.Services
+		)
+}
+
+-- Add Databases Children in IoTSystem, Remove Devices Containment Reference in IoTSystem
+rule OldSystem2NewSystem extends ImportName {
+	from
+		s: OLD!IoTSystem
+	to
+		t: NEW!IoTSystem(
+			Version <- s.Version,
+			Utilities <- s.Services,
+			Gateways <- s.Gateways,
+			Databases <- Sequence{db}
+		),
+		db: NEW!Database(
+			Name <-  s.Name,
+			DatabaseID <- 'DB_' + s.Name
+		)
+}
+
+-- Delete Communication Protocol Children, Devices become Children
+rule OldGateway2NewGateway extends ImportName {
+	from
+		s: OLD!Gateway (not s.IoTSystem.oclIsUndefined())
+	to
+		t: NEW!Gateway(
+			GatewayID <- s.GatewayID,
+			Model <- s.Model,
+			IoTSystem <- s.IoTSystem,
+			Devices <- s.Devices
+		)
+}
+
+
+-- Rename AnalyticsSystem to Analytics
+rule AnalyticsSystem2Analytics extends Service2Utility {
+	from
+		s: OLD!AnalyticsSystem 
+	to
+		t: NEW!Analytics(
+			AnalyticsType <- s.AnalyticsType,
+			DataSource <- s.DataSource,
+			OutputType <- s.OutputType
+		)
+}
+
+-- Import Monitoring 
+rule ImportOldMonitoring extends Service2Utility {
+	from
+		s: OLD!Monitoring
+	to
+		t: NEW!Monitoring (
+			Metrics <- s.Metrics,
+			Sensors <- s.Sensors,
+			Control <- s.Control
+		)
+}
+
+-- Import Controlling
+rule ImportOldControlling extends Service2Utility {
+	from
+		s: OLD!Controlling
+	to
+		t: NEW!Controlling (
+			ControlType <- s.ControlType,
+			Action <- s.Action,
+			Actuators <- s.Actuators
+		)
+}
+
+-- Change Protocol Directly to Communication Protocol Type
+rule OldSensor2NewSensor extends ImportDevice {
+	from
+		s: OLD!Sensor
+	to
+		t: NEW!Sensor (
+			Type <- s.Type,
+			State <- s.State,
+			Unit <- s.Unit,
+			Value <- s.Value,
+			Protocol <- s.Protocol.Type
+		)
+}
+
+-- Change Protocol Directly to Communication Protocol Type
+rule OldActuator2NewActuator extends ImportDevice {
+	from
+		s: OLD!Actuator
+	to
+		t: NEW!Actuator (
+			Type <- s.Type,
+			Protocol <- s.Protocol.Type
+		)
+}

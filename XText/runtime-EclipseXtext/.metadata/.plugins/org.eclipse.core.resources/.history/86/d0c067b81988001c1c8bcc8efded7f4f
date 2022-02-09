@@ -1,0 +1,80 @@
+Farm Aquila{
+	Location LAquila
+	Size 20.0
+	Crops[
+		Crop Cabbage{
+			CropGroup Vegetable
+			GrowthDuration 12
+			SeedCode veg_123
+		}
+	]
+	Farmers[
+		Farmer Ram {
+			FarmerID User123
+			Email 'ram@gmail.com'
+			PhoneNumber '9841954542'
+			Services [NutritionMoniteringSystem]
+		}
+	]
+	IoTSystem [
+		IoTSystem iotSystem{
+			Version '1.0.0'
+			Gateways[
+				Gateway MQTTGateway{
+					GatewayID MQAQGate1
+					Model MQ123
+					Devices[NutSensor1,NutActuator1]
+					Protocols[
+						CommunicationProtocol ProtocolMQTT{
+							Type MQTT
+						}
+					]
+				}
+			]
+			Devices[
+				Sensor NutSensor1 {
+					DeviceID NutAQSen1
+					IPAddress '19.24.33.10'
+					Manufacturer krohne
+					Type EC
+					State Passive
+					Unit 'mS/cm'
+					Value 1.3
+					Protocol ProtocolMQTT
+				}
+				Actuator NutActuator1{
+					DeviceID NutAQAct1
+					IPAddress '19.10.25.20'
+					Type NutrientController
+					Manufacturer ElectroCraft
+				}
+			]
+			Services[
+				Monitoring NutritionMoniteringSystem{
+					ServiceID aq_moninutri1
+					Host localhost
+					Metrics Nutrient
+					URI 'farm://service/monitor/nutrient'
+					Sensors[]
+					Control NutritionControlingSystem
+				}
+				Controlling NutritionControlingSystem{
+					ServiceID an_controlnutri1
+					Host localhost
+					ControlType NutrientController
+					Action Alert
+					Actuators[]
+					URI "farm://service-aquila/control/nutrient"
+				}
+				AnalyticsSystem Harvest{
+					ServiceID aq_harvest1
+					Host localhost
+					AnalyticsType Harvesting
+					DataSource 'Data-AQ-Harvest.db'
+					OutputType BarChart
+					URI "farm://service-aquila/analytic/harvest"
+				}
+			]
+		}
+	]
+}

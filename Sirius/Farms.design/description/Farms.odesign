@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Farms" version="12.0.0.2017041100">
+  <ownedViewpoints name="Project Management">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Farms" domainClass="smartFarming::Farm" enablePopupBars="true">
+      <metamodel href="../../SmartFarming/model/smartFarming.ecore#/"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="Manages" targetMapping="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']" targetFinderExpression="[Devices/]">
+          <style lineStyle="dash" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Operates" sourceMapping="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Farmer']/@nodeMappings[name='Farmer']" targetMapping="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']" targetFinderExpression="[Services/]">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Uses" sourceMapping="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']" targetMapping="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subContainerMappings[name='Gateway']/@subNodeMappings[name='Communication']" targetFinderExpression="[Protocol/]">
+          <style lineStyle="dash_dot" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Monitors" sourceMapping="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']" targetMapping="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']" targetFinderExpression="[Sensors/]">
+          <style lineStyle="dot" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Controls" sourceMapping="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']" targetMapping="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']" targetFinderExpression="[Actuators/]">
+          <style lineStyle="dot" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="IoTSystem" domainClass="smartFarming::IoTSystem">
+          <subNodeMappings name="Service" domainClass="smartFarming::Service">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/Farms.design/description/pics/services.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Device" domainClass="smartFarming::Device">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/Farms.design/description/pics/devices.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subContainerMappings name="Gateway" semanticCandidatesExpression="feature:eAllContents" domainClass="smartFarming::Gateway">
+            <subNodeMappings name="Communication" domainClass="smartFarming::CommunicationProtocol">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/Farms.design/description/pics/communication.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="feature:Name">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" labelExpression="['System ' + Name +' '+ Version/]">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Tool">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Add Farmer" nodeMappings="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Farmer']/@nodeMappings[name='Farmer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartFarming::Farmer" referenceName="Farmers">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Add Operator Relation" edgeMappings="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Operates']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Services" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Add Crop" nodeMappings="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Crop']/@nodeMappings[name='Crop']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartFarming::Crop" referenceName="Crops">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Add Monitoring" nodeMappings="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartFarming::Monitoring" referenceName="Services">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Add Sensor" nodeMappings="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartFarming::Sensor" referenceName="Devices">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Add Monitors Relation" edgeMappings="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Monitors']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Sensors" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Add Actuator" nodeMappings="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartFarming::Actuator" referenceName="Actuators">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Add Controlling" nodeMappings="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartFarming::Controlling" referenceName="Services">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Add Control Relation" edgeMappings="//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Controls']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Actuators" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <additionalLayers name="Farmer">
+        <nodeMappings name="Farmer" domainClass="smartFarming::Farmer">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/Farms.design/description/pics/farmer.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+      </additionalLayers>
+      <additionalLayers name="Crop">
+        <nodeMappings name="Crop" domainClass="smartFarming::Crop">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/Farms.design/description/pics/crops.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="Farms.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

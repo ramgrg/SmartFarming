@@ -1,0 +1,93 @@
+Farm Farm_Aquila{
+	Location: 'LAquila'
+	Size: 20.0 sqm
+	Crops: [
+		Crop Cabbage{
+			CropGroup: Vegetable
+			GrowthDuration: 70 days
+			SeedCode: 'veg-cab-1'
+		},
+		Crop Lily{
+			CropGroup: Flower
+			GrowthDuration: 100 days
+			SeedCode: 'flow-li-1'
+		},
+		Crop Lemon{
+			CropGroup: Fruit
+			GrowthDuration: 300 days
+			SeedCode: 'fru-lem-1'
+		}
+	]
+	Farmers:[
+		Farmer Ram {
+			FarmerID: 'FAQ1'
+			Email: 'ram.gurung@gmail.com'
+			PhoneNumber: '3518214417'
+			Services: ["iotSystem.NutritionControllingSystem"]
+		},
+		Farmer Haben {
+			FarmerID: 'FAQ2'
+			Email: 'checkhaben@gmail.com'
+			PhoneNumber: '3518214317'
+			Services: ["iotSystem.NutritionControllingSystem"]
+		},
+		Farmer Mohammad {
+			FarmerID: 'FAQ3'
+			Email: 'mohammad.rijal@gmail.com'
+			PhoneNumber: '3518214418'
+			Services: ["iotSystem.NutritionControllingSystem"]
+		}
+	]
+	IoTSystem: [
+		IoTSystem iotSystem {
+			Version: '1.0.0'
+			Services: [
+				Controlling NutritionControllingSystem {
+					ServiceID: 'AQNutCon1'
+					Host: 'localhost'
+					URI: 'farm://service-aq/control/nutrient'
+					ControlType: NutrientController
+					Action: Alert
+					Actuators: [NutActuator1]
+				},
+				Monitoring NutritionMonitoringSystem{
+					ServiceID: 'AQNutMon1'
+					Host: 'localhost'
+					Metrics: Nutrient
+					Sensors: [NutSensor1]
+					Control: NutritionControllingSystem	
+				}
+			]
+			Devices: [
+				Sensor NutSensor1{
+					DeviceID: nutrisen1
+					IPAddress: '192.20.20.10'
+					Manufacturer: 'Krontn'
+					State: Active
+					Unit: 'mg'
+					Value: 10.0
+					Protocol: 'MQTTGateway.ProtocolMQTT'
+				},
+				Actuator NutActuator1{
+					DeviceID: 'nutriact1'
+					IPAddress: '192.20.21.10'
+					Manufacturer: Electrocraft
+					Type: NutrientController
+					Protocol: 'MQTTGateway.ProtocolMQTT'
+				}
+			]
+			Gateways:[
+				Gateway MQTTGateway{
+					GatewayID: 'MQAQGate1'
+					Model: 'MQ123'
+					Devices: [Sensor1,Actuator1]
+					Protocols:[
+						CommunicationProtocol ProtocolMQTT{
+							Type: MQTT
+						}
+					]
+				}
+			]
+		}
+	]
+}

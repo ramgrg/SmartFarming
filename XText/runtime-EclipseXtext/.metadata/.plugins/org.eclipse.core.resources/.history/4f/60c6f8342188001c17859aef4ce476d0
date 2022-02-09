@@ -1,0 +1,48 @@
+Farm Aquila{
+	Location LAquila
+	Size 20.0
+	Crops[
+		Crop Cabbage{
+			CropGroup Vegetable
+			GrowthDuration 12
+			SeedCode veg_123
+		}
+	]
+	Farmers[
+		Farmer Ram {
+			FarmerID User123
+			Email 'ram@gmail.com'
+			PhoneNumber '9841954542'
+			Services []
+		}
+	]
+	IoTSystem [
+		IoTSystem iotSystem{
+			Version '1.0.0'
+			Services [
+				Controlling NutritionControllingSystem{
+					ServiceID aqcontnutri1
+					Host localhost
+					URI 'farm://service-aq/control/nutrient'
+					ControlType NutrientController
+					Action Alert
+					Actuators[ ]
+				},
+				Monitoring NutritionMonitoringSystem{
+					ServiceID aqmonnutri1
+					Host localhost
+					Metrics Nutrient
+					Sensors []
+					Control 
+					
+				}
+			]
+			Devices [
+				Sensor Sensor1 {
+					DeviceID
+				}
+			
+			]
+		}
+	]
+}

@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:smartFarming="http://www.example.org/smartFarming" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_WyfsMIg1EeyY84Zt_25-7w" selectedViews="_n8O0UIg1EeyY84Zt_25-7w" version="14.6.0.202110251100">
+    <semanticResources>Farm_Aquila.xmi</semanticResources>
+    <semanticResources>smartFarming.ecore</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_n8O0UIg1EeyY84Zt_25-7w">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_KS8JUIg3EeyY84Zt_25-7w" name="Aquila Farm" repPath="#_KS4e8Ig3EeyY84Zt_25-7w" changeId="bcdf2764-941a-49df-b723-529472c2621d">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']"/>
+        <target xmi:type="smartFarming:Farm" href="Farm_Aquila.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_KS4e8Ig3EeyY84Zt_25-7w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_KTJksIg3EeyY84Zt_25-7w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_KTJksYg3EeyY84Zt_25-7w" type="Sirius" element="_KS4e8Ig3EeyY84Zt_25-7w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_KWS_UIg3EeyY84Zt_25-7w" type="2002" element="_KTXAEYg3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWS_U4g3EeyY84Zt_25-7w" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_KWS_VIg3EeyY84Zt_25-7w" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_KWUNcIg3EeyY84Zt_25-7w" type="3008" element="_KTm3sIg3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWYe4Ig3EeyY84Zt_25-7w" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_KWZF8Ig3EeyY84Zt_25-7w" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_KWelj4g3EeyY84Zt_25-7w" type="3007" element="_KTsXQYg3EeyY84Zt_25-7w">
+                  <children xmi:type="notation:Node" xmi:id="_KWfMkIg3EeyY84Zt_25-7w" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_KWfMkYg3EeyY84Zt_25-7w" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_f0qd4InCEeyYXbvkA9hfjA" type="3005" element="_fz3zsYnCEeyYXbvkA9hfjA">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_f0qd4YnCEeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f0qd4onCEeyYXbvkA9hfjA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_KWelkIg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWelkYg3EeyY84Zt_25-7w" x="23" y="50" width="45" height="40"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_KWfMkog3EeyY84Zt_25-7w" type="3007" element="_KTs-UYg3EeyY84Zt_25-7w">
+                  <children xmi:type="notation:Node" xmi:id="_KWfMlYg3EeyY84Zt_25-7w" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_KWfMlog3EeyY84Zt_25-7w" x="8" y="-11"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_f0rE8InCEeyYXbvkA9hfjA" type="3005" element="_fz5o4InCEeyYXbvkA9hfjA">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_f0rE8YnCEeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f0rE8onCEeyYXbvkA9hfjA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_KWfMk4g3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWfMlIg3EeyY84Zt_25-7w" x="95" y="50" width="41" height="41"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_KWZF8Yg3EeyY84Zt_25-7w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_KWZF8og3EeyY84Zt_25-7w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWUNcYg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWUNcog3EeyY84Zt_25-7w" x="215" y="218" width="167" height="115"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KWZtAIg3EeyY84Zt_25-7w" type="3007" element="_KTs-VIg3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWa7IIg3EeyY84Zt_25-7w" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KWa7IYg3EeyY84Zt_25-7w" x="-21" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_QsfsQIm_EeyYXbvkA9hfjA" type="3005" element="_QrJocYm_EeyYXbvkA9hfjA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_QsfsQYm_EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QsfsQom_EeyYXbvkA9hfjA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWZtAYg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWZtAog3EeyY84Zt_25-7w" x="192" y="38" width="64" height="64"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KWcJQIg3EeyY84Zt_25-7w" type="3007" element="_KTtlYYg3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWcwUIg3EeyY84Zt_25-7w" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KWcwUYg3EeyY84Zt_25-7w" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_QshhcIm_EeyYXbvkA9hfjA" type="3005" element="_QrLdoom_EeyYXbvkA9hfjA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_QshhcYm_EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qshhcom_EeyYXbvkA9hfjA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWcJQYg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWcJQog3EeyY84Zt_25-7w" x="399" y="38" width="64" height="64"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KWcwUog3EeyY84Zt_25-7w" type="3007" element="_KTtlZIg3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWcwVYg3EeyY84Zt_25-7w" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KWcwVog3EeyY84Zt_25-7w" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_QsivkIm_EeyYXbvkA9hfjA" type="3005" element="_QrLdpYm_EeyYXbvkA9hfjA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_QsivkYm_EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qsivkom_EeyYXbvkA9hfjA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWcwU4g3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWcwVIg3EeyY84Zt_25-7w" x="63" y="38" width="64" height="64"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KWcwV4g3EeyY84Zt_25-7w" type="3007" element="_KTtlZ4g3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWdXYIg3EeyY84Zt_25-7w" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KWdXYYg3EeyY84Zt_25-7w" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_QsjWoIm_EeyYXbvkA9hfjA" type="3005" element="_QrLdqIm_EeyYXbvkA9hfjA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_QsjWoYm_EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QsjWoom_EeyYXbvkA9hfjA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWcwWIg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWcwWYg3EeyY84Zt_25-7w" x="144" y="146" width="49" height="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KWdXYog3EeyY84Zt_25-7w" type="3007" element="_KTuMcIg3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWdXZYg3EeyY84Zt_25-7w" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KWdXZog3EeyY84Zt_25-7w" x="-10" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_QsjWo4m_EeyYXbvkA9hfjA" type="3005" element="_QrLdq4m_EeyYXbvkA9hfjA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_QsjWpIm_EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QsjWpYm_EeyYXbvkA9hfjA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWdXY4g3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWdXZIg3EeyY84Zt_25-7w" x="230" y="146" width="45" height="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KWd-cIg3EeyY84Zt_25-7w" type="3007" element="_KTuMc4g3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWd-c4g3EeyY84Zt_25-7w" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KWd-dIg3EeyY84Zt_25-7w" x="-11" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_QsjWpom_EeyYXbvkA9hfjA" type="3005" element="_QrMEsom_EeyYXbvkA9hfjA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_QsjWp4m_EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QsjWqIm_EeyYXbvkA9hfjA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWd-cYg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWd-cog3EeyY84Zt_25-7w" x="43" y="144" width="45" height="44"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KWelgIg3EeyY84Zt_25-7w" type="3007" element="_KTuMdog3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWelg4g3EeyY84Zt_25-7w" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KWelhIg3EeyY84Zt_25-7w" x="-23" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_QsjWqYm_EeyYXbvkA9hfjA" type="3005" element="_QrMEtYm_EeyYXbvkA9hfjA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_QsjWqom_EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QsjWq4m_EeyYXbvkA9hfjA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWelgYg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWelgog3EeyY84Zt_25-7w" x="410" y="145" width="41" height="41"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KWelhYg3EeyY84Zt_25-7w" type="3007" element="_KTuMeYg3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWeliIg3EeyY84Zt_25-7w" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KWeliYg3EeyY84Zt_25-7w" x="-16" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_QsjWrIm_EeyYXbvkA9hfjA" type="3005" element="_QrMEuIm_EeyYXbvkA9hfjA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_QsjWrYm_EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QsjWrom_EeyYXbvkA9hfjA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWelhog3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWelh4g3EeyY84Zt_25-7w" x="499" y="147" width="45" height="38"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KWeliog3EeyY84Zt_25-7w" type="3007" element="_KTuzgIg3EeyY84Zt_25-7w">
+              <children xmi:type="notation:Node" xmi:id="_KWeljYg3EeyY84Zt_25-7w" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KWeljog3EeyY84Zt_25-7w" x="-21" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_QsjWr4m_EeyYXbvkA9hfjA" type="3005" element="_QrMEu4m_EeyYXbvkA9hfjA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_QsjWsIm_EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QsjWsYm_EeyYXbvkA9hfjA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KWeli4g3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWeljIg3EeyY84Zt_25-7w" x="315" y="144" width="43" height="44"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_KWS_VYg3EeyY84Zt_25-7w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_KWS_Vog3EeyY84Zt_25-7w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_KWS_UYg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWS_Uog3EeyY84Zt_25-7w" x="64" y="120" width="583" height="351"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_my6x0Im0EeyYXbvkA9hfjA" type="2001" element="_mx6FMIm0EeyYXbvkA9hfjA">
+          <children xmi:type="notation:Node" xmi:id="_my9OEIm0EeyYXbvkA9hfjA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_my9OEYm0EeyYXbvkA9hfjA" x="-12" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_C4mJcIm9EeyYXbvkA9hfjA" type="3005" element="_C3G7sIm9EeyYXbvkA9hfjA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_C4mJcYm9EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C4mJcom9EeyYXbvkA9hfjA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_my6x0Ym0EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_my6x0om0EeyYXbvkA9hfjA" x="268" y="20" width="65" height="65"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_my-cMIm0EeyYXbvkA9hfjA" type="2001" element="_mx_kwIm0EeyYXbvkA9hfjA">
+          <children xmi:type="notation:Node" xmi:id="_my-cM4m0EeyYXbvkA9hfjA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_my-cNIm0EeyYXbvkA9hfjA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_C4pMwIm9EeyYXbvkA9hfjA" type="3005" element="_C3TI8Ym9EeyYXbvkA9hfjA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_C4pMwYm9EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C4pMwom9EeyYXbvkA9hfjA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_my-cMYm0EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_my-cMom0EeyYXbvkA9hfjA" x="456" y="20" width="69" height="65"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_my-cNYm0EeyYXbvkA9hfjA" type="2001" element="_myCBAIm0EeyYXbvkA9hfjA">
+          <children xmi:type="notation:Node" xmi:id="_my-cOIm0EeyYXbvkA9hfjA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_my-cOYm0EeyYXbvkA9hfjA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_C4pz0Im9EeyYXbvkA9hfjA" type="3005" element="_C3YogYm9EeyYXbvkA9hfjA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_C4pz0Ym9EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C4pz0om9EeyYXbvkA9hfjA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_my-cNom0EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_my-cN4m0EeyYXbvkA9hfjA" x="136" y="20" width="65" height="66"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_4PZ20Im0EeyYXbvkA9hfjA" type="2001" element="_4Ol-gIm0EeyYXbvkA9hfjA">
+          <children xmi:type="notation:Node" xmi:id="_4PbsAIm0EeyYXbvkA9hfjA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_4PbsAYm0EeyYXbvkA9hfjA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_e3-wAIm-EeyYXbvkA9hfjA" type="3005" element="_e2T8EYm-EeyYXbvkA9hfjA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_e3-wAYm-EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e3-wAom-EeyYXbvkA9hfjA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_4PZ20Ym0EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4PZ20om0EeyYXbvkA9hfjA" x="712" y="140" width="69" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_4PdhMIm0EeyYXbvkA9hfjA" type="2001" element="_4Opo4Im0EeyYXbvkA9hfjA">
+          <children xmi:type="notation:Node" xmi:id="_4PeIQIm0EeyYXbvkA9hfjA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_4PeIQYm0EeyYXbvkA9hfjA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_e3-wA4m-EeyYXbvkA9hfjA" type="3005" element="_e2UjIom-EeyYXbvkA9hfjA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_e3-wBIm-EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e3-wBYm-EeyYXbvkA9hfjA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_4PdhMYm0EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4PdhMom0EeyYXbvkA9hfjA" x="712" y="252" width="69" height="65"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_KTJksog3EeyY84Zt_25-7w"/>
+        <edges xmi:type="notation:Edge" xmi:id="_KWksKIg3EeyY84Zt_25-7w" type="4001" element="_KTzE8Ig3EeyY84Zt_25-7w" source="_KWcwV4g3EeyY84Zt_25-7w" target="_KWelj4g3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWksLIg3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWksLYg3EeyY84Zt_25-7w" x="-21" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWksLog3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWksL4g3EeyY84Zt_25-7w" x="5" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWksMIg3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWksMYg3EeyY84Zt_25-7w" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWksKYg3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWksKog3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWksK4g3EeyY84Zt_25-7w" points="[8, 7, -114, -107]$[69, 129, -53, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWksMog3EeyY84Zt_25-7w" id="(0.8396501457725948,-0.014634146341463428)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWksM4g3EeyY84Zt_25-7w" id="(1.4222222222222223,-0.3555555555555555)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_KWksNIg3EeyY84Zt_25-7w" type="4001" element="_KTzE9Yg3EeyY84Zt_25-7w" source="_KWdXYog3EeyY84Zt_25-7w" target="_KWelj4g3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWksOIg3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWksOYg3EeyY84Zt_25-7w" x="-4" y="15"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWksOog3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWksO4g3EeyY84Zt_25-7w" x="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWksPIg3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWksPYg3EeyY84Zt_25-7w" x="-3" y="-3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWksNYg3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWksNog3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWksN4g3EeyY84Zt_25-7w" points="[22, 46, -32, -68]$[13, 142, -41, 28]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWlTMIg3EeyY84Zt_25-7w" id="(0.5203252032520325,-0.014634146341463428)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWlTMYg3EeyY84Zt_25-7w" id="(1.4222222222222223,-0.3555555555555555)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_KWlTMog3EeyY84Zt_25-7w" type="4001" element="_KTzE-og3EeyY84Zt_25-7w" source="_KWd-cIg3EeyY84Zt_25-7w" target="_KWelj4g3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWlTNog3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWlTN4g3EeyY84Zt_25-7w" x="-17" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWlTOIg3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWlTOYg3EeyY84Zt_25-7w" x="-1" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWlTOog3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWlTO4g3EeyY84Zt_25-7w" x="1" y="5"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWlTM4g3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWlTNIg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWlTNYg3EeyY84Zt_25-7w" points="[9, 3, -219, -86]$[164, 108, -64, 19]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWlTPIg3EeyY84Zt_25-7w" id="(0.8,0.5909090909090909)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWlTPYg3EeyY84Zt_25-7w" id="(1.4222222222222223,-0.3555555555555555)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_KWlTPog3EeyY84Zt_25-7w" type="4001" element="_KTzsAIg3EeyY84Zt_25-7w" source="_KWelgIg3EeyY84Zt_25-7w" target="_KWfMkog3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWlTQog3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWlTQ4g3EeyY84Zt_25-7w" x="2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWlTRIg3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWlTRYg3EeyY84Zt_25-7w" x="-6" y="19"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWlTRog3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWlTR4g3EeyY84Zt_25-7w" x="-6" y="16"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWlTP4g3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWlTQIg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWlTQYg3EeyY84Zt_25-7w" points="[-21, 29, 64, -93]$[-82, 117, 3, -5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWlTSIg3EeyY84Zt_25-7w" id="(0.5710886377156454,0.3113342898134864)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWlTSYg3EeyY84Zt_25-7w" id="(0.8048780487804879,0.12195121951219512)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_KWl6QIg3EeyY84Zt_25-7w" type="4001" element="_KTzsBYg3EeyY84Zt_25-7w" source="_KWelhYg3EeyY84Zt_25-7w" target="_KWfMkog3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWl6RIg3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWl6RYg3EeyY84Zt_25-7w" x="3" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWl6Rog3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWl6R4g3EeyY84Zt_25-7w" x="-4" y="22"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWl6SIg3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWl6SYg3EeyY84Zt_25-7w" x="-2" y="15"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWl6QYg3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWl6Qog3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWl6Q4g3EeyY84Zt_25-7w" points="[-10, 7, 145, -109]$[-153, 114, 2, -2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWmhUIg3EeyY84Zt_25-7w" id="(0.24281842818428187,0.7027863777089784)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWmhUYg3EeyY84Zt_25-7w" id="(0.9512195121951219,0.4878048780487805)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_KWmhUog3EeyY84Zt_25-7w" type="4001" element="_KTzsCog3EeyY84Zt_25-7w" source="_KWeliog3EeyY84Zt_25-7w" target="_KWelj4g3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWmhVog3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWmhV4g3EeyY84Zt_25-7w" x="3" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWmhWIg3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWmhWYg3EeyY84Zt_25-7w" x="-6" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWmhWog3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWmhW4g3EeyY84Zt_25-7w" x="-3" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWmhU4g3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWmhVIg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWmhVYg3EeyY84Zt_25-7w" points="[-12, 40, 19, -72]$[-63, 132, -32, 20]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWmhXIg3EeyY84Zt_25-7w" id="(0.5445263754963131,0.07760532150776052)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWmhXYg3EeyY84Zt_25-7w" id="(1.4222222222222223,-0.3555555555555555)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_KWmhXog3EeyY84Zt_25-7w" type="4001" element="_KV_dUIg3EeyY84Zt_25-7w" source="_KWZtAIg3EeyY84Zt_25-7w" target="_KWcwV4g3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWmhYog3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWmhY4g3EeyY84Zt_25-7w" x="2" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWmhZIg3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWmhZYg3EeyY84Zt_25-7w" x="-5" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWmhZog3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWmhZ4g3EeyY84Zt_25-7w" x="-4" y="-6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWmhX4g3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWmhYIg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWmhYYg3EeyY84Zt_25-7w" points="[-13, 32, 26, -66]$[-31, 77, 8, -21]"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWmhaYg3EeyY84Zt_25-7w" id="(0.8396501457725948,0.5707317073170731)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_KWmhaog3EeyY84Zt_25-7w" type="4001" element="_KWBSgog3EeyY84Zt_25-7w" source="_KWZtAIg3EeyY84Zt_25-7w" target="_KWdXYog3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWmhbog3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWmhb4g3EeyY84Zt_25-7w" x="-14" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWmhcIg3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWmhcYg3EeyY84Zt_25-7w" x="6" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWmhcog3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWmhc4g3EeyY84Zt_25-7w" x="5" y="1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWmha4g3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWmhbIg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWmhbYg3EeyY84Zt_25-7w" points="[2, 21, -10, -66]$[8, 65, -4, -22]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWnIYIg3EeyY84Zt_25-7w" id="(0.7719298245614035,0.6792452830188679)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWnIYYg3EeyY84Zt_25-7w" id="(0.5203252032520325,0.5707317073170731)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_KWnIYog3EeyY84Zt_25-7w" type="4001" element="_KWBSh4g3EeyY84Zt_25-7w" source="_KWZtAIg3EeyY84Zt_25-7w" target="_KWd-cIg3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWnIZog3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWnIZ4g3EeyY84Zt_25-7w" x="25" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWnIaIg3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWnIaYg3EeyY84Zt_25-7w" x="6" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWnIaog3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWnIa4g3EeyY84Zt_25-7w" x="-35" y="1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWnIY4g3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWnIZIg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWnIZYg3EeyY84Zt_25-7w" points="[-8, 8, 130, -75]$[-135, 87, 3, 4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWnIbIg3EeyY84Zt_25-7w" id="(0.21052631578947367,0.39622641509433965)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWnIbYg3EeyY84Zt_25-7w" id="(0.5333333333333333,0.045454545454545456)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_KWnIbog3EeyY84Zt_25-7w" type="4001" element="_KWJOUIg3EeyY84Zt_25-7w" source="_KWcJQIg3EeyY84Zt_25-7w" target="_KWelgIg3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_KWnIcog3EeyY84Zt_25-7w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWnIc4g3EeyY84Zt_25-7w" x="-15" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWnIdIg3EeyY84Zt_25-7w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWnIdYg3EeyY84Zt_25-7w" x="-11" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_KWnIdog3EeyY84Zt_25-7w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KWnId4g3EeyY84Zt_25-7w" x="-11" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_KWnIb4g3EeyY84Zt_25-7w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KWnIcIg3EeyY84Zt_25-7w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KWnIcYg3EeyY84Zt_25-7w" points="[-1, 17, 3, -84]$[-4, 101, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZUuR4Im1EeyYXbvkA9hfjA" id="(0.6031746031746031,0.7377049180327869)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KWnIeYg3EeyY84Zt_25-7w" id="(0.5710886377156454,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mzCtoIm0EeyYXbvkA9hfjA" type="4001" element="_myQDcIm0EeyYXbvkA9hfjA" source="_my6x0Im0EeyYXbvkA9hfjA" target="_KWZtAIg3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_mzDUsIm0EeyYXbvkA9hfjA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzDUsYm0EeyYXbvkA9hfjA" x="-8" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mzDUsom0EeyYXbvkA9hfjA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzDUs4m0EeyYXbvkA9hfjA" x="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mzDUtIm0EeyYXbvkA9hfjA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzDUtYm0EeyYXbvkA9hfjA" x="2" y="-3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mzCtoYm0EeyYXbvkA9hfjA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mzCtoom0EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mzCto4m0EeyYXbvkA9hfjA" points="[0, 2, -6, -111]$[4, 81, -2, -32]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mzGYAIm0EeyYXbvkA9hfjA" id="(0.2923076923076923,0.9692307692307692)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mzG_EIm0EeyYXbvkA9hfjA" type="4001" element="_myQqgIm0EeyYXbvkA9hfjA" source="_my-cMIm0EeyYXbvkA9hfjA" target="_KWcJQIg3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_mzG_FIm0EeyYXbvkA9hfjA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzG_FYm0EeyYXbvkA9hfjA" x="-5" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mzG_Fom0EeyYXbvkA9hfjA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzG_F4m0EeyYXbvkA9hfjA" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mzG_GIm0EeyYXbvkA9hfjA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzG_GYm0EeyYXbvkA9hfjA" x="-3" y="5"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mzG_EYm0EeyYXbvkA9hfjA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mzG_Eom0EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mzG_E4m0EeyYXbvkA9hfjA" points="[-209, 64, -4, -84]$[-200, 144, 5, -4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mzKCYIm0EeyYXbvkA9hfjA" id="(3.5870836511568776,0.011456628477905129)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mzKCYYm0EeyYXbvkA9hfjA" id="(0.46875,0.0625)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mzKCYom0EeyYXbvkA9hfjA" type="4001" element="_myQqhYm0EeyYXbvkA9hfjA" source="_my-cNYm0EeyYXbvkA9hfjA" target="_KWcwUog3EeyY84Zt_25-7w">
+          <children xmi:type="notation:Node" xmi:id="_mzKCZom0EeyYXbvkA9hfjA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzKCZ4m0EeyYXbvkA9hfjA" x="-11" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mzKCaIm0EeyYXbvkA9hfjA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzKCaYm0EeyYXbvkA9hfjA" x="7" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mzKCaom0EeyYXbvkA9hfjA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mzKCa4m0EeyYXbvkA9hfjA" x="6" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mzKCY4m0EeyYXbvkA9hfjA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mzKCZIm0EeyYXbvkA9hfjA" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mzKCZYm0EeyYXbvkA9hfjA" points="[-223, 2, 4, -83]$[-219, 82, 8, -3]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mzKpcIm0EeyYXbvkA9hfjA" id="(3.914709851551957,0.9632553005019788)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mzKpcYm0EeyYXbvkA9hfjA" id="(0.4927536231884058,0.05660377358490566)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_KWJ1Yog3EeyY84Zt_25-7w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_KWJ1Y4g3EeyY84Zt_25-7w"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_KTXAEYg3EeyY84Zt_25-7w" name="System  1.0.0">
+      <target xmi:type="smartFarming:IoTSystem" href="Farm_Aquila.xmi#//@IoTSystem"/>
+      <semanticElements xmi:type="smartFarming:IoTSystem" href="Farm_Aquila.xmi#//@IoTSystem"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_KTgxEIg3EeyY84Zt_25-7w" labelSize="10" borderSize="1" borderSizeComputationExpression="1">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_KTm3sIg3EeyY84Zt_25-7w" name="Gateway1">
+        <target xmi:type="smartFarming:Gateway" href="Farm_Aquila.xmi#//@IoTSystem/@Gateways.0"/>
+        <semanticElements xmi:type="smartFarming:Gateway" href="Farm_Aquila.xmi#//@IoTSystem/@Gateways.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_KTrwMIg3EeyY84Zt_25-7w" borderSize="1" borderSizeComputationExpression="1">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subContainerMappings[name='Gateway']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subContainerMappings[name='Gateway']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTsXQYg3EeyY84Zt_25-7w" name="MQTT1" incomingEdges="_KTzE8Ig3EeyY84Zt_25-7w _KTzE9Yg3EeyY84Zt_25-7w _KTzE-og3EeyY84Zt_25-7w _KTzsCog3EeyY84Zt_25-7w" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="smartFarming:CommunicationProtocol" href="Farm_Aquila.xmi#//@IoTSystem/@Gateways.0/@Protocols.0"/>
+          <semanticElements xmi:type="smartFarming:CommunicationProtocol" href="Farm_Aquila.xmi#//@IoTSystem/@Gateways.0/@Protocols.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fz3zsYnCEeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/communication.png">
+            <labelFormat>bold</labelFormat>
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subContainerMappings[name='Gateway']/@subNodeMappings[name='Communication']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subContainerMappings[name='Gateway']/@subNodeMappings[name='Communication']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTs-UYg3EeyY84Zt_25-7w" name="CoAP1" incomingEdges="_KTzsAIg3EeyY84Zt_25-7w _KTzsBYg3EeyY84Zt_25-7w" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="smartFarming:CommunicationProtocol" href="Farm_Aquila.xmi#//@IoTSystem/@Gateways.0/@Protocols.1"/>
+          <semanticElements xmi:type="smartFarming:CommunicationProtocol" href="Farm_Aquila.xmi#//@IoTSystem/@Gateways.0/@Protocols.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fz5o4InCEeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/communication.png">
+            <labelFormat>bold</labelFormat>
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subContainerMappings[name='Gateway']/@subNodeMappings[name='Communication']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subContainerMappings[name='Gateway']/@subNodeMappings[name='Communication']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTs-VIg3EeyY84Zt_25-7w" name="Monitoring Nutrient1" outgoingEdges="_KV_dUIg3EeyY84Zt_25-7w _KWBSgog3EeyY84Zt_25-7w _KWBSh4g3EeyY84Zt_25-7w" incomingEdges="_myQDcIm0EeyYXbvkA9hfjA" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="smartFarming:Monitoring" href="Farm_Aquila.xmi#//@IoTSystem/@Services.0"/>
+        <semanticElements xmi:type="smartFarming:Monitoring" href="Farm_Aquila.xmi#//@IoTSystem/@Services.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QrJocYm_EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/services.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTtlYYg3EeyY84Zt_25-7w" name="Control Nutrient1" outgoingEdges="_KWJOUIg3EeyY84Zt_25-7w" incomingEdges="_myQqgIm0EeyYXbvkA9hfjA" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="smartFarming:Controlling" href="Farm_Aquila.xmi#//@IoTSystem/@Services.1"/>
+        <semanticElements xmi:type="smartFarming:Controlling" href="Farm_Aquila.xmi#//@IoTSystem/@Services.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QrLdoom_EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/services.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTtlZIg3EeyY84Zt_25-7w" name="Harvest Analytics" incomingEdges="_myQqhYm0EeyYXbvkA9hfjA" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="smartFarming:AnalyticsSystem" href="Farm_Aquila.xmi#//@IoTSystem/@Services.2"/>
+        <semanticElements xmi:type="smartFarming:AnalyticsSystem" href="Farm_Aquila.xmi#//@IoTSystem/@Services.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QrLdpYm_EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/services.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Service']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTtlZ4g3EeyY84Zt_25-7w" name="PHSensor1" outgoingEdges="_KTzE8Ig3EeyY84Zt_25-7w" incomingEdges="_KV_dUIg3EeyY84Zt_25-7w" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.0"/>
+        <semanticElements xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QrLdqIm_EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/devices.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTuMcIg3EeyY84Zt_25-7w" name="ECSensor1" outgoingEdges="_KTzE9Yg3EeyY84Zt_25-7w" incomingEdges="_KWBSgog3EeyY84Zt_25-7w" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.1"/>
+        <semanticElements xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QrLdq4m_EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/devices.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTuMc4g3EeyY84Zt_25-7w" name="EC Sensor2" outgoingEdges="_KTzE-og3EeyY84Zt_25-7w" incomingEdges="_KWBSh4g3EeyY84Zt_25-7w" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.2"/>
+        <semanticElements xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QrMEsom_EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/devices.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTuMdog3EeyY84Zt_25-7w" name="NutrientActuator1" outgoingEdges="_KTzsAIg3EeyY84Zt_25-7w" incomingEdges="_KWJOUIg3EeyY84Zt_25-7w" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="smartFarming:Actuator" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.3"/>
+        <semanticElements xmi:type="smartFarming:Actuator" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.3"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QrMEtYm_EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/devices.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTuMeYg3EeyY84Zt_25-7w" name="Temp Sensor1" outgoingEdges="_KTzsBYg3EeyY84Zt_25-7w" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.4"/>
+        <semanticElements xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.4"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QrMEuIm_EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/devices.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_KTuzgIg3EeyY84Zt_25-7w" name="Temp Actuator1" outgoingEdges="_KTzsCog3EeyY84Zt_25-7w" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="smartFarming:Actuator" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.5"/>
+        <semanticElements xmi:type="smartFarming:Actuator" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.5"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_QrMEu4m_EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/devices.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@containerMappings[name='IoTSystem']/@subNodeMappings[name='Device']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KTzE8Ig3EeyY84Zt_25-7w" sourceNode="_KTtlZ4g3EeyY84Zt_25-7w" targetNode="_KTsXQYg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KTzE8Yg3EeyY84Zt_25-7w" lineStyle="dash_dot" size="2" strokeColor="77,137,20">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KTzE8og3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KTzE9Yg3EeyY84Zt_25-7w" sourceNode="_KTuMcIg3EeyY84Zt_25-7w" targetNode="_KTsXQYg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KTzE9og3EeyY84Zt_25-7w" lineStyle="dash_dot" size="2" strokeColor="77,137,20">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KTzE94g3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KTzE-og3EeyY84Zt_25-7w" sourceNode="_KTuMc4g3EeyY84Zt_25-7w" targetNode="_KTsXQYg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KTzE-4g3EeyY84Zt_25-7w" lineStyle="dash_dot" size="2" strokeColor="77,137,20">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KTzE_Ig3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KTzsAIg3EeyY84Zt_25-7w" sourceNode="_KTuMdog3EeyY84Zt_25-7w" targetNode="_KTs-UYg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Actuator" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KTzsAYg3EeyY84Zt_25-7w" lineStyle="dash_dot" size="2" strokeColor="77,137,20">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KTzsAog3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KTzsBYg3EeyY84Zt_25-7w" sourceNode="_KTuMeYg3EeyY84Zt_25-7w" targetNode="_KTs-UYg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Sensor" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KTzsBog3EeyY84Zt_25-7w" lineStyle="dash_dot" size="2" strokeColor="77,137,20">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KTzsB4g3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KTzsCog3EeyY84Zt_25-7w" sourceNode="_KTuzgIg3EeyY84Zt_25-7w" targetNode="_KTsXQYg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Actuator" href="Farm_Aquila.xmi#//@IoTSystem/@Devices.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KTzsC4g3EeyY84Zt_25-7w" lineStyle="dash_dot" size="2" strokeColor="77,137,20">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KTzsDIg3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Uses']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KV_dUIg3EeyY84Zt_25-7w" sourceNode="_KTs-VIg3EeyY84Zt_25-7w" targetNode="_KTtlZ4g3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Monitoring" href="Farm_Aquila.xmi#//@IoTSystem/@Services.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KWArcIg3EeyY84Zt_25-7w" lineStyle="dot" size="2" strokeColor="239,41,41">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Monitors']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KWArcYg3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Monitors']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KWBSgog3EeyY84Zt_25-7w" sourceNode="_KTs-VIg3EeyY84Zt_25-7w" targetNode="_KTuMcIg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Monitoring" href="Farm_Aquila.xmi#//@IoTSystem/@Services.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KWBSg4g3EeyY84Zt_25-7w" lineStyle="dot" size="2" strokeColor="239,41,41">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Monitors']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KWBShIg3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Monitors']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KWBSh4g3EeyY84Zt_25-7w" sourceNode="_KTs-VIg3EeyY84Zt_25-7w" targetNode="_KTuMc4g3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Monitoring" href="Farm_Aquila.xmi#//@IoTSystem/@Services.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KWBSiIg3EeyY84Zt_25-7w" lineStyle="dot" size="2" strokeColor="239,41,41">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Monitors']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KWBSiYg3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Monitors']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_KWJOUIg3EeyY84Zt_25-7w" sourceNode="_KTtlYYg3EeyY84Zt_25-7w" targetNode="_KTuMdog3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Controlling" href="Farm_Aquila.xmi#//@IoTSystem/@Services.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_KWJOUYg3EeyY84Zt_25-7w" lineStyle="dot" size="2" strokeColor="39,76,114">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Controls']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_KWJOUog3EeyY84Zt_25-7w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Controls']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_mx6FMIm0EeyYXbvkA9hfjA" name="Mohammad Rijal" outgoingEdges="_myQDcIm0EeyYXbvkA9hfjA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smartFarming:Farmer" href="Farm_Aquila.xmi#//@Farmers.0"/>
+      <semanticElements xmi:type="smartFarming:Farmer" href="Farm_Aquila.xmi#//@Farmers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_C3G7sIm9EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/farmer.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Farmer']/@nodeMappings[name='Farmer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Farmer']/@nodeMappings[name='Farmer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_mx_kwIm0EeyYXbvkA9hfjA" name="Haben Birhane" outgoingEdges="_myQqgIm0EeyYXbvkA9hfjA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smartFarming:Farmer" href="Farm_Aquila.xmi#//@Farmers.1"/>
+      <semanticElements xmi:type="smartFarming:Farmer" href="Farm_Aquila.xmi#//@Farmers.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_C3TI8Ym9EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/farmer.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Farmer']/@nodeMappings[name='Farmer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Farmer']/@nodeMappings[name='Farmer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_myCBAIm0EeyYXbvkA9hfjA" name="Ram Prasad Gurung" outgoingEdges="_myQqhYm0EeyYXbvkA9hfjA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smartFarming:Farmer" href="Farm_Aquila.xmi#//@Farmers.2"/>
+      <semanticElements xmi:type="smartFarming:Farmer" href="Farm_Aquila.xmi#//@Farmers.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_C3YogYm9EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/farmer.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Farmer']/@nodeMappings[name='Farmer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Farmer']/@nodeMappings[name='Farmer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_myQDcIm0EeyYXbvkA9hfjA" sourceNode="_mx6FMIm0EeyYXbvkA9hfjA" targetNode="_KTs-VIg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Farmer" href="Farm_Aquila.xmi#//@Farmers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_myQDcYm0EeyYXbvkA9hfjA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Operates']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_myQDcom0EeyYXbvkA9hfjA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Operates']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_myQqgIm0EeyYXbvkA9hfjA" sourceNode="_mx_kwIm0EeyYXbvkA9hfjA" targetNode="_KTtlYYg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Farmer" href="Farm_Aquila.xmi#//@Farmers.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_myQqgYm0EeyYXbvkA9hfjA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Operates']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_myQqgom0EeyYXbvkA9hfjA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Operates']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_myQqhYm0EeyYXbvkA9hfjA" sourceNode="_myCBAIm0EeyYXbvkA9hfjA" targetNode="_KTtlZIg3EeyY84Zt_25-7w">
+      <target xmi:type="smartFarming:Farmer" href="Farm_Aquila.xmi#//@Farmers.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_myQqhom0EeyYXbvkA9hfjA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Operates']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_myQqh4m0EeyYXbvkA9hfjA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer/@edgeMappings[name='Operates']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_4Ol-gIm0EeyYXbvkA9hfjA" name="Broccoli" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smartFarming:Crop" href="Farm_Aquila.xmi#//@Crops.0"/>
+      <semanticElements xmi:type="smartFarming:Crop" href="Farm_Aquila.xmi#//@Crops.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_e2T8EYm-EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/crops.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Crop']/@nodeMappings[name='Crop']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Crop']/@nodeMappings[name='Crop']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_4Opo4Im0EeyYXbvkA9hfjA" name="Strawberry" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smartFarming:Crop" href="Farm_Aquila.xmi#//@Crops.1"/>
+      <semanticElements xmi:type="smartFarming:Crop" href="Farm_Aquila.xmi#//@Crops.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_e2UjIom-EeyYXbvkA9hfjA" showIcon="false" workspacePath="/Farms.design/description/pics/crops.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Crop']/@nodeMappings[name='Crop']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Crop']/@nodeMappings[name='Crop']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_KS5GAIg3EeyY84Zt_25-7w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Farmer']"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/Farms.design/description/Farms.odesign#//@ownedViewpoints[name='Project%20Management']/@ownedRepresentations[name='Farms']/@additionalLayers[name='Crop']"/>
+    <target xmi:type="smartFarming:Farm" href="Farm_Aquila.xmi#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
