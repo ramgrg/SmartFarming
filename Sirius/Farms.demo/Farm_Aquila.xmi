@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartFarming:Farm xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smartFarming="http://www.example.org/smartFarming" xsi:schemaLocation="http://www.example.org/smartFarming smartFarming.ecore" Name="Aquila" Location="L'Aquila" Size="100000.0">
+  <Crops Name="Broccoli" GrowthDuration="180" SeedCode="BR001"/>
+  <Crops Name="Strawberry" GrowthDuration="120" SeedCode="STR001"/>
+  <Farmers Name="Mohammad Rijal" FarmerID="FM001" Email="mohammad.rijal13@gmail.com" PhoneNumber="0444512452" Services="//@IoTSystem/@Services.0"/>
+  <Farmers Name="Haben Birhane" FarmerID="FM002" Email="checkhaben@gmail.com" PhoneNumber="0214512463" Services="//@IoTSystem/@Services.1"/>
+  <Farmers Name="Ram Prasad Gurung" FarmerID="FM0003" Email="ram.gurung1990@gmail.com" PhoneNumber="0814512452" Services="//@IoTSystem/@Services.2"/>
+  <IoTSystem Version="1.0.0">
+    <Services xsi:type="smartFarming:Monitoring" Name="Monitoring Nutrient1" ServiceID="SER001" Host="localhost" URI="ser://monitoring/nutrient/1" Sensors="//@IoTSystem/@Devices.0 //@IoTSystem/@Devices.1 //@IoTSystem/@Devices.2" Control="//@IoTSystem/@Services.1"/>
+    <Services xsi:type="smartFarming:Controlling" Name="Control Nutrient1" ServiceID="SER002" Host="localhost" URI="ser://control/nutrient/1" ControlType="NutrientController" Actuators="//@IoTSystem/@Devices.3"/>
+    <Services xsi:type="smartFarming:AnalyticsSystem" Name="Harvest Analytics" ServiceID="SER0003" Host="localhost" URI="ser://analytics/harvesting/1" DataSource="excel.xlsx"/>
+    <Devices xsi:type="smartFarming:Sensor" Name="PHSensor1" DeviceID="S001" IPAddress="123.123.42.123" Manufacturer="Siemens" Type="PH" Value="2.0" Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Devices xsi:type="smartFarming:Sensor" Name="ECSensor1" DeviceID="S002" IPAddress="123.214.12.234" Manufacturer="Siemens" Type="EC" Unit="mS/cm" Value="62.0" Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Devices xsi:type="smartFarming:Sensor" Name="EC Sensor2" DeviceID="S003" IPAddress="123.41.123.12" Manufacturer="Siemens" Type="EC" Unit="mS/cm" Value="82.0" Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Devices xsi:type="smartFarming:Actuator" Name="NutrientActuator1" DeviceID="A001" IPAddress="123.214.24.123" Manufacturer="Siemens" Type="NutrientController" Protocol="//@IoTSystem/@Gateways.0/@Protocols.1"/>
+    <Devices xsi:type="smartFarming:Sensor" Name="Temp Sensor1" DeviceID="S004" IPAddress="123.123.12.123" Manufacturer="Siemens" Unit="Celsius" Protocol="//@IoTSystem/@Gateways.0/@Protocols.1"/>
+    <Devices xsi:type="smartFarming:Actuator" Name="Temp Actuator1" DeviceID="A002" IPAddress="123.123.23.123" Manufacturer="Siemens" Protocol="//@IoTSystem/@Gateways.0/@Protocols.0"/>
+    <Gateways Name="Gateway1" GatewayID="GT001" Model="Siemens" Devices="//@IoTSystem/@Devices.0 //@IoTSystem/@Devices.1 //@IoTSystem/@Devices.2 //@IoTSystem/@Devices.3 //@IoTSystem/@Devices.4 //@IoTSystem/@Devices.5">
+      <Protocols Name="MQTT1" Type="MQTT"/>
+      <Protocols Name="CoAP1"/>
+    </Gateways>
+  </IoTSystem>
+</smartFarming:Farm>

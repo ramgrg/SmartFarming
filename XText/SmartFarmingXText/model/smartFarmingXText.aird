@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_Ldod0IgWEeyEDaKq1Ti8wg" selectedViews="_LfMkEIgWEeyEDaKq1Ti8wg _Lqcx0IgWEeyEDaKq1Ti8wg" version="14.6.0.202110251100">
+    <semanticResources>smartFarmingXText.ecore</semanticResources>
+    <semanticResources>smartFarmingXText.genmodel</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_LfMkEIgWEeyEDaKq1Ti8wg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.sirius.sample.ecore.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_LjSZ4IgWEeyEDaKq1Ti8wg" name="smartFarmingXText package entities" repPath="#_LjGzsIgWEeyEDaKq1Ti8wg" changeId="e39ce2fd-3ffd-401a-ae23-d3fc42152baa">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.sirius.sample.ecore.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+        <target xmi:type="ecore:EPackage" href="smartFarmingXText.ecore#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_Lqcx0IgWEeyEDaKq1Ti8wg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_LsIM0IgWEeyEDaKq1Ti8wg" name="smartFarmingXText" repPath="#_Lr7YgIgWEeyEDaKq1Ti8wg" changeId="6415dd2e-3e18-4cfa-b3e2-a853ddec3c42">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+        <target xmi:type="ecore:EPackage" href="smartFarmingXText.ecore#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_LjGzsIgWEeyEDaKq1Ti8wg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_LjenIIgWEeyEDaKq1Ti8wg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_LjfOMIgWEeyEDaKq1Ti8wg" type="Sirius" element="_LjGzsIgWEeyEDaKq1Ti8wg" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_LjfOMYgWEeyEDaKq1Ti8wg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_LnwqMIgWEeyEDaKq1Ti8wg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_LnyfYIgWEeyEDaKq1Ti8wg"/>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.sirius.sample.ecore.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_LjHawIgWEeyEDaKq1Ti8wg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.sirius.sample.ecore.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.sirius.sample.ecore.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
+    <target xmi:type="ecore:EPackage" href="smartFarmingXText.ecore#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_Lr7YgIgWEeyEDaKq1Ti8wg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_LsNFUIgWEeyEDaKq1Ti8wg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_LsNFUYgWEeyEDaKq1Ti8wg" type="Sirius" element="_Lr7YgIgWEeyEDaKq1Ti8wg" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_LsNFUogWEeyEDaKq1Ti8wg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_LtCy0IgWEeyEDaKq1Ti8wg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_LtDZ4IgWEeyEDaKq1Ti8wg"/>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_LsDUUIgWEeyEDaKq1Ti8wg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
+    <target xmi:type="ecore:EPackage" href="smartFarmingXText.ecore#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

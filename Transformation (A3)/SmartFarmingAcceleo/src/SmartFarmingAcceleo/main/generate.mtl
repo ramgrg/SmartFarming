@@ -1,0 +1,463 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.example.org/smartFarmingV2')]
+
+
+[template public farmDetail(myFarm : Farm)]
+[comment @main/]
+[file (myFarm.Name + '.html', false, 'UTF-8')]
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>[myFarm.Name/]</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+    <body>
+        <main class="container">
+            <header>
+                <hgroup>
+                    <h1>Farm [myFarm.Name/]</h1>
+                    <h2>[myFarm.Location/] | [myFarm.Size/] square meter</h2>
+                </hgroup>
+            </header>
+            <article>
+                <h2>Detail</h2>
+                <details open>
+                    <summary>Crops</summary>
+                    <figure>
+                        <table role="grid">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Seed Code</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+								[for (crop : Crop | myFarm.Crops)]
+                                <tr>
+                                    <th scope="row">[crop.SeedCode/]</th>
+                                    <td>[crop.Name/]</td>
+                                    <td><a href="crop/[crop.SeedCode/].html">Detail</a></td>
+                                </tr>
+								[/for]
+                            </tbody>
+                        </table>
+                    </figure>
+                </details>
+                <details open>
+                    <summary>Farmers</summary>
+                    <figure>
+                        <table role="grid">
+                            <thead>
+                                <tr>
+                                <th scope="col">Farmer ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+								[for (farmer : Farmer | myFarm.Farmers)]
+                                <tr>
+                                    <th scope="row">[farmer.FarmerID/]</th>
+                                    <td>[farmer.Name/]</td>
+                                    <td><a href="farmer/[farmer.FarmerID/].html">Detail</a></td>
+                                </tr>
+								[/for]
+                            </tbody>
+                        </table>
+                    </figure>
+                </details>
+                <details open>
+                    <summary>IoTSystem Titan</summary>
+                    <p>Ver. 1</p>
+                    <details open>
+                        <summary>Utilities</summary>
+                        <figure>
+                            <table role="grid">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Utility ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+								[for (utility : Utility | myFarm.IoTSystem.Utilities)]
+	                                <tr>
+	                                    <th scope="row">[utility.UtilityID/]</th>
+	                                    <td>[utility.Name/]</td>
+										[if(utility.oclIsKindOf(Monitoring))]
+											<td>Monitoring</td>
+										[elseif(utility.oclIsKindOf(Controlling))]
+											<td>Controlling</td>
+										[elseif(utility.oclIsKindOf(Analytics))]
+											<td>Analytics</td>
+										[else]
+											<td>Undefined</td>
+										[/if]
+	                                    <td><a href="utility/[utility.UtilityID/].html">Detail</a></td>
+	                                </tr>
+								[/for]
+                                </tbody>
+                            </table>
+                        </figure>
+                    </details>
+                    <details open>
+                        <summary>Gateways</summary>
+                        <figure>
+                            <table role="grid">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Gateway ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+  								[for (gateway : Gateway | myFarm.IoTSystem.Gateways)]
+	                                <tr>
+	                                    <th scope="row">[gateway.GatewayID/]</th>
+	                                    <td>[gateway.Name/]</td>
+	                                    <td><a href="gateway/[gateway.GatewayID/].html">Detail</a></td>
+	                                </tr>
+								[/for]
+                                </tbody>
+                            </table>
+                        </figure>
+                    </details>
+                    <details open>
+                        <summary>Databases</summary>
+                        <figure>
+                            <table role="grid">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Database ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+  								[for (database : Database | myFarm.IoTSystem.Databases)]
+	                                <tr>
+	                                    <th scope="row">[database.DatabaseID/]</th>
+	                                    <td>[database.Name/]</td>
+	                                    <td><a href="database/[database.DatabaseID/].html">Detail</a></td>
+	                                </tr>
+								[/for]
+                                </tbody>
+                            </table>
+                        </figure>
+                    </details>
+                </details>
+            </article>
+        </main>
+    </body>
+</html>
+[/file]
+[for (crop : Crop | myFarm.Crops)]
+	[crop.cropDetail()/]
+[/for]
+[for (farmer : Farmer | myFarm.Farmers)]
+	[farmer.farmerDetail()/]
+[/for]
+[for (gateway : Gateway | myFarm.IoTSystem.Gateways)]
+	[gateway.gatewayDetail()/]
+[/for]
+[for (database : Database | myFarm.IoTSystem.Databases)]
+	[database.databaseDetail()/]
+[/for]
+[for (utility : Utility | myFarm.IoTSystem.Utilities)]
+	[utility.utilityDetail()/]
+[/for]
+[/template]
+
+
+[template public cropDetail(myCrop : Crop)]
+[file ('crop/' + myCrop.SeedCode + '.html', false, 'UTF-8')]
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>[myCrop.Name/]</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+        <main class="container">
+            <header>
+                <hgroup>
+                    <h1>[myCrop.Name/]</h1>
+                    <h2>Crop of [myCrop.Farm.Name/] Farm</h2>
+                </hgroup>
+            </header>
+			<article>
+				<h2>Detail</h2>
+                <ul>
+                    <li>Seed Code: [myCrop.SeedCode/]</li>
+                    <li>GrowthDuration: [myCrop.GrowthDuration/] days</li>
+                    <li>Crop Group: [myCrop.CropGroup/]</li>                
+                </ul>
+			</article>
+		</main>
+	</body>
+</html>
+[/file]
+[/template]
+
+[template public farmerDetail(myFarmer : Farmer)]
+[file ('farmer/' + myFarmer.FarmerID + '.html', false, 'UTF-8')]
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>[myFarmer.Name/]</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+        <main class="container">
+            <header>
+                <hgroup>
+                    <h1>[myFarmer.Name/]</h1>
+                    <h2>Farmer of [myFarmer.Farm.Name/] Farm</h2>
+                </hgroup>
+            </header>
+			<article>
+				<h2>Detail</h2>
+                <ul>
+                    <li>Farmer ID: [myFarmer.FarmerID/]</li>
+                    <li>Email: [myFarmer.Email/]</li>
+                    <li>Phone Number: [myFarmer.PhoneNumber/]</li>
+					<li>Manage Utilities:
+					[for (utility : Utility | myFarmer.Utilities) separator (', ')]
+						<a href="../utility/[utility.UtilityID/].html">[utility.Name/]<span/>
+					[/for]
+					</li>
+                </ul>
+			</article>
+		</main>
+	</body>
+</html>
+[/file]
+[/template]
+
+[template public gatewayDetail(myGateway : Gateway)]
+[file ('gateway/' + myGateway.GatewayID + '.html', false, 'UTF-8')]
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>[myGateway.Name/]</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+        <main class="container">
+            <header>
+                <hgroup>
+                    <h1>[myGateway.Name/]</h1>
+                    <h2>Gateway of [myGateway.IoTSystem.Name/] System</h2>
+                </hgroup>
+            </header>
+			<article>
+				<h2>Detail</h2>
+                <ul>
+                    <li>Gateway ID: [myGateway.GatewayID/]</li>
+                    <li>Model: [myGateway.Model/]</li>
+                </ul>
+                <details open>
+                    <summary>Devices</summary>
+                    <figure>
+                        <table role="grid">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Device ID</th>
+                                    <th scope="col">Name</th>
+									<th scope="col">Type</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              [for (device : Device | myGateway.Devices)]
+                                <tr>
+                                    <th scope="row">[device.DeviceID/]</th>
+                                    <td>[device.Name/]</td>
+									[if(device.oclIsKindOf(Sensor))]
+											<td>Sensor</td>
+									[elseif(device.oclIsKindOf(Actuator))]
+											<td>Actuator</td>
+									[/if]
+                                    <td><a href="../device/[device.DeviceID/].html">Detail</a></td>
+                                </tr>
+                            [/for]
+                            </tbody>
+                        </table>
+                    </figure>
+                </details>
+			</article>
+		</main>
+	</body>
+</html>
+[/file]
+
+[for (device : Device | myGateway.Devices)]
+	[device.deviceDetail()/]
+[/for]
+[/template]
+
+[template public databaseDetail(myDatabase : Database)]
+[file ('database/' + myDatabase.DatabaseID + '.html', false, 'UTF-8')]
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>[myDatabase.Name/]</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+        <main class="container">
+            <header>
+                <hgroup>
+                    <h1>[myDatabase.Name/]</h1>
+                    <h2>Database of [myDatabase.IoTSystem.Name/] System</h2>
+                </hgroup>
+            </header>
+			<article>
+				<h2>Detail</h2>
+                <ul>
+                    <li>Database ID: [myDatabase.DatabaseID/]</li>
+                    <li>Database Type: [myDatabase.DatabaseType/]</li>
+                    <li>Size: [myDatabase.Size/]</li>
+				</ul>
+			</article>
+		</main>
+	</body>
+</html>
+[/file]
+[/template]
+
+[template public utilityDetail(myUtility : Utility)]
+[file ('utility/' + myUtility.UtilityID + '.html', false, 'UTF-8')]
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>[myUtility.Name/]</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+        <main class="container">
+            <header>
+                <hgroup>
+                    <h1>[myUtility.Name/]</h1>
+					<h2>
+					[if(myUtility.oclIsKindOf(Monitoring))]
+						Monitoring
+					[elseif(myUtility.oclIsKindOf(Controlling))]
+						Controlling
+					[elseif(myUtility.oclIsKindOf(Analytics))]
+						Analytics
+					[else]
+						Undefined
+					[/if]
+                     of [myUtility.IoTSystem.Name/] System</h2>
+                </hgroup>
+            </header>
+			<article>
+				<h2>Detail</h2>
+                <ul>
+                    <li>Utility ID: [myUtility.UtilityID/]</li>
+                    <li>Host: [myUtility.Host/]</li>
+                    <li>URI: [myUtility.URI/]</li>
+					<li>PIC:
+					[for (farmer : Farmer | myUtility.PIC) separator(', ')]
+						<a href="../farmer/[farmer.FarmerID/].html">[farmer.Name/]</a>
+					[/for]
+					</li>
+					<li>Use Databases:
+					[for (database : Database | myUtility.Databases) separator(', ')]
+						<a href="../database/[database.DatabaseID/].html">[database.Name/]</a>
+					[/for]
+					</li>
+					[let myMonitoring : Monitoring = myUtility]
+	                	<li>Metrics: [myMonitoring.Metrics/]</li>
+	                	<li>Control: [myMonitoring.Control.Name/]</li>
+						<li>Use Sensors:
+						[for (sensor : Sensor | myMonitoring.Sensors) separator(', ')]
+							<a href="../device/[sensor.DeviceID/].html">[sensor.Name/]</a>
+						[/for]
+						</li>
+'					[elselet myControlling : Controlling = myUtility]
+                   	 	<li>Control Type: [myControlling.ControlType/]</li>
+                    	<li>Action: [myControlling.Action/]</li>
+						<li>Use Actuators:
+						[for (actuator : Actuator | myControlling.Actuators) separator(', ')]
+							<a href="../device/[actuator.DeviceID/].html">[actuator.Name/]</a>
+						[/for]
+						</li>
+'					[elselet myAnalytics : Analytics = myUtility]
+						<li>Analytics Type: [myAnalytics.AnalyticsType/]</li>
+                    	<li>Data Source: [myAnalytics.DataSource/]</li>
+                    	<li>Output Type: [myAnalytics.OutputType/]</li>			
+					[/let]
+                </ul>
+			</article>
+		</main>
+	</body>
+</html>
+[/file]
+[/template]
+
+[template public deviceDetail(myDevice : Device)]
+[file ('device/' + myDevice.DeviceID + '.html', false, 'UTF-8')]
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>[myDevice.Name/]</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+ 		<main class="container">
+            <header>
+                <hgroup>
+                    <h1>[myDevice.Name/]</h1>
+					<h2>
+					[if(myDevice.oclIsKindOf(Sensor))]
+						Sensor
+					[elseif(myDevice.oclIsKindOf(Actuator))]
+						Actuator
+					[else]
+						Undefined
+					[/if]
+                     Device</h2>
+                </hgroup>
+            </header>
+			<article>
+				<h2>Detail</h2>
+                <ul>
+                    <li>Device ID: [myDevice.DeviceID/]</li>
+                    <li>IP Address: [myDevice.IPAddress/]</li>
+                    <li>Manufacturer: [myDevice.Manufacturer/]</li>
+					<li>Protocol: [myDevice.CommunicationProtocol/]</li>
+					[let mySensor : Sensor = myDevice]
+						<li>Type: [mySensor.Type/]</li>
+						<li>State: [mySensor.State/]</li>
+						<li>Unit: [mySensor.Unit/]</li>
+						<li>Value: [mySensor.Value/]</li>
+					[elselet myActuator : Actuator = myDevice]
+						<li>Type: [myActuator.Type/]</li>						
+					[/let]
+                </ul>
+			</article>
+		</main>
+	</body>
+</html>
+[/file]
+[/template]

@@ -1,0 +1,102 @@
+Farm Farm_Aquila{
+	Location: 'LAquila'
+	Size: 20.0 sqm
+	Crops: [
+		Crop Cabbage{
+			CropGroup: Vegetable
+			GrowthDuration: 70 days
+			SeedCode: 'veg-cab-1'
+		},
+		Crop Lily{
+			CropGroup: Flower
+			GrowthDuration: 100 days
+			SeedCode: 'flow-li-1'
+		},
+		Crop Lemon{
+			CropGroup: Fruit
+			GrowthDuration: 300 days
+			SeedCode: 'fru-lem-1'
+		}
+	]
+	Farmers:[
+		Farmer Ram {
+			FarmerID: 'FAQ1'
+			Email: 'ram.gurung@gmail.com'
+			PhoneNumber: '3518214417'
+			Services: ["AQ_IoT1.NutritionMonitoringSystem"]
+		},
+		Farmer Haben {
+			FarmerID: 'FAQ2'
+			Email: 'checkhaben@gmail.com'
+			PhoneNumber: '3518214317'
+			Services: ["AQ_IoT1.Harvest"]
+		},
+		Farmer Mohammad {
+			FarmerID: 'FAQ3'
+			Email: 'mohammad.rijal@gmail.com'
+			PhoneNumber: '3518214418'
+			Services: ["AQ_IoT1.NutritionControllingSystem"]
+		}
+	]
+	IoTSystem: [
+		IoTSystem AQ_IoT1 {
+			Version: '1.0.0'
+			Services: [
+				Controlling NutritionControllingSystem {
+					ServiceID: 'AQNutCon1'
+					Host: 'localhost'
+					URI: 'farm://service-aq/control/nutrient'
+					ControlType: NutrientController
+					Action: Alert
+					Actuators: [NutActuator1]
+				},
+				Monitoring NutritionMonitoringSystem{
+					ServiceID: 'AQNutMon1'
+					Host: 'localhost'
+					URI: 'farm://service-aq/monitor/nutrient'
+					Metrics: Nutrient
+					Sensors: [NutSensor1]
+					Control: NutritionControllingSystem	
+				},
+				AnalyticsSystem Harvest{
+					ServiceID: 'AQHarAnl1'
+					Host: 'localhost'
+					URI: 'farm://service-aq/analytic/harvest'
+					AnalyticsType: Harvesting
+					DataSource:'Data-AQ-Harvest.db'
+					OutputType: BarChart
+				}
+			]
+			Devices: [
+				Sensor NutSensor1{
+					DeviceID: 'nutrisen1'
+					IPAddress: '192.10.25.20'
+					Manufacturer: 'Krohne'
+					State: Active
+					Unit: 'mS/cm'
+					Value: 1.0
+					Protocol: "MQTTGateway.Protocol_MQTT"
+				},
+				Actuator NutActuator1{
+					DeviceID: 'nutriact1'
+					IPAddress: '192.24.21.10'
+					Manufacturer: 'ElectroCraft'
+					Type: NutrientController
+					Protocol: "MQTTGateway.Protocol_MQTT"
+				}
+			]
+			Gateways:[
+				Gateway MQTTGateway{
+					GatewayID: 'MQAQGate1'
+					Model: 'MQ123'
+					Devices: [NutSensor1,NutActuator1]
+					Protocols:[
+						CommunicationProtocol Protocol_MQTT{
+							Type: MQTT
+						}
+					]
+				}
+			]
+		}
+	]
+}

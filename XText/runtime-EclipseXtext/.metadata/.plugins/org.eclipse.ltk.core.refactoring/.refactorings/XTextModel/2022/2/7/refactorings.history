@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;XTextModel/Test1.farm&apos; to &apos;Farm-Aquila.farm&apos;" description="Rename resource &apos;Test1.farm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Test1.farm" name="Farm-Aquila.farm" stamp="1644254383877" updateReferences="true"/>
+</session>

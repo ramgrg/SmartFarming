@@ -1,0 +1,169 @@
+grammar com.se4gd.smartfarming.SmartFarming with org.eclipse.xtext.common.Terminals
+
+import "http://www.example.org/smartFarmingXText" 
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+Farm returns Farm:
+	'Farm'
+	name=EString
+	'{'
+		('Location:' Location=EString)?
+		'Size:' Size=EFloat 'sqm'
+		'Crops:' '[' Crops+=Crop ( "," Crops+=Crop)* ']' 
+		'Farmers:' '[' Farmers+=Farmer ( "," Farmers+=Farmer)* ']' 
+		'IoTSystem:' '[' IoTSystem=IoTSystem ']'
+	'}';
+
+Service returns Service:
+	AnalyticsSystem | Monitoring | Controlling;
+
+Device returns Device:
+	Actuator | Sensor;
+
+EString returns ecore::EString:
+	STRING | ID;
+
+EFloat returns ecore::EFloat:
+	'-'? INT? '.' INT (('E'|'e') '-'? INT)?;
+
+Crop returns Crop:
+	'Crop'
+	name=EString
+	'{'
+		('CropGroup:' CropGroup=CropGroup)?
+		'GrowthDuration:' GrowthDuration=EInt 'days'
+		('SeedCode:' SeedCode=EString)?
+	'}';
+
+Farmer returns Farmer:
+	'Farmer'
+	name=EString
+	'{'
+		('FarmerID:' FarmerID=EString)?
+		('Email:' Email=EString)?
+		('PhoneNumber:' PhoneNumber=EString)?
+		'Services:' '[' Services+=[Service|EString] ( "," Services+=[Service|EString])* ']' 
+	'}';
+
+IoTSystem returns IoTSystem:
+	'IoTSystem'
+	name=EString
+	'{'
+		('Version:' Version=EString)?
+		'Services:' '[' Services+=Service ( "," Services+=Service)* ']' 
+		'Devices:' '[' Devices+=Device ( "," Devices+=Device)* ']' 
+		'Gateways:' '[' Gateways+=Gateway ( "," Gateways+=Gateway)* ']' 
+	'}';
+
+enum CropGroup returns CropGroup:
+				Vegetable = 'Vegetable' | Fruit = 'Fruit' | Flower = 'Flower' | Tubers = 'Tubers';
+
+EInt returns ecore::EInt:
+	'-'? INT;
+
+AnalyticsSystem returns AnalyticsSystem:
+	{AnalyticsSystem}
+	'AnalyticsSystem'
+	name=EString
+	'{'
+		('ServiceID:' ServiceID=EString)?
+		('Host:' Host=EString)?
+		('URI:' URI=EString)?
+		('AnalyticsType:' AnalyticsType=AnalyticsType)?
+		('DataSource:' DataSource=EString)?
+		('OutputType:' OutputType=OutputType)?
+	'}';
+
+Monitoring returns Monitoring:
+	'Monitoring'
+	name=EString
+	'{'
+		('ServiceID:' ServiceID=EString)?
+		('Host:' Host=EString)?
+		('URI:' URI=EString)?
+		('Metrics:' Metrics=MonitoringMetrics)?
+		'Sensors:' '[' Sensors+=[Sensor|EString] ( "," Sensors+=[Sensor|EString])* ']' 
+		('Control:' Control=[Controlling|EString])?
+	'}';
+
+Controlling returns Controlling:
+	'Controlling'
+	name=EString
+	'{'
+		('ServiceID:' ServiceID=EString)?
+		('Host:' Host=EString)?
+		('URI:' URI=EString)?
+		('ControlType:' ControlType=ControlType)?
+		('Action:' Action=ControllerAction)?
+		'Actuators:' '[' Actuators+=[Actuator|EString] ( "," Actuators+=[Actuator|EString])* ']' 
+	'}';
+
+enum AnalyticsType returns AnalyticsType:
+				Harvesting = 'Harvesting' | Seeding = 'Seeding' | Resource = 'Resource';
+
+enum OutputType returns OutputType:
+				LineGraph = 'LineGraph' | PieChart = 'PieChart' | BarChart = 'BarChart' | Tabular = 'Tabular';
+
+enum MonitoringMetrics returns MonitoringMetrics:
+				Nutrient = 'Nutrient' | PhotoSynthesis = 'PhotoSynthesis' | EnvironmentalSafety = 'EnvironmentalSafety';
+
+Sensor returns Sensor:
+	'Sensor'
+	name=EString
+	'{'
+		('DeviceID:' DeviceID=EString)?
+		('IPAddress:' IPAddress=EString)?
+		('Manufacturer:' Manufacturer=EString)?
+		('Type:' Type=SensorType)?
+		('State:' State=SensorState)?
+		('Unit:' Unit=EString)?
+		'Value:' Value=EFloat
+		'Protocol:' Protocol=[CommunicationProtocol|EString]
+	'}';
+
+enum SensorType returns SensorType:
+				Temperature = 'Temperature' | Humidity = 'Humidity' | CO2 = 'CO2' | Oxygen = 'Oxygen' | PH = 'PH' | EC = 'EC' | LEDLight = 'LEDLight' | Surveillance = 'Surveillance';
+
+enum SensorState returns SensorState:
+				Active = 'Active' | Passive = 'Passive';
+
+CommunicationProtocol returns CommunicationProtocol:
+	{CommunicationProtocol}
+	'CommunicationProtocol'
+	name=EString
+	'{'
+		('Type:' Type=CommunicationType)?
+	'}';
+
+enum CommunicationType returns CommunicationType:
+				ZigBee = 'ZigBee' | MQTT = 'MQTT' | COAP = 'COAP' | HTTP = 'HTTP' | WIFI = 'WIFI' | Bluetooth = 'Bluetooth' | ZWave = 'ZWave';
+
+enum ControlType returns ControlType:
+				AirConditioner = 'AirConditioner' | NutrientController = 'NutrientController' | LEDController = 'LEDController' | OxygenController = 'OxygenController' | CO2Controller = 'CO2Controller';
+
+enum ControllerAction returns ControllerAction:
+				Increase = 'Increase' | Decrease = 'Decrease' | ON = 'ON' | OFF = 'OFF' | Alert = 'Alert';
+
+Actuator returns Actuator:
+	'Actuator'
+	name=EString
+	'{'
+		('DeviceID:' DeviceID=EString)?
+		('IPAddress:' IPAddress=EString)?
+		('Manufacturer:' Manufacturer=EString)?
+		('Type:' Type=ActuatorType)?
+		'Protocol:' Protocol=[CommunicationProtocol|EString]
+	'}';
+
+enum ActuatorType returns ActuatorType:
+				AirConditioner = 'AirConditioner' | NutrientController = 'NutrientController' | LEDController = 'LEDController' | OxygenController = 'OxygenController' | CO2Controller = 'CO2Controller';
+
+Gateway returns Gateway:
+	'Gateway'
+	name=EString
+	'{'
+		('GatewayID:' GatewayID=EString)?
+		('Model:' Model=EString)?
+		'Devices:' '[' Devices+=[Device|EString] ( "," Devices+=[Device|EString])* ']' 
+		'Protocols:' '[' Protocols+=CommunicationProtocol ( "," Protocols+=CommunicationProtocol)* ']' 
+	'}';

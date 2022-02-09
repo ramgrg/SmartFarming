@@ -1,0 +1,102 @@
+Farm Farm_Lappeenranta{
+	Location: 'Lappeenranta'
+	Size: 25.0 sqm
+	Crops: [
+		Crop Mushroom{
+			CropGroup: Vegetable
+			GrowthDuration: 40 days
+			SeedCode: 'veg-mus-1'
+		},
+		Crop Rose{
+			CropGroup: Flower
+			GrowthDuration: 100 days
+			SeedCode: 'flow-ros-1'
+		},
+		Crop Orange{
+			CropGroup: Fruit
+			GrowthDuration: 1500 days
+			SeedCode: 'fru-or-1'
+		}
+	]
+	Farmers:[
+		Farmer Ram {
+			FarmerID: 'FLap1'
+			Email: 'ram.gurung@gmail.com'
+			PhoneNumber: '3518214417'
+			Services: ["Lap_IOT1.TemperatureControllingSystem"]
+		},
+		Farmer Haben {
+			FarmerID: 'FLap2'
+			Email: 'checkhaben@gmail.com'
+			PhoneNumber: '3518214317'
+			Services: ["Lap_IOT1.Seed"]
+		},
+		Farmer Mohammad {
+			FarmerID: 'FLap3'
+			Email: 'mohammad.rijal@gmail.com'
+			PhoneNumber: '3518214418'
+			Services: ['Lap_IOT1.TemperatureMonitoringSystem']
+		}
+	]
+	IoTSystem: [
+		IoTSystem Lap_IOT1 {
+			Version: '1.0.0'
+			Services: [
+				Controlling TemperatureControllingSystem {
+					ServiceID: 'LapTempCon1'
+					Host: 'localhost'
+					URI: 'farm://service-lap/control/temperature'
+					ControlType: AirConditioner
+					Action: Alert
+					Actuators: [TempActuator1]
+				},
+				Monitoring TemperatureMonitoringSystem{
+					ServiceID: 'LapTempMon1'
+					Host: 'localhost'
+					URI: 'farm://service-aq/monitor/temperature'
+					Metrics: EnvironmentalSafety
+					Sensors: [TempSensor1]
+					Control: TemperatureControllingSystem	
+				},
+				AnalyticsSystem Seed{
+					ServiceID: 'LapSedAnl1'
+					Host: 'localhost'
+					URI: 'farm://service-lap/analytic/seed'
+					AnalyticsType: Seeding
+					DataSource:'Data-Lap-Seed.db'
+					OutputType: LineGraph
+				}
+			]
+			Devices: [
+				Sensor TempSensor1{
+					DeviceID: 'tempsen1'
+					IPAddress: '192.23.11.20'
+					Manufacturer: 'Aquara'
+					State: Active
+					Unit: 'celcius'
+					Value: 24.0
+					Protocol: 'MQTTGateway.ProtocolMQTT'
+				},
+				Actuator TempActuator1{
+					DeviceID: 'tempact1'
+					IPAddress: '192.14.21.10'
+					Manufacturer: 'Netatmo'
+					Type: NutrientController
+					Protocol: 'MQTTGateway.ProtocolMQTT'
+				}
+			]
+			Gateways:[
+				Gateway MQTTGateway{
+					GatewayID: 'MQAQGate1'
+					Model: 'MQ123'
+					Devices: [TempSensor1,TempActuator1]
+					Protocols:[
+						CommunicationProtocol ProtocolMQTT{
+							Type: MQTT
+						}
+					]
+				}
+			]
+		}
+	]
+}
