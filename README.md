@@ -268,4 +268,10 @@ We have added edge operators to represent the relationship among the defferent C
 	- Add Operator relation -  to add a relationship between the service and the farmer operating it.
 	- Add Monitor relation - to add a relationship between the monitoring service and the sensors it uses for that operation.
 	- Add Control relation - to add a relationship between the controlling service and the actuators it uses for that operation.
+	
+**Additional Layer** 
+
+	- We have added two additional layers to give more clear look for the project manager, if the project manager wants to focus on the IoT system he can remove the crop and farmer layers by unchecking the checkbox. And if he wants to see the crops and the farmers responsible for the services he can activate the Farmer and crop layer by checking the boxs.
+
+![image](https://user-images.githubusercontent.com/56352752/153263950-f8781e89-6d8d-41d8-94a0-f9f3cf30ff3f.png)
 
