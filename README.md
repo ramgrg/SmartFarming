@@ -39,7 +39,7 @@ Smart Farming can mean different things, Since we are focusing on IoT systems fo
 ### MetaClassess
 We have identified 13 main metamodel concepts to describe of specfic domain. 
 
-![Copy of Copy of Sunday Diagram drawio (2)](https://user-images.githubusercontent.com/37994271/153568155-3f8f4508-90a7-44da-9891-7c0f91f0efd3.png)
+![Copy of Copy of Sunday Diagram drawio (3)](https://user-images.githubusercontent.com/37994271/153568953-52f66f26-eae6-4a53-b039-44adcbddd349.png)
 
 ### Relationships
 As you can see from the above diagram,all metamodels have different types of relationships among them.
