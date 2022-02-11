@@ -25,10 +25,10 @@ How to use the project:
     * Metamodel in EMF
     * Dynamic Instances
     * Constraints, Operations and Drived fields in OCL
-  ### 4. Model Transformation in Acceleo 
+  ### 4. Model Transformation
     * Refactoring and Refining of Metamodels
     * Model to Model Transformation using ATL
-    * Model to Text Transformation
+    * Model to Text Transformation using Acceleo
   ### 5. xText and Sirius 
     * Concrete Syntax using xText
     * Graphical Editor using Sirius
@@ -118,6 +118,9 @@ Sensor_Constraints
 ### Concrete Syntax
 
 We have created two model instances which represent the concrete syntax of our metamodel: Farm_Aquila and Farm_Lappeenranta. 
+
+General Structure: 
+<img width="457" alt="Screen Shot 2022-02-11 at 11 46 01" src="https://user-images.githubusercontent.com/37994271/153569968-58c5364f-09e6-4f2d-a6df-7a7ff523714c.png">
 
 1. Farm_Aquila
 ![image](https://user-images.githubusercontent.com/8501541/149832459-a6bb7d12-0603-4cd6-a56b-64d8944556ed.png)
