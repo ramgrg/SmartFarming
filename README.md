@@ -117,11 +117,17 @@ Sensor_Constraints
 
 ### Concrete Syntax
 
-We have created two model instances which represent the concrete syntax of our metamodel: Farm_Aquila and Farm_Lappeenranta. 
-
-General Structure: 
+**General Structure: **
+- Orange is for reserved word `START Concept` and `END`
+- Magenta is for name of a concept
+- Green is for group of props/relation/children
+- Light blue is for name of attreibute or relation
+- Default white for attribute value
+- String data indicated by quotation ""
 
 <img width="457" alt="Screen Shot 2022-02-11 at 11 46 01" src="https://user-images.githubusercontent.com/37994271/153569968-58c5364f-09e6-4f2d-a6df-7a7ff523714c.png">
+
+To demonstrate, we have created two model instances which represent the concrete syntax of our metamodel: Farm_Aquila and Farm_Lappeenranta. 
 
 1. Farm_Aquila
 ![image](https://user-images.githubusercontent.com/8501541/149832459-a6bb7d12-0603-4cd6-a56b-64d8944556ed.png)
@@ -232,8 +238,8 @@ We have refined the model from A2 with following changes:
 - Rename Attribute ServiceID to UtilityID (from Service to Utility concept)
 - Select First Database for Utility from newly created Databases
 - Move Devices become under Gateways (change the reference to containment) and remove Devices containment reference from IoTSystem
-- Rename Attribute Services to Utilities in Farmer concept. 
-- Move Protocol Attribute from Sensor and Actuator to Device
+- Rename Attribute Services to Utilities in Farmer and IoTSystem concept. 
+- Move Protocol Attribute from Sensor and Actuator to Device (the value is CommunicationType enum)
 
 The structure of new metamodel shown in figure below. The new metamodel file can be seen under Transformation Folder -> SmartFarmingV2 (smartFarmingV2.ecore)
 
