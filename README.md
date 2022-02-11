@@ -25,7 +25,7 @@ How to use the project:
     * Metamodel in EMF
     * Dynamic Instances
     * Constraints, Operations and Drived fields in OCL
-  ### 4. Model Transformation in Epsilon 
+  ### 4. Model Transformation in Acceleo 
     * Refactoring and Refining of Metamodels
     * Model to Model Transformation using ATL
     * Model to Text Transformation
