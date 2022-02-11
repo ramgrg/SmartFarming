@@ -39,11 +39,11 @@ Smart Farming can mean different things, Since we are focusing on IoT systems fo
 ### MetaClassess
 We have identified 13 main metamodel concepts to describe of specfic domain. 
 
-![image](https://user-images.githubusercontent.com/56352752/149790437-baa812d1-f0be-4adf-bac9-d06704225dbc.png)
+![Copy of Copy of Sunday Diagram drawio (2)](https://user-images.githubusercontent.com/37994271/153568155-3f8f4508-90a7-44da-9891-7c0f91f0efd3.png)
 
 ### Relationships
 As you can see from the above diagram,all metamodels have different types of relationships among them.
-<img width="819" alt="Screen Shot 2022-01-17 at 22 22 52" src="https://user-images.githubusercontent.com/37994271/149833063-703ad60d-4771-4aba-9c0c-638ad1f91e6f.png">
+<img width="820" alt="Screen Shot 2022-02-11 at 11 22 34" src="https://user-images.githubusercontent.com/37994271/153568006-dcbbab22-3891-44c0-a33f-59a717a9b3a2.png">
 
 ## 2. MPS
 
@@ -233,7 +233,7 @@ We have refined the model from A2 with following changes:
 
 The structure of new metamodel shown in figure below. The new metamodel file can be seen under Transformation Folder -> SmartFarmingV2 (smartFarmingV2.ecore)
 
-![Copy of Sunday Diagram (2)](https://user-images.githubusercontent.com/37994271/153266773-2f600b88-9d38-43a7-b66d-17af4fe47071.jpg)
+![Copy of Copy of Sunday Diagram drawio](https://user-images.githubusercontent.com/37994271/153568345-79d13bad-06cb-425b-92ef-a6074f0a3d5c.png)
 
 ### Model-to-Model Transformation (SmartFarmingTransformation)
 We transformed Farm_Lapen.xmi (smartFarming.ecore) to Output.xmi (smartFarmingV2.ecore) based on above model refinement using ATL. Following configuration is used:
