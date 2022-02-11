@@ -120,6 +120,7 @@ Sensor_Constraints
 We have created two model instances which represent the concrete syntax of our metamodel: Farm_Aquila and Farm_Lappeenranta. 
 
 General Structure: 
+
 <img width="457" alt="Screen Shot 2022-02-11 at 11 46 01" src="https://user-images.githubusercontent.com/37994271/153569968-58c5364f-09e6-4f2d-a6df-7a7ff523714c.png">
 
 1. Farm_Aquila
